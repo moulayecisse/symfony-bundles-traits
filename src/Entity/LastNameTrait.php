@@ -6,7 +6,7 @@
  * Time: 01:03
  */
 
-namespace App\Traits\Entity;
+namespace Cisse\Traits\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;

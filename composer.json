@@ -17,8 +17,8 @@
 	"symfony/validator": "*"
   },
   "autoload": {
-	"psr-0": { "Cisse\\Symfony\\Bundle\\Traits": "" }
+	"psr-0": { "Cisse\\Traits": "" }
   },
-  "target-dir": "Cisse/Symfony/Bundle/Traits",
+  "target-dir": "Cisse/Traits",
   "minimum-stability": "dev"
 }

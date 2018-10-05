@@ -6,7 +6,7 @@
  * Time: 01:03.
  */
 
-namespace App\Traits\Entity;
+namespace Cisse\Traits\Entity;
 
 use DateTimeInterface;
 use Doctrine\ORM\Mapping as ORM;
