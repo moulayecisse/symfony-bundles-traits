@@ -9,7 +9,7 @@
 	  "name": "Moulaye CISSE",
 	  "email": "moulaye.cisse@hotmail.fr",
 	  "homepage": "http://www.moulayecisse.com"
-	},
+	}
   ],
   "require": {
 	"php": ">=5.4.0",
