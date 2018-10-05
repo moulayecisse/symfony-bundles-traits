@@ -3,6 +3,7 @@
   "type": "symfony-bundle",
   "description": "Symfony Useful Traits",
   "keywords": ["Trait", "Trait", "xml", "json", "api", "web service"],
+  "homepage": "http://www.moulayecisse.com",
   "license": "MIT",
   "authors": [
 	{
@@ -13,7 +14,11 @@
   ],
   "require": {
 	"php": ">=5.4.0",
+
 	"symfony/framework-bundle": ">=3.4",
 	"symfony/validator": "*"
+  },
+  "autoload": {
+	"psr-4": { "Cisse\\Traits\\": "src/" }
   }
 }
