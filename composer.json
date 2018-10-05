@@ -14,8 +14,6 @@
   "require": {
 	"php": ">=5.4.0",
 	"symfony/framework-bundle": ">=3.4",
-	"symfony/twig-bundle": "*",
-	"doctrine/doctrine-bundle": "*",
 	"symfony/validator": "*"
   },
   "autoload": {
