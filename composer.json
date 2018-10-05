@@ -1,5 +1,5 @@
 {
-  "name": "cisse/symfony-traits",
+  "name": "cisse/traits",
   "type": "symfony-bundle",
   "description": "Symfony Useful Traits",
   "keywords": ["Trait", "Trait", "xml", "json", "api", "web service"],
@@ -19,6 +19,6 @@
   "autoload": {
 	"psr-0": { "Cisse\\Traits": "" }
   },
-  "target-dir": "Cisse/Traits",
+  "target-dir": "",
   "minimum-stability": "dev"
 }
