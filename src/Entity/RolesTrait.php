@@ -48,6 +48,18 @@ Trait RolesTrait
      */
     public function getRoles() : array
     {
-        return $this->roles ?? [];
+        return array_unique(array_merge(['ROLE_USER'], $this->roles));
+    }
+
+    /**
+     * Reset roles
+     *
+     * @return self
+     */
+    public function resetRoles() : self
+    {
+        $this->roles = [];
+
+        return $this;
     }
 }
