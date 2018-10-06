@@ -19,7 +19,7 @@ Trait PasswordTrait
      *
      * @var string
      *
-     * @ORM\Column(type="string", length=254, unique=true)
+     * @ORM\Column(type="string", length=255, unique=true)
      *
      * @Assert\NotBlank()
      * @Assert\NotNull()

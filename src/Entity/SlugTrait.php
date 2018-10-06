@@ -18,8 +18,9 @@ Trait SlugTrait
      * Slug
      *
      * @var string
-     * @ORM\Column(type="string")
-     * @Assert\Type(type="string")
+     *
+     * @ORM\Column(type="string", length=255)
+     *
      * @Assert\NotNull()
      */
     private $slug;
