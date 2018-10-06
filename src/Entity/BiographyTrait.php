@@ -18,9 +18,9 @@ trait BiographyTrait
      *
      * @var string
      *
-     * @ORM\Column(type="text", nullable=true)
+     * @ORM\Column(type="string", length=255, nullable=true)
      *
-     * @Assert\Length(max=250)
+     * @Assert\Length(max=255)
      */
     private $biography;
 

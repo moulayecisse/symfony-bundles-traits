@@ -19,7 +19,7 @@ Trait EmailTrait
      *
      * @var string
      *
-     * @ORM\Column(type="string", length=255, unique=true)
+     * @ORM\Column(type="string", length=255, nullable=true, unique=true)
      *
      * @Assert\NotBlank()
      * @Assert\Email()

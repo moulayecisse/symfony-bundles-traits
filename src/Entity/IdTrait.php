@@ -20,8 +20,6 @@ use Symfony\Component\Validator\Constraints as Assert;
 trait IdTrait
 {
     /**
-     * @Groups( "details" )
-     *
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")

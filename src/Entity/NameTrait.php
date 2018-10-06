@@ -20,7 +20,8 @@ Trait NameTrait
      *
      * @var string
      *
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
+     *
      * @Assert\NotNull()
      */
     private $name;

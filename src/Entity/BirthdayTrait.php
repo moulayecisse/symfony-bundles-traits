@@ -19,7 +19,7 @@ trait BirthdayTrait
     /**
      * Name.
      *
-     * @var DateTimeInterface
+     * @var \DateTime
      *
      * @ORM\Column(type="date", nullable=true)
      */
@@ -28,11 +28,11 @@ trait BirthdayTrait
     /**
      * Set birthday.
      *
-     * @param DateTimeInterface $birthday Content
+     * @param \DateTime $birthday Content
      *
      * @return self
      */
-    public function setBirthday(DateTimeInterface $birthday): self
+    public function setBirthday(\DateTime $birthday): self
     {
         $this->birthday = $birthday;
 
@@ -42,9 +42,9 @@ trait BirthdayTrait
     /**
      * Get birthday.
      *
-     * @return DateTimeInterface
+     * @return DateTime
      */
-    public function getBirthday(): DateTimeInterface
+    public function getBirthday(): \DateTime
     {
         return $this->birthday;
     }

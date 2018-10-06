@@ -21,7 +21,7 @@ Trait RolesTrait
      *
      * @ORM\Column(type="array")
      */
-    protected $roles;
+    private $roles;
 
     function __construct()
     {

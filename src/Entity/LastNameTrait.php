@@ -19,7 +19,7 @@ Trait LastNameTrait
      *
      * @var string
      *
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      *
      * @Assert\NotBlank()
      * @Assert\Length(min=4, max=50)
