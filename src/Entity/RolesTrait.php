@@ -19,7 +19,7 @@ Trait RolesTrait
      *
      * @var array
      *
-     * @ORM\Column(type="array")
+     * @ORM\Column(type="json")
      */
     private $roles;
 
