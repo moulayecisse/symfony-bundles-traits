@@ -20,8 +20,10 @@ Trait NameTrait
      *
      * @var string
      *
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"draft", "details"})
      *
+     * @ORM\Column(type="string")
+     * @Assert\Type(type="string")
      * @Assert\NotNull()
      */
     private $name;
