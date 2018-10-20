@@ -12,10 +12,10 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 
-Trait NameTrait
+Trait ZipCodeTrait
 {
     /**
-     * Name
+     * ZipCode
      *
      * @var string
      *
@@ -23,28 +23,28 @@ Trait NameTrait
      * @Assert\Type(type="string")
      * @Assert\NotNull()
      */
-    private $name;
+    private $zipCode;
 
     /**
-     * Set name
+     * Set zipCode
      *
-     * @param  string $name
+     * @param  string $zipCode
      * @return self
      */
-    public function setName(string $name) : self
+    public function setZipCode(string $zipCode) : self
     {
-        $this->name = $name;
+        $this->zipCode = $zipCode;
 
         return $this;
     }
 
     /**
-     * Get name
+     * Get zipCode
      *
      * @return string
      */
-    public function getName() : string
+    public function getZipCode() : string
     {
-        return $this->name;
+        return $this->zipCode;
     }
 }

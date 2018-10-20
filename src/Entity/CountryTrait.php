@@ -12,10 +12,10 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 
-Trait NameTrait
+Trait CountryTrait
 {
     /**
-     * Name
+     * Country
      *
      * @var string
      *
@@ -23,28 +23,28 @@ Trait NameTrait
      * @Assert\Type(type="string")
      * @Assert\NotNull()
      */
-    private $name;
+    private $country;
 
     /**
-     * Set name
+     * Set country
      *
-     * @param  string $name
+     * @param  string $country
      * @return self
      */
-    public function setName(string $name) : self
+    public function setCountry(string $country) : self
     {
-        $this->name = $name;
+        $this->country = $country;
 
         return $this;
     }
 
     /**
-     * Get name
+     * Get country
      *
      * @return string
      */
-    public function getName() : string
+    public function getCountry() : string
     {
-        return $this->name;
+        return $this->country;
     }
 }

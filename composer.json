@@ -15,9 +15,9 @@
   "require": {
 	"php": ">=7.1.0",
 
-	"symfony/orm-pack": ">=1.0 <=1.0.5",
-	"symfony/serializer": "4.1 <=4.1.6",
-	"symfony/validator": "4.1 <=4.1.6"
+	"symfony/orm-pack": "*",
+	"symfony/serializer": "*",
+	"symfony/validator": "*"
   },
   "autoload": {
 	"psr-4": { "Cisse\\Traits\\": "src/" }

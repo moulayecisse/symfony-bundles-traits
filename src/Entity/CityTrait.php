@@ -12,10 +12,10 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 
-Trait NameTrait
+Trait CityTrait
 {
     /**
-     * Name
+     * City
      *
      * @var string
      *
@@ -23,28 +23,28 @@ Trait NameTrait
      * @Assert\Type(type="string")
      * @Assert\NotNull()
      */
-    private $name;
+    private $city;
 
     /**
-     * Set name
+     * Set city
      *
-     * @param  string $name
+     * @param  string $city
      * @return self
      */
-    public function setName(string $name) : self
+    public function setCity(string $city) : self
     {
-        $this->name = $name;
+        $this->city = $city;
 
         return $this;
     }
 
     /**
-     * Get name
+     * Get city
      *
      * @return string
      */
-    public function getName() : string
+    public function getCity() : string
     {
-        return $this->name;
+        return $this->city;
     }
 }

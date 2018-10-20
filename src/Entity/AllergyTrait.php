@@ -12,39 +12,39 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 
-Trait NameTrait
+Trait AllergyTrait
 {
     /**
-     * Name
+     * Allergy
      *
      * @var string
      *
-     * @ORM\Column(type="string")
-     * @Assert\Type(type="string")
+     * @ORM\Column(type="text", nullable=true)
+     *
      * @Assert\NotNull()
      */
-    private $name;
+    private $allergy;
 
     /**
-     * Set name
+     * Set allergy
      *
-     * @param  string $name
+     * @param  string $allergy
      * @return self
      */
-    public function setName(string $name) : self
+    public function setAllergy(string $allergy) : self
     {
-        $this->name = $name;
+        $this->allergy = $allergy;
 
         return $this;
     }
 
     /**
-     * Get name
+     * Get allergy
      *
      * @return string
      */
-    public function getName() : string
+    public function getAllergy() : string
     {
-        return $this->name;
+        return $this->allergy;
     }
 }
