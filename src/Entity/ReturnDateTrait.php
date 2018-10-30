@@ -41,9 +41,9 @@ trait ReturnDateTrait
     /**
      * Get returnDate.
      *
-     * @return \DateTime
+     * @return \DateTime|null
      */
-    public function getReturnDate(): \DateTime
+    public function getReturnDate(): ?\DateTime
     {
         return $this->returnDate;
     }

@@ -41,9 +41,9 @@ Trait AllergyTrait
     /**
      * Get allergy
      *
-     * @return string
+     * @return string|null
      */
-    public function getAllergy() : string
+    public function getAllergy() : ?string
     {
         return $this->allergy;
     }

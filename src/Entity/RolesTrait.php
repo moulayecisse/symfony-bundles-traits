@@ -19,7 +19,7 @@ Trait RolesTrait
      *
      * @var array
      *
-     * @ORM\Column(type="json")
+     * @ORM\Column(type="json", nullable=true)
      */
     private $roles;
 
@@ -48,7 +48,7 @@ Trait RolesTrait
      */
     public function getRoles() : array
     {
-        return array_unique(array_merge(['ROLE_USER'], $this->roles));
+        return array_unique(array_merge([], $this->roles));
     }
 
     /**

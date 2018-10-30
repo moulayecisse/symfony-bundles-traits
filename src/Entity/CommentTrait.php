@@ -37,9 +37,9 @@ Trait CommentTrait
     /**
      * Get comment
      *
-     * @return string
+     * @return string|null
      */
-    public function getComment() : string
+    public function getComment() : ?string
     {
         return $this->comment;
     }

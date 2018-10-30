@@ -37,9 +37,9 @@ Trait PhoneTrait
     /**
      * Get Phone
      *
-     * @return string
+     * @return string|null
      */
-    public function getPhone() : string
+    public function getPhone() : ?string
     {
         return $this->Phone;
     }

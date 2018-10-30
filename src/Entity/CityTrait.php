@@ -19,7 +19,7 @@ Trait CityTrait
      *
      * @var string
      *
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", length=255, nullable=true)
      * @Assert\Type(type="string")
      * @Assert\NotNull()
      */
@@ -41,9 +41,9 @@ Trait CityTrait
     /**
      * Get city
      *
-     * @return string
+     * @return string|null
      */
-    public function getCity() : string
+    public function getCity() : ?string
     {
         return $this->city;
     }

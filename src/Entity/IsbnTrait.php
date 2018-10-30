@@ -37,9 +37,9 @@ Trait IsbnTrait
     /**
      * Get isbn
      *
-     * @return string
+     * @return string|null
      */
-    public function getIsbn() : string
+    public function getIsbn() : ?string
     {
         return $this->isbn;
     }

@@ -19,7 +19,7 @@ Trait PasswordTrait
      *
      * @var string
      *
-     * @ORM\Column(type="string", length=255, unique=true)
+     * @ORM\Column(type="string", length=255, nullable=true, unique=true)
      *
      * @Assert\NotBlank()
      * @Assert\NotNull()
@@ -42,9 +42,9 @@ Trait PasswordTrait
     /**
      * Get password
      *
-     * @return string
+     * @return string|null
      */
-    public function getPassword() : string
+    public function getPassword() : ?string
     {
         return $this->password;
     }

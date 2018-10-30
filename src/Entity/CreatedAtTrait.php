@@ -41,9 +41,9 @@ trait CreatedAtTrait
     /**
      * Get CreatedAt.
      *
-     * @return \DateTime
+     * @return \DateTime|null
      */
-    public function getCreatedAt(): \DateTime
+    public function getCreatedAt(): ?\DateTime
     {
         return $this->CreatedAt;
     }

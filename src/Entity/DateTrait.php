@@ -41,9 +41,9 @@ trait DateTrait
     /**
      * Get date.
      *
-     * @return \DateTime
+     * @return \DateTime|null
      */
-    public function getDate(): \DateTime
+    public function getDate(): ?\DateTime
     {
         return $this->date;
     }

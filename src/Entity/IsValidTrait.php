@@ -38,9 +38,9 @@ Trait IsValidTrait
     /**
      * Get isValid
      *
-     * @return bool
+     * @return bool|null
      */
-    public function getIsValid() : bool
+    public function getIsValid() : ?bool
     {
         return $this->isValid;
     }

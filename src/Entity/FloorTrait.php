@@ -38,9 +38,9 @@ Trait FloorTrait
     /**
      * Get floor
      *
-     * @return int
+     * @return int|null
      */
-    public function getFloor() : int
+    public function getFloor() : ?int
     {
         return $this->floor;
     }

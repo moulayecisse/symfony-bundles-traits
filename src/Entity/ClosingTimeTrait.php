@@ -41,9 +41,9 @@ trait ClosingTimeTrait
     /**
      * Get ClosingTime.
      *
-     * @return \DateTime
+     * @return \DateTime|null
      */
-    public function getClosingTime(): \DateTime
+    public function getClosingTime(): ?\DateTime
     {
         return $this->ClosingTime;
     }

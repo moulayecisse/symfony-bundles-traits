@@ -39,9 +39,9 @@ Trait ExtensionTrait
     /**
      * Get extension
      *
-     * @return string
+     * @return string|null
      */
-    public function getExtension() : string
+    public function getExtension() : ?string
     {
         return $this->extension;
     }

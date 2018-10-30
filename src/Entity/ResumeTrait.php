@@ -37,9 +37,9 @@ Trait ResumeTrait
     /**
      * Get resume
      *
-     * @return string
+     * @return string|null
      */
-    public function getResume() : string
+    public function getResume() : ?string
     {
         return $this->resume;
     }

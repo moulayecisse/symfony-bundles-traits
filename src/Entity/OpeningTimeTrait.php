@@ -41,9 +41,9 @@ trait OpeningTimeTrait
     /**
      * Get OpeningTime.
      *
-     * @return \DateTime
+     * @return \DateTime|null
      */
-    public function getOpeningTime(): \DateTime
+    public function getOpeningTime(): ?\DateTime
     {
         return $this->OpeningTime;
     }

@@ -19,7 +19,7 @@ Trait ZipCodeTrait
      *
      * @var string
      *
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", length=255, nullable=true)
      * @Assert\Type(type="string")
      * @Assert\NotNull()
      */
@@ -41,9 +41,9 @@ Trait ZipCodeTrait
     /**
      * Get zipCode
      *
-     * @return string
+     * @return string|null
      */
-    public function getZipCode() : string
+    public function getZipCode() : ?string
     {
         return $this->zipCode;
     }

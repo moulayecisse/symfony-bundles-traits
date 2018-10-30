@@ -38,9 +38,9 @@ Trait AmountTrait
     /**
      * Get Amount
      *
-     * @return int
+     * @return int|null
      */
-    public function getAmount() : int
+    public function getAmount() : ?int
     {
         return $this->amount;
     }

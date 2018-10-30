@@ -41,9 +41,9 @@ Trait AddressTrait
     /**
      * Get address
      *
-     * @return string
+     * @return string|null
      */
-    public function getAddress() : string
+    public function getAddress() : ?string
     {
         return $this->address;
     }

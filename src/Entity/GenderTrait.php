@@ -21,7 +21,7 @@ Trait GenderTrait
      *
      * @var string
      *
-     * @ORM\Column(type="string", length=1)
+     * @ORM\Column(type="string", length=1, nullable=true)
      * @Assert\Type(type="string")
      * @Assert\Length(max="1", min="1")
      * @Assert\NotNull()
@@ -49,9 +49,9 @@ Trait GenderTrait
     /**
      * Get gender
      *
-     * @return string
+     * @return string|null
      */
-    public function getGender() : string
+    public function getGender() : ?string
     {
         return $this->gender;
     }

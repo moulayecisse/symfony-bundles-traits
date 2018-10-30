@@ -42,9 +42,9 @@ trait BirthdayTrait
     /**
      * Get birthday.
      *
-     * @return DateTime
+     * @return \DateTime|null
      */
-    public function getBirthday(): \DateTime
+    public function getBirthday(): ?\DateTime
     {
         return $this->birthday;
     }

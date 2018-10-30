@@ -38,9 +38,9 @@ Trait DurationTrait
     /**
      * Get Duration
      *
-     * @return int
+     * @return int|null
      */
-    public function getDuration() : int
+    public function getDuration() : ?int
     {
         return $this->duration;
     }

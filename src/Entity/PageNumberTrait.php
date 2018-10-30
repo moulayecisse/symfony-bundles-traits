@@ -38,9 +38,9 @@ Trait PageNumberTrait
     /**
      * Get pageNumber
      *
-     * @return int
+     * @return int|null
      */
-    public function getPageNumber() : int
+    public function getPageNumber() : ?int
     {
         return $this->pageNumber;
     }

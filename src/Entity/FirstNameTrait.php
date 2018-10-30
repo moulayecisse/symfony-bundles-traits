@@ -44,9 +44,9 @@ Trait FirstNameTrait
     /**
      * Get firstName
      *
-     * @return string
+     * @return string|null
      */
-    public function getFirstName() : string
+    public function getFirstName() : ?string
     {
         return $this->firstName;
     }

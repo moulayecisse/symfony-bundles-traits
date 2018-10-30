@@ -41,9 +41,9 @@ trait EndDateTrait
     /**
      * Get endDate.
      *
-     * @return \DateTime
+     * @return \DateTime|null
      */
-    public function getEndDate(): \DateTime
+    public function getEndDate(): ?\DateTime
     {
         return $this->endDate;
     }
