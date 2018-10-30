@@ -48,7 +48,7 @@ Trait RolesTrait
      */
     public function getRoles() : array
     {
-        return array_unique(array_merge([], $this->roles));
+        return array_unique(array_merge([], is_array($this->roles) ? $this->roles : []));
     }
 
     /**
