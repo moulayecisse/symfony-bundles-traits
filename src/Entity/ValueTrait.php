@@ -38,9 +38,9 @@ Trait ValueTrait
     /**
      * Get Value
      *
-     * @return string
+     * @return string|null
      */
-    public function getValue() : string
+    public function getValue() : ?string
     {
         return $this->Value;
     }
