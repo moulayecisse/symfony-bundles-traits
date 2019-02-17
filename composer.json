@@ -1,4 +1,5 @@
 {
+
   "name": "cisse/Traits",
   "type": "symfony-bundle",
   "description": "Symfony Useful Traits",
