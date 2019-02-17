@@ -22,7 +22,7 @@ trait BirthdayTrait
      *
      * @ORM\Column(type="date", nullable=true)
      */
-    private $birthday;
+    protected $birthday;
 
     /**
      * Set birthday.

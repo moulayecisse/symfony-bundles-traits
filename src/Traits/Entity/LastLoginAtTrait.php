@@ -22,7 +22,7 @@ trait LastLoginAtTrait
      *
      * @ORM\Column(type="datetime", nullable=true)
      */
-    private $lastLoginAt;
+    protected $lastLoginAt;
 
     /**
      * Set LastLoginAt.

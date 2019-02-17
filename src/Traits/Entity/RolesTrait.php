@@ -19,7 +19,7 @@ trait RolesTrait
      *
      * @ORM\Column(type="json", nullable=true)
      */
-    private $roles;
+    protected $roles;
 
     public function __construct()
     {
@@ -42,12 +42,16 @@ trait RolesTrait
     /**
      * Get roles
      *
+     * @see UserInterface
      * @return String[]
      */
     public function getRoles() : array
     {
-        return array_unique(array_merge([], is_array($this->roles) ? $this->roles : []));
-    }
+        $roles = $this->roles;
+        // guarantee every user at least has ROLE_USER
+        $roles[] = 'ROLE_USER';
+
+        return array_unique($roles);    }
 
     /**
      * Reset roles

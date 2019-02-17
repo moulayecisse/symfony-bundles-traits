@@ -19,7 +19,7 @@ trait TitleTrait
      *
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $title;
+    protected $title;
 
     /**
      * Set title

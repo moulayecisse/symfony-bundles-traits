@@ -19,7 +19,7 @@ trait RankTrait
      *
      * @ORM\Column(type="integer", nullable=true)
      */
-    private $rank;
+    protected $rank;
 
     /**
      * Set Rank

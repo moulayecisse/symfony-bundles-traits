@@ -20,7 +20,7 @@ trait ExtensionTrait
      * @ORM\Column(type="string", length=255, nullable=true)
      *
      */
-    private $extension;
+    protected $extension;
 
     /**
      * Set extension

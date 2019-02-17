@@ -11,41 +11,39 @@ namespace Cisse\Traits\Traits\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
-trait LastNameTrait
+trait NameTrait
 {
     /**
      * Name
      *
      * @var string
      *
-     * @ORM\Column(type="string", length=255, nullable=true)
-     *
-     * @Assert\NotBlank()
-     * @Assert\Length(min=4, max=50)
-     *
+     * @ORM\Column(type="string", length=255)
+     * @var string
+     * @Assert\Type(type="string")
      */
-    protected $lastName;
+    protected $image;
 
     /**
-     * Set lastName
+     * Set image
      *
-     * @param  string $lastName
+     * @param  string $image
      * @return self
      */
-    public function setLastName(string $lastName) : self
+    public function setImage(string $image) : self
     {
-        $this->lastName = $lastName;
+        $this->image = $image;
 
         return $this;
     }
 
     /**
-     * Get lastName
+     * Get image
      *
      * @return string|null
      */
-    public function getLastName() : ?string
+    public function getImage() : ?string
     {
-        return $this->lastName;
+        return $this->image;
     }
 }

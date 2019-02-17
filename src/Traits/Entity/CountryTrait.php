@@ -22,7 +22,7 @@ trait CountryTrait
      * @Assert\Type(type="string")
      * @Assert\NotNull()
      */
-    private $country;
+    protected $country;
 
     /**
      * Set country

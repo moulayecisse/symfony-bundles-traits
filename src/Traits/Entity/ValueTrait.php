@@ -19,7 +19,7 @@ trait ValueTrait
      *
      * @ORM\Column(type="text", nullable=true)
      */
-    private $value;
+    protected $value;
 
     /**
      * Set Value

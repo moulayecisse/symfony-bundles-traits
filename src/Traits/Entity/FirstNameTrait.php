@@ -24,7 +24,7 @@ trait FirstNameTrait
      * @Assert\Length(min=4, max=50)
      *
      */
-    private $firstName;
+    protected $firstName;
 
     /**
      * Set firstName

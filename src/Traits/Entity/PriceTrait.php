@@ -19,7 +19,7 @@ trait PriceTrait
      *
      * @ORM\Column(type="integer", nullable=true)
      */
-    private $price;
+    protected $price;
 
     /**
      * Set Price

@@ -19,7 +19,7 @@ trait PageNumberTrait
      *
      * @ORM\Column(type="integer", nullable=true)
      */
-    private $pageNumber;
+    protected $pageNumber;
 
     /**
      * Set pageNumber

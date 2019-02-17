@@ -19,7 +19,7 @@ trait RateTrait
      *
      * @ORM\Column(type="float", nullable=true)
      */
-    private $rate;
+    protected $rate;
 
     /**
      * Set Rate

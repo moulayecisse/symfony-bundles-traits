@@ -20,7 +20,7 @@ trait LabelTrait
      * @ORM\Column(type="string", length=255, nullable=true)
      *
      */
-    private $label;
+    protected $label;
 
     /**
      * Set label

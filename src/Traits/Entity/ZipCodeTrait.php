@@ -22,7 +22,7 @@ trait ZipCodeTrait
      * @Assert\Type(type="string")
      * @Assert\NotNull()
      */
-    private $zipCode;
+    protected $zipCode;
 
     /**
      * Set zipCode

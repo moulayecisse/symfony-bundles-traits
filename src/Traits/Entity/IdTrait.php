@@ -24,7 +24,7 @@ trait IdTrait
      *
      * @noinspection PhpPropertyNamingConventionInspection
      */
-    private $id;
+    protected $id;
 
     /**
      * @return int|null

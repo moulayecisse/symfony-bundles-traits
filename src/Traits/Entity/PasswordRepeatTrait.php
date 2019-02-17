@@ -20,7 +20,7 @@ trait PasswordRepeatTrait
      * @Assert\NotBlank()
      * @Assert\NotNull()
      */
-    private $passwordRepeat;
+    protected $passwordRepeat;
 
     /**
      * Set passwordRepeat

@@ -22,7 +22,7 @@ trait BiographyTrait
      *
      * @Assert\Length(max=255)
      */
-    private $biography;
+    protected $biography;
 
     /**
      * Set biography.

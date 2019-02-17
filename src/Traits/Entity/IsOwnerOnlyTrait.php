@@ -19,7 +19,7 @@ trait IsOwnerOnlyTrait
      *
      * @ORM\Column(type="boolean", nullable=true)
      */
-    private $isOwnerOnly;
+    protected $isOwnerOnly;
 
     /**
      * Set isOwnerOnly

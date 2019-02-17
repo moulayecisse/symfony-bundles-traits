@@ -20,7 +20,7 @@ trait LongitudeTrait
      * @ORM\Column(type="float", nullable=true)
      *
      */
-    private $longitude;
+    protected $longitude;
 
     /**
      * Set longitude

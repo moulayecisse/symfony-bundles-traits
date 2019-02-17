@@ -22,7 +22,7 @@ trait DateTrait
      *
      * @ORM\Column(type="date", nullable=true)
      */
-    private $date;
+    protected $date;
 
     /**
      * Set date.

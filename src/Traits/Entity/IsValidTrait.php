@@ -19,7 +19,7 @@ trait IsValidTrait
      *
      * @ORM\Column(type="boolean", nullable=true)
      */
-    private $isValid;
+    protected $isValid;
 
     /**
      * Set isValid

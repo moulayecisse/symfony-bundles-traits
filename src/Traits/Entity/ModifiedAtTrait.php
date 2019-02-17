@@ -8,43 +8,44 @@
 
 namespace Cisse\Traits\Traits\Entity;
 
+use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * trait DateTrait.
  */
-trait CreatedAtTrait
+trait ModifiedAtTrait
 {
     /**
-     * CreatedAt
+     * ModifiedAt
      *
-     * @var \DateTime
+     * @var DateTime
      *
      * @ORM\Column(type="datetime", nullable=true)
      */
-    protected $CreatedAt;
+    protected $modifiedAt;
 
     /**
-     * Set CreatedAt.
+     * Set ModifiedAt.
      *
-     * @param \DateTime $CreatedAt Content
+     * @param DateTime $modifiedAt Content
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $CreatedAt): self
+    public function setModifiedAt(DateTime $modifiedAt): self
     {
-        $this->CreatedAt = $CreatedAt;
+        $this->modifiedAt = $modifiedAt;
 
         return $this;
     }
 
     /**
-     * Get CreatedAt.
+     * Get ModifiedAt.
      *
-     * @return \DateTime|null
+     * @return DateTime|null
      */
-    public function getCreatedAt(): ?\DateTime
+    public function getModifiedAt(): ?DateTime
     {
-        return $this->CreatedAt;
+        return $this->modifiedAt;
     }
 }

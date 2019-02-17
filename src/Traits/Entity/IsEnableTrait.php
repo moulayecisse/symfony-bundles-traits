@@ -19,7 +19,7 @@ trait IsEnableTrait
      *
      * @ORM\Column(type="boolean", nullable=true)
      */
-    private $isEnable;
+    protected $isEnable;
 
     /**
      * Set isEnable

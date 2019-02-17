@@ -20,7 +20,7 @@ trait LatitudeTrait
      * @ORM\Column(type="float", nullable=true)
      *
      */
-    private $latitude;
+    protected $latitude;
 
     /**
      * Set latitude

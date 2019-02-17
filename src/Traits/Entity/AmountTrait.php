@@ -19,7 +19,7 @@ trait AmountTrait
      *
      * @ORM\Column(type="float", nullable=true)
      */
-    private $amount;
+    protected $amount;
 
     /**
      * Set Amount

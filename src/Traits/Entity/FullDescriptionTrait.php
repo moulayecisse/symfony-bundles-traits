@@ -19,7 +19,7 @@ Trait FullDescriptionTrait
      *
      * @ORM\Column(type="text", nullable=true)
      */
-    private $fullDescription;
+    protected $fullDescription;
 
     /**
      * Set fullDescription

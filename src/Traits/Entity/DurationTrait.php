@@ -19,7 +19,7 @@ trait DurationTrait
      *
      * @ORM\Column(type="integer", nullable=true)
      */
-    private $duration;
+    protected $duration;
 
     /**
      * Set Duration

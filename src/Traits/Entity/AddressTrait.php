@@ -22,7 +22,7 @@ trait AddressTrait
      *
      * @Assert\NotNull()
      */
-    private $address;
+    protected $address;
 
     /**
      * Set address

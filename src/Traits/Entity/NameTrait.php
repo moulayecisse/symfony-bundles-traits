@@ -22,7 +22,7 @@ trait NameTrait
      * @Assert\Type(type="string")
      * @Assert\NotNull()
      */
-    private $name;
+    protected $name;
 
     /**
      * Set name

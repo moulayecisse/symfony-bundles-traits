@@ -19,7 +19,7 @@ trait IsLocalTrait
      *
      * @ORM\Column(type="boolean", nullable=true)
      */
-    private $isLocal;
+    protected $isLocal;
 
     /**
      * Set isLocal

@@ -22,7 +22,7 @@ trait StartDateTimeTrait
      *
      * @ORM\Column(type="datetime", nullable=true)
      */
-    private $startDateTime;
+    protected $startDateTime;
 
     /**
      * Set StartDateTime.

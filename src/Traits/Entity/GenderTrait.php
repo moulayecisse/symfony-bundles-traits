@@ -25,7 +25,7 @@ trait GenderTrait
      * @Assert\Length(max="1", min="1")
      * @Assert\NotNull()
      */
-    private $gender;
+    protected $gender;
 
     /**
      * Set gender

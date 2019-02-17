@@ -22,7 +22,7 @@ trait PasswordTrait
      *
      * @Assert\NotBlank(message="Le mot de passe doit être renseigné")
      */
-    private $password;
+    protected $password;
 
     /**
      * Set password

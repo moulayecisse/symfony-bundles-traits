@@ -22,7 +22,7 @@ trait PathTrait
      *
      * @Assert\NotNull()
      */
-    private $path;
+    protected $path;
 
     /**
      * Set path

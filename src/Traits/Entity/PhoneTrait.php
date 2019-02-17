@@ -19,7 +19,7 @@ trait PhoneTrait
      *
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $phone;
+    protected $phone;
 
     /**
      * Set Phone

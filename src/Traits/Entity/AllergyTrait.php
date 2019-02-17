@@ -22,7 +22,7 @@ trait AllergyTrait
      *
      * @Assert\NotNull()
      */
-    private $allergy;
+    protected $allergy;
 
     /**
      * Set allergy

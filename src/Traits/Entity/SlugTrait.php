@@ -20,7 +20,7 @@ trait SlugTrait
      * @ORM\Column(type="string", length=255, nullable=true)
      *
      */
-    private $slug;
+    protected $slug;
 
     /**
      * Set slug

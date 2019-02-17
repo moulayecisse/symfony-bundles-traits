@@ -19,7 +19,7 @@ trait MessageTrait
      *
      * @ORM\Column(type="text", nullable=true)
      */
-    private $message;
+    protected $message;
 
     /**
      * Set message

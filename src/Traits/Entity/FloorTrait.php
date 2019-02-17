@@ -19,7 +19,7 @@ trait FloorTrait
      *
      * @ORM\Column(type="integer", nullable=true)
      */
-    private $floor;
+    protected $floor;
 
     /**
      * Set floor

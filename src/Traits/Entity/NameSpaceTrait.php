@@ -22,7 +22,7 @@ trait NameSpaceTrait
      * @Assert\Type(type="string")
      * @Assert\NotNull()
      */
-    private $nameSpace;
+    protected $nameSpace;
 
     /**
      * Set nameSpace

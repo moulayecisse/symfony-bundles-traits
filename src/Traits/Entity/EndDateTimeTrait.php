@@ -22,7 +22,7 @@ trait EndDateTimeTrait
      *
      * @ORM\Column(type="datetime", nullable=true)
      */
-    private $endDateTime;
+    protected $endDateTime;
 
     /**
      * Set EndDateTime.

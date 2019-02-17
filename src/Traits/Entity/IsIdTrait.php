@@ -19,7 +19,7 @@ trait IsIdTrait
      *
      * @ORM\Column(type="boolean", nullable=true)
      */
-    private $isId;
+    protected $isId;
 
     /**
      * Set isId

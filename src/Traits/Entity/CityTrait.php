@@ -22,7 +22,7 @@ trait CityTrait
      * @Assert\Type(type="string")
      * @Assert\NotNull()
      */
-    private $city;
+    protected $city;
 
     /**
      * Set city

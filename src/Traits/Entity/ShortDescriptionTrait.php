@@ -19,7 +19,7 @@ Trait ShortDescriptionTrait
      *
      * @ORM\Column(type="string", length=500, nullable=true)
      */
-    private $shortDescription;
+    protected $shortDescription;
 
     /**
      * Set shortDescription

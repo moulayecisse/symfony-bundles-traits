@@ -19,7 +19,7 @@ trait CommentTrait
      *
      * @ORM\Column(type="text", nullable=true)
      */
-    private $comment;
+    protected $comment;
 
     /**
      * Set comment

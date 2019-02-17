@@ -22,7 +22,7 @@ trait ReturnDateTrait
      *
      * @ORM\Column(type="date", nullable=true)
      */
-    private $returnDate;
+    protected $returnDate;
 
     /**
      * Set returnDate.

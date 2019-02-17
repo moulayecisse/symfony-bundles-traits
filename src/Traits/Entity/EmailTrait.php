@@ -23,7 +23,7 @@ trait EmailTrait
      * @Assert\NotBlank()
      * @Assert\Email()
      */
-    private $email;
+    protected $email;
 
     /**
      * Set email

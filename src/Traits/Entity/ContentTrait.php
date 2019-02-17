@@ -19,7 +19,7 @@ Trait ContentTrait
      *
      * @ORM\Column(type="text", nullable=true)
      */
-    private $content;
+    protected $content;
 
     /**
      * Set content

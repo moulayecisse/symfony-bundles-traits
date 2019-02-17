@@ -19,7 +19,7 @@ trait ResumeTrait
      *
      * @ORM\Column(type="text", nullable=true)
      */
-    private $resume;
+    protected $resume;
 
     /**
      * Set resume

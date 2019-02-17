@@ -19,7 +19,7 @@ trait IsVisibleTrait
      *
      * @ORM\Column(type="boolean", nullable=true)
      */
-    private $isVisible;
+    protected $isVisible;
 
     /**
      * Set isVisible

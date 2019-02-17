@@ -22,7 +22,7 @@ trait OpeningTimeTrait
      *
      * @ORM\Column(type="time", nullable=true)
      */
-    private $openingTime;
+    protected $openingTime;
 
     /**
      * Set OpeningTime.
