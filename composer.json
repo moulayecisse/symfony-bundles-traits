@@ -1,5 +1,5 @@
 {
-  "name": "cisse/traitsbundle",
+  "name": "cisse/Traits",
   "type": "symfony-bundle",
   "description": "Symfony Useful Traits",
   "keywords": ["Trait", "Trait", "xml", "json", "api", "web service"],
@@ -20,6 +20,6 @@
 	"symfony/validator": "*"
   },
   "autoload": {
-	"psr-4": { "Cisse\\TraitsBundle\\": "src/" }
+	"psr-4": { "Cisse\\Traits\\": "src/" }
   }
 }
