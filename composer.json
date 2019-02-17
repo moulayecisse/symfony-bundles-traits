@@ -1,0 +1,25 @@
+{
+  "name": "cisse/traitsbundle",
+  "type": "symfony-bundle",
+  "description": "Symfony Useful Traits",
+  "keywords": ["Trait", "Trait", "xml", "json", "api", "web service"],
+  "homepage": "http://www.moulayecisse.com",
+  "license": "MIT",
+  "authors": [
+	{
+	  "name": "Moulaye CISSE",
+	  "email": "moulaye.cisse@hotmail.fr",
+	  "homepage": "http://www.moulayecisse.com"
+	}
+  ],
+  "require": {
+	"php": ">=7.1.0",
+
+	"symfony/orm-pack": "*",
+	"symfony/serializer": "*",
+	"symfony/validator": "*"
+  },
+  "autoload": {
+	"psr-4": { "Cisse\\TraitsBundle\\": "src/" }
+  }
+}
