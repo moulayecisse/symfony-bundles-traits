@@ -8,6 +8,8 @@
 
 namespace Cisse\Traits\Exceptions;
 
-class InvalidGenderException extends \InvalidArgumentException
+use InvalidArgumentException;
+
+class InvalidGenderException extends InvalidArgumentException
 {
 }
