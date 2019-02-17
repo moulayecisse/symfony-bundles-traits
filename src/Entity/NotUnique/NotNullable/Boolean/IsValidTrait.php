@@ -40,7 +40,7 @@ trait IsValidTrait
      *
      * @return bool|null
      */
-    public function getIsValid() : ?bool
+    public function getIsValid() : bool
     {
         return $this->isValid;
     }

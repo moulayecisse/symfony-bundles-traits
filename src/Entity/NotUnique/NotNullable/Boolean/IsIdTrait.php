@@ -40,7 +40,7 @@ trait IsIdTrait
      *
      * @return bool|null
      */
-    public function getIsId() : ?bool
+    public function getIsId() : bool
     {
         return $this->isId;
     }

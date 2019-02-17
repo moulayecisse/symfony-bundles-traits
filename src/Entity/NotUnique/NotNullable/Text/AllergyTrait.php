@@ -42,7 +42,7 @@ trait AllergyTrait
      *
      * @return string|null
      */
-    public function getAllergy() : ?string
+    public function getAllergy() : string
     {
         return $this->allergy;
     }

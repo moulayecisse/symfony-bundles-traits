@@ -42,7 +42,7 @@ trait ZipCodeTrait
      *
      * @return string|null
      */
-    public function getZipCode() : ?string
+    public function getZipCode() : string
     {
         return $this->zipCode;
     }

@@ -43,7 +43,7 @@ trait BiographyTrait
      *
      * @return string|null
      */
-    public function getBiography(): ?string
+    public function getBiography(): string
     {
         return $this->biography;
     }

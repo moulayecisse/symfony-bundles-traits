@@ -32,7 +32,7 @@ trait BirthdayTrait
      *
      * @return self
      */
-    public function setBirthday(DateTime $birthday): self
+    public function setBirthday(?Datetime $birthday): self
     {
         $this->birthday = $birthday;
 

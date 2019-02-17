@@ -39,7 +39,7 @@ trait PhoneTrait
      *
      * @return string|null
      */
-    public function getPhone() : ?string
+    public function getPhone() : string
     {
         return $this->phone;
     }

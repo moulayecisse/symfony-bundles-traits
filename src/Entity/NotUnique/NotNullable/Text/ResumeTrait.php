@@ -39,7 +39,7 @@ trait ResumeTrait
      *
      * @return string|null
      */
-    public function getResume() : ?string
+    public function getResume() : string
     {
         return $this->resume;
     }

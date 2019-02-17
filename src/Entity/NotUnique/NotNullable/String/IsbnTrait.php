@@ -39,7 +39,7 @@ trait IsbnTrait
      *
      * @return string|null
      */
-    public function getIsbn() : ?string
+    public function getIsbn() : string
     {
         return $this->isbn;
     }

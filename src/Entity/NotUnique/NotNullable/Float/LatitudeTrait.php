@@ -28,7 +28,7 @@ trait LatitudeTrait
      * @param  float|null $latitude
      * @return self
      */
-    public function setLatitude(?float $latitude) : self
+    public function setLatitude(float $latitude) : self
     {
         $this->latitude = $latitude;
 
@@ -40,7 +40,7 @@ trait LatitudeTrait
      *
      * @return float|null
      */
-    public function getLatitude() : ?float
+    public function getLatitude() : float
     {
         return $this->latitude;
     }

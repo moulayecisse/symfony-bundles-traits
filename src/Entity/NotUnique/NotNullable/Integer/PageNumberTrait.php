@@ -40,7 +40,7 @@ trait PageNumberTrait
      *
      * @return int|null
      */
-    public function getPageNumber() : ?int
+    public function getPageNumber() : int
     {
         return $this->pageNumber;
     }

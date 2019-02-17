@@ -40,7 +40,7 @@ trait IsEnableTrait
      *
      * @return bool|null
      */
-    public function getIsEnable() : ?bool
+    public function getIsEnable() : bool
     {
         return $this->isEnable;
     }

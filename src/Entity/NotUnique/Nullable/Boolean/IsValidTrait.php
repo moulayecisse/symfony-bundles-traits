@@ -28,7 +28,7 @@ trait IsValidTrait
      *
      * @return self
      */
-    public function setIsValid(bool $isValid) : self
+    public function setIsValid(?bool $isValid) : self
     {
         $this->isValid = $isValid;
 

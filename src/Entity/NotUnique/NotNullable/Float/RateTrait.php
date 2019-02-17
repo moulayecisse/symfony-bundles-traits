@@ -40,7 +40,7 @@ trait RateTrait
      *
      * @return float|null
      */
-    public function getRate() : ?float
+    public function getRate() : float
     {
         return $this->rate;
     }

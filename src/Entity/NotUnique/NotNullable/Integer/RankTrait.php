@@ -28,7 +28,7 @@ trait RankTrait
      *
      * @return self
      */
-    public function setRank(?int $rank) : self
+    public function setRank(int $rank) : self
     {
         $this->rank = $rank;
 
@@ -40,7 +40,7 @@ trait RankTrait
      *
      * @return int|null
      */
-    public function getRank() : ?int
+    public function getRank() : int
     {
         return $this->rank;
     }

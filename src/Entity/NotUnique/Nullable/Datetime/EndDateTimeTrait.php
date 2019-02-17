@@ -32,7 +32,7 @@ trait EndDateTimeTrait
      *
      * @return self
      */
-    public function setEndDateTime(DateTime $endDateTime): self
+    public function setEndDateTime(?Datetime $endDateTime): self
     {
         $this->endDateTime = $endDateTime;
 

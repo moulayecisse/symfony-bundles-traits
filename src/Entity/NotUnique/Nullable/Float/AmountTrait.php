@@ -24,11 +24,11 @@ trait AmountTrait
     /**
      * Set Amount
      *
-     * @param  int $amount
+     * @param float $amount
      *
      * @return self
      */
-    public function setAmount(int $amount) : self
+    public function setAmount(?float $amount) : self
     {
         $this->amount = $amount;
 
@@ -38,9 +38,9 @@ trait AmountTrait
     /**
      * Get Amount
      *
-     * @return int|null
+     * @return float|null
      */
-    public function getAmount() : ?int
+    public function getAmount() : ?float
     {
         return $this->amount;
     }

@@ -40,7 +40,7 @@ trait PasswordRepeatTrait
      *
      * @return string|null
      */
-    public function getPasswordRepeat() : ?string
+    public function getPasswordRepeat() : string
     {
         return $this->passwordRepeat;
     }

@@ -32,7 +32,7 @@ trait DateTrait
      *
      * @return self
      */
-    public function setDate(DateTime $date): self
+    public function setDate(?Datetime $date): self
     {
         $this->date = $date;
 

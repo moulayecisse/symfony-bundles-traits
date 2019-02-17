@@ -49,7 +49,7 @@ trait GenderTrait
      *
      * @return string|null
      */
-    public function getGender() : ?string
+    public function getGender() : string
     {
         return $this->gender;
     }

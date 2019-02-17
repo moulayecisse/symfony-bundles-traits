@@ -32,7 +32,7 @@ trait LastLoginAtTrait
      *
      * @return self
      */
-    public function setLastLoginAt(DateTime $lastLoginAt): self
+    public function setLastLoginAt(?Datetime $lastLoginAt): self
     {
         $this->lastLoginAt = $lastLoginAt;
 

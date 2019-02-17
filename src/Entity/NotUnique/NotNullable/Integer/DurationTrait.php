@@ -40,7 +40,7 @@ trait DurationTrait
      *
      * @return int|null
      */
-    public function getDuration() : ?int
+    public function getDuration() : int
     {
         return $this->duration;
     }

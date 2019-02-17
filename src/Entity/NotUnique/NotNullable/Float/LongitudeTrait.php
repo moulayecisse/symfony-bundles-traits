@@ -28,7 +28,7 @@ trait LongitudeTrait
      * @param  float|null $longitude
      * @return self
      */
-    public function setLongitude(?float $longitude) : self
+    public function setLongitude(float $longitude) : self
     {
         $this->longitude = $longitude;
 
@@ -40,7 +40,7 @@ trait LongitudeTrait
      *
      * @return float|null
      */
-    public function getLongitude() : ?float
+    public function getLongitude() : float
     {
         return $this->longitude;
     }

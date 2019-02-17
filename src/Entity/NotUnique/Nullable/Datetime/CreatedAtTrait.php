@@ -32,7 +32,7 @@ trait CreatedAtTrait
      *
      * @return self
      */
-    public function setCreatedAt(DateTime $createdAt): self
+    public function setCreatedAt(?Datetime $createdAt): self
     {
         $this->createdAt = $createdAt;
 

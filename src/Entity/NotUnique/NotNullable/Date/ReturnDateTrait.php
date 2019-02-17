@@ -44,7 +44,7 @@ trait ReturnDateTrait
      *
      * @return DateTime|null
      */
-    public function getReturnDate(): ?DateTime
+    public function getReturnDate(): DateTime
     {
         return $this->returnDate;
     }

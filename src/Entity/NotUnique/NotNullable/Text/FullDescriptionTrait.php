@@ -39,7 +39,7 @@ trait FullDescriptionTrait
      *
      * @return string|null
      */
-    public function getFullDescription() : ?string
+    public function getFullDescription() : string
     {
         return $this->fullDescription;
     }

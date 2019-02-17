@@ -28,7 +28,7 @@ trait IsLocalTrait
      *
      * @return self
      */
-    public function setIsLocal(bool $isLocal) : self
+    public function setIsLocal(?bool $isLocal) : self
     {
         $this->isLocal = $isLocal;
 

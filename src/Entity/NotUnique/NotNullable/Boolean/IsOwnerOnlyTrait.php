@@ -40,7 +40,7 @@ trait IsOwnerOnlyTrait
      *
      * @return bool|null
      */
-    public function getIsOwnerOnly() : ?bool
+    public function getIsOwnerOnly() : bool
     {
         return $this->isOwnerOnly;
     }

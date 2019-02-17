@@ -42,7 +42,7 @@ trait CityTrait
      *
      * @return string|null
      */
-    public function getCity() : ?string
+    public function getCity() : string
     {
         return $this->city;
     }

@@ -28,7 +28,7 @@ trait IsEnableTrait
      *
      * @return self
      */
-    public function setIsEnable(bool $isEnable) : self
+    public function setIsEnable(?bool $isEnable) : self
     {
         $this->isEnable = $isEnable;
 

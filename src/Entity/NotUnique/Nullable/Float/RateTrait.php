@@ -28,7 +28,7 @@ trait RateTrait
      *
      * @return self
      */
-    public function setRate(float $rate) : self
+    public function setRate(?float $rate) : self
     {
         $this->rate = $rate;
 

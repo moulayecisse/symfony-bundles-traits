@@ -40,7 +40,7 @@ trait IsVisibleTrait
      *
      * @return bool|null
      */
-    public function getIsVisible() : ?bool
+    public function getIsVisible() : bool
     {
         return $this->isVisible;
     }

@@ -40,7 +40,7 @@ trait FloorTrait
      *
      * @return int|null
      */
-    public function getFloor() : ?int
+    public function getFloor() : int
     {
         return $this->floor;
     }

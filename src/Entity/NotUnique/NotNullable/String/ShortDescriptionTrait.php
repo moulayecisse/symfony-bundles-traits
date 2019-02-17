@@ -39,7 +39,7 @@ trait ShortDescriptionTrait
      *
      * @return string|null
      */
-    public function getShortDescription() : ?string
+    public function getShortDescription() : string
     {
         return $this->shortDescription;
     }

@@ -28,7 +28,7 @@ trait IsIdTrait
      *
      * @return self
      */
-    public function setIsId(bool $isId) : self
+    public function setIsId(?bool $isId) : self
     {
         $this->isId = $isId;
 

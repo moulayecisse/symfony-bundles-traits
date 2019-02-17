@@ -40,7 +40,7 @@ trait IsLocalTrait
      *
      * @return bool|null
      */
-    public function getIsLocal() : ?bool
+    public function getIsLocal() : bool
     {
         return $this->isLocal;
     }

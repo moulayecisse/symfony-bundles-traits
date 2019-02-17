@@ -40,7 +40,7 @@ trait PriceTrait
      *
      * @return int|null
      */
-    public function getPrice() : ?int
+    public function getPrice() : int
     {
         return $this->price;
     }

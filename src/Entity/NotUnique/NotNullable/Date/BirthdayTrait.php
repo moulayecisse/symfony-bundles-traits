@@ -44,7 +44,7 @@ trait BirthdayTrait
      *
      * @return DateTime|null
      */
-    public function getBirthday(): ?DateTime
+    public function getBirthday(): DateTime
     {
         return $this->birthday;
     }

@@ -28,7 +28,7 @@ trait IsOwnerOnlyTrait
      *
      * @return self
      */
-    public function setIsOwnerOnly(bool $isOwnerOnly) : self
+    public function setIsOwnerOnly(?bool $isOwnerOnly) : self
     {
         $this->isOwnerOnly = $isOwnerOnly;
 

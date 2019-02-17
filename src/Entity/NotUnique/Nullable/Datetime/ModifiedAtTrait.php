@@ -32,7 +32,7 @@ trait ModifiedAtTrait
      *
      * @return self
      */
-    public function setModifiedAt(DateTime $modifiedAt): self
+    public function setModifiedAt(?Datetime $modifiedAt): self
     {
         $this->modifiedAt = $modifiedAt;
 

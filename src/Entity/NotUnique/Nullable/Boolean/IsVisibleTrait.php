@@ -28,7 +28,7 @@ trait IsVisibleTrait
      *
      * @return self
      */
-    public function setIsVisible(bool $isVisible) : self
+    public function setIsVisible(?bool $isVisible) : self
     {
         $this->isVisible = $isVisible;
 

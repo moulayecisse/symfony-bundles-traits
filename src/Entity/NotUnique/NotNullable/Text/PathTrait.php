@@ -42,7 +42,7 @@ trait PathTrait
      *
      * @return string|null
      */
-    public function getPath() : ?string
+    public function getPath() : string
     {
         return $this->path;
     }

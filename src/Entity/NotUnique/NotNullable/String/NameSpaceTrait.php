@@ -42,7 +42,7 @@ trait NameSpaceTrait
      *
      * @return string|null
      */
-    public function getNameSpace() : ?string
+    public function getNameSpace() : string
     {
         return $this->nameSpace;
     }
