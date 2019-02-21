@@ -20,7 +20,6 @@ trait NameSpaceTrait
      *
      * @ORM\Column(type="string", length=255, nullable=true, unique=true)
      * @Assert\Type(type="string")
-     * @Assert\NotNull()
      */
     protected $nameSpace;
 

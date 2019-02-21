@@ -20,7 +20,6 @@ trait CityTrait
      *
      * @ORM\Column(type="string", length=255, nullable=true, unique=true)
      * @Assert\Type(type="string")
-     * @Assert\NotNull()
      */
     protected $city;
 

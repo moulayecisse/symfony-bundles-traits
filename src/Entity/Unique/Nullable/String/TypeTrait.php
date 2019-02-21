@@ -11,38 +11,38 @@ namespace Cisse\Traits\Entity\Unique\Nullable\String;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
-trait NameTrait
+trait TypeTrait
 {
     /**
-     * Name
+     * Type
      *
      * @var string
      *
      * @ORM\Column(type="string", length=255, nullable=true, unique=true)
      * @Assert\Type(type="string")
      */
-    protected $name;
+    protected $type;
 
     /**
-     * Set name
+     * Set type
      *
-     * @param  string $name
+     * @param  string $type
      * @return self
      */
-    public function setName(string $name) : self
+    public function setType(string $type) : self
     {
-        $this->name = $name;
+        $this->type = $type;
 
         return $this;
     }
 
     /**
-     * Get name
+     * Get type
      *
      * @return string|null
      */
-    public function getName() : ?string
+    public function getType() : string
     {
-        return $this->name;
+        return $this->type;
     }
 }

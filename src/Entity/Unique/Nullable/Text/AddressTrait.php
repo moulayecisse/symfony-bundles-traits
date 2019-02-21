@@ -19,8 +19,6 @@ trait AddressTrait
      * @var string
      *
      * @ORM\Column(type="text", nullable=true, unique=true)
-     *
-     * @Assert\NotNull()
      */
     protected $address;
 

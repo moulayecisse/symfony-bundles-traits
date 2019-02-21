@@ -18,7 +18,6 @@ trait PasswordRepeatTrait
      * @var string
      *
      * @Assert\NotBlank()
-     * @Assert\NotNull()
      */
     protected $passwordRepeat;
 

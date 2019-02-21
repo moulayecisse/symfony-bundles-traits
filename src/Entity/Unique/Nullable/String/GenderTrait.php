@@ -23,7 +23,6 @@ trait GenderTrait
      * @ORM\Column(type="string", length=1, nullable=true, unique=true)
      * @Assert\Type(type="string")
      * @Assert\Length(max="1", min="1")
-     * @Assert\NotNull()
      */
     protected $gender;
 
