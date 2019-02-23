@@ -6,7 +6,7 @@
  * Time: 01:03
  */
 
-namespace Cisse\Traits\Model\NotUnique\Nullable\Boolean;
+namespace Cisse\Traits\Model\Boolean;
 
 trait IsVisibleTrait
 {

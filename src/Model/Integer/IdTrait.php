@@ -7,7 +7,7 @@
  * Time: 00:56
  */
 
-namespace Cisse\Traits\Model\NotUnique\Nullable\Integer;
+namespace Cisse\Traits\Model\Integer;
 
 /**
  * trait IdTrait

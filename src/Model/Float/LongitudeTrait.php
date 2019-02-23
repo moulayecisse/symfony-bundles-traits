@@ -6,7 +6,7 @@
  * Time: 01:03
  */
 
-namespace Cisse\Traits\Model\NotUnique\Nullable\Float;
+namespace Cisse\Traits\Model\Float;
 
 trait LongitudeTrait
 {

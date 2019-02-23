@@ -6,7 +6,7 @@
  * Time: 01:03
  */
 
-namespace Cisse\Traits\Model\NotUnique\Nullable\Integer;
+namespace Cisse\Traits\Model\Integer;
 
 trait FloorTrait
 {

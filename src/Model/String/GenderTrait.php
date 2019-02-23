@@ -6,7 +6,7 @@
  * Time: 01:03
  */
 
-namespace Cisse\Traits\Model\NotUnique\Nullable\String;
+namespace Cisse\Traits\Model\String;
 
 use Cisse\Traits\Exceptions\InvalidGenderException;
 use Cisse\Traits\Interfaces\GenderInterface;

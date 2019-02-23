@@ -6,7 +6,7 @@
  * Time: 01:03
  */
 
-namespace Cisse\Traits\Model\NotUnique\Nullable\Text;
+namespace Cisse\Traits\Model\Text;
 
 trait AddressTrait
 {

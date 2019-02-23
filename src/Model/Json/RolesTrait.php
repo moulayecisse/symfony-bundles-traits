@@ -6,7 +6,7 @@
  * Time: 01:03
  */
 
-namespace Cisse\Traits\Model\NotUnique\Nullable\Json;
+namespace Cisse\Traits\Model\Json;
 
 trait RolesTrait
 {

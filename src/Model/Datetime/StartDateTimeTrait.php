@@ -6,7 +6,7 @@
  * Time: 01:03.
  */
 
-namespace Cisse\Traits\Model\NotUnique\Nullable\Datetime;
+namespace Cisse\Traits\Model\Datetime;
 
 use DateTime;
 
