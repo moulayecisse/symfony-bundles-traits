@@ -28,7 +28,7 @@ trait PageNumberTrait
      *
      * @return self
      */
-    public function setPageNumber(int $pageNumber) : self
+    public function setPageNumber(?int $pageNumber) : self
     {
         $this->pageNumber = $pageNumber;
 

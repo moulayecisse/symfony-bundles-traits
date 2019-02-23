@@ -30,7 +30,7 @@ trait PasswordTrait
      * @param  string $password
      * @return self
      */
-    public function setPassword(string $password) : self
+    public function setPassword(?string $password) : self
     {
         $this->password = $password;
 

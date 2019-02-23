@@ -27,7 +27,7 @@ trait ResumeTrait
      * @param  string $resume
      * @return self
      */
-    public function setResume(string $resume) : self
+    public function setResume(?string $resume) : self
     {
         $this->resume = $resume;
 

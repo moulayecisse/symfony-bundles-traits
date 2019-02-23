@@ -28,7 +28,7 @@ trait LabelTrait
      * @param  string $label
      * @return self
      */
-    public function setLabel(string $label) : self
+    public function setLabel(?string $label) : self
     {
         $this->label = $label;
 

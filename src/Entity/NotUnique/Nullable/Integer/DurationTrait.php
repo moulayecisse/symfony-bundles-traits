@@ -28,7 +28,7 @@ trait DurationTrait
      *
      * @return self
      */
-    public function setDuration(int $duration) : self
+    public function setDuration(?int $duration) : self
     {
         $this->duration = $duration;
 

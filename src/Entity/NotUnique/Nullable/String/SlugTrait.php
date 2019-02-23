@@ -28,7 +28,7 @@ trait SlugTrait
      * @param  string $slug
      * @return self
      */
-    public function setSlug(string $slug) : self
+    public function setSlug(?string $slug) : self
     {
         $this->slug = $slug;
 

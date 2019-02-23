@@ -29,7 +29,7 @@ trait ExtensionTrait
      *
      * @return self
      */
-    public function setExtension(string $extension) : self
+    public function setExtension(?string $extension) : self
     {
         $this->extension = $extension;
 

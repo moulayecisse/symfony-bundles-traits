@@ -27,7 +27,7 @@ trait PhoneTrait
      * @param  string $phone
      * @return self
      */
-    public function setPhone(string $phone) : self
+    public function setPhone(?string $phone) : self
     {
         $this->phone = $phone;
 

@@ -31,7 +31,7 @@ trait BiographyTrait
      *
      * @return self
      */
-    public function setBiography(string $biography): self
+    public function setBiography(?string $biography): self
     {
         $this->biography = $biography;
 

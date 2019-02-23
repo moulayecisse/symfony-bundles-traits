@@ -30,7 +30,7 @@ trait TypeTrait
      * @param  string $type
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(?string $type) : self
     {
         $this->type = $type;
 

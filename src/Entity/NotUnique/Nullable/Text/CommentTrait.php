@@ -27,7 +27,7 @@ trait CommentTrait
      * @param  string $comment
      * @return self
      */
-    public function setComment(string $comment) : self
+    public function setComment(?string $comment) : self
     {
         $this->comment = $comment;
 

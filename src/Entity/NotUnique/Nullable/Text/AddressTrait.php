@@ -30,7 +30,7 @@ trait AddressTrait
      * @param  string $address
      * @return self
      */
-    public function setAddress(string $address) : self
+    public function setAddress(?string $address) : self
     {
         $this->address = $address;
 

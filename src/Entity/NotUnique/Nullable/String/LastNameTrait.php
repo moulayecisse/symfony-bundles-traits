@@ -32,7 +32,7 @@ trait LastNameTrait
      * @param  string $lastName
      * @return self
      */
-    public function setLastName(string $lastName) : self
+    public function setLastName(?string $lastName) : self
     {
         $this->lastName = $lastName;
 

@@ -33,7 +33,7 @@ trait GenderTrait
      * @param  string $gender
      * @return self
      */
-    public function setGender(string $gender) : self
+    public function setGender(?string $gender) : self
     {
         if (in_array($gender, [GenderInterface::MALE, GenderInterface::FEMALE])) {
             $this->gender = $gender;

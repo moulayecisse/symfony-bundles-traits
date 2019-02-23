@@ -27,7 +27,7 @@ trait MessageTrait
      * @param  string $message
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(?string $message) : self
     {
         $this->message = $message;
 

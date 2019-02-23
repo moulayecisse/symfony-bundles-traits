@@ -28,7 +28,7 @@ trait FloorTrait
      *
      * @return self
      */
-    public function setFloor(int $floor) : self
+    public function setFloor(?int $floor) : self
     {
         $this->floor = $floor;
 

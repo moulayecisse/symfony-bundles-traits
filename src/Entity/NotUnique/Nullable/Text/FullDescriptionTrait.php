@@ -27,7 +27,7 @@ trait FullDescriptionTrait
      * @param  string $fullDescription
      * @return self
      */
-    public function setFullDescription(string $fullDescription) : self
+    public function setFullDescription(?string $fullDescription) : self
     {
         $this->fullDescription = $fullDescription;
 

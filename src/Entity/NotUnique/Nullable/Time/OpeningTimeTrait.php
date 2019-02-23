@@ -32,7 +32,7 @@ trait OpeningTimeTrait
      *
      * @return self
      */
-    public function setOpeningTime(DateTime $openingTime): self
+    public function setOpeningTime(?DateTime $openingTime): self
     {
         $this->openingTime = $openingTime;
 

@@ -30,7 +30,7 @@ trait AllergyTrait
      * @param  string $allergy
      * @return self
      */
-    public function setAllergy(string $allergy) : self
+    public function setAllergy(?string $allergy) : self
     {
         $this->allergy = $allergy;
 

@@ -30,7 +30,7 @@ trait ZipCodeTrait
      * @param  string $zipCode
      * @return self
      */
-    public function setZipCode(string $zipCode) : self
+    public function setZipCode(?string $zipCode) : self
     {
         $this->zipCode = $zipCode;
 

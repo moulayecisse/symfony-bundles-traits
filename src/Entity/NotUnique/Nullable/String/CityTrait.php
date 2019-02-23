@@ -30,7 +30,7 @@ trait CityTrait
      * @param  string $city
      * @return self
      */
-    public function setCity(string $city) : self
+    public function setCity(?string $city) : self
     {
         $this->city = $city;
 

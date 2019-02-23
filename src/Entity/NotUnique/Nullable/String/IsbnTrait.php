@@ -27,7 +27,7 @@ trait IsbnTrait
      * @param  string $isbn
      * @return self
      */
-    public function setIsbn(string $isbn) : self
+    public function setIsbn(?string $isbn) : self
     {
         $this->isbn = $isbn;
 

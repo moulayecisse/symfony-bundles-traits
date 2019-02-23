@@ -28,7 +28,7 @@ trait PasswordRepeatTrait
      * @param  string $passwordRepeat
      * @return self
      */
-    public function setPasswordRepeat(string $passwordRepeat) : self
+    public function setPasswordRepeat(?string $passwordRepeat) : self
     {
         $this->passwordRepeat = $passwordRepeat;
 

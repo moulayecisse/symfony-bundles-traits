@@ -27,7 +27,7 @@ trait ContentTrait
      * @param  string $content
      * @return self
      */
-    public function setContent(string $content) : self
+    public function setContent(?string $content) : self
     {
         $this->content = $content;
 

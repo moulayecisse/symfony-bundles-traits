@@ -30,7 +30,7 @@ trait CountryTrait
      * @param  string $country
      * @return self
      */
-    public function setCountry(string $country) : self
+    public function setCountry(?string $country) : self
     {
         $this->country = $country;
 

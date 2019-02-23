@@ -31,7 +31,7 @@ trait EmailTrait
      * @param  string $email
      * @return self
      */
-    public function setEmail(string $email) : self
+    public function setEmail(?string $email) : self
     {
         $this->email = $email;
 

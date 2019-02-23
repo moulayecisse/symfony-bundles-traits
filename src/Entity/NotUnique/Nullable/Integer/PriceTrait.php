@@ -28,7 +28,7 @@ trait PriceTrait
      *
      * @return self
      */
-    public function setPrice(int $price) : self
+    public function setPrice(?int $price) : self
     {
         $this->price = $price;
 

@@ -30,7 +30,7 @@ trait NameSpaceTrait
      * @param  string $nameSpace
      * @return self
      */
-    public function setNameSpace(string $nameSpace) : self
+    public function setNameSpace(?string $nameSpace) : self
     {
         $this->nameSpace = $nameSpace;
 
