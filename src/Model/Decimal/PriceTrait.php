@@ -15,18 +15,18 @@ trait PriceTrait
     /**
      * Price
      *
-     * @var int
+     * @var int|null
      */
     protected $price;
 
     /**
      * Set Price
      *
-     * @param  int $price
+     * @param  int|null $price
      *
      * @return self
      */
-    public function setPrice(int $price) : self
+    public function setPrice(?int $price) : self
     {
         $this->price = $price;
 
@@ -38,7 +38,7 @@ trait PriceTrait
      *
      * @return int|null
      */
-    public function getPrice() : int
+    public function getPrice() : ?int
     {
         return $this->price;
     }

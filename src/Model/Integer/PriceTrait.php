@@ -13,14 +13,14 @@ trait PriceTrait
     /**
      * Price
      *
-     * @var int
+     * @var int|null
      */
     protected $price;
 
     /**
      * Set Price
      *
-     * @param  int $price
+     * @param  int|null $price
      *
      * @return self
      */
