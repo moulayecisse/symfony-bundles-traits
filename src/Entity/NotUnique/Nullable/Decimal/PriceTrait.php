@@ -15,7 +15,7 @@ trait PriceTrait
     /**
      * Price
      *
-     * @var int
+     * @var int|null
      *
      * @ORM\Column(type="decimal", precision=12, scale=2, nullable=true, unique=false)
      */
@@ -24,11 +24,11 @@ trait PriceTrait
     /**
      * Set Price
      *
-     * @param  int $price
+     * @param  int|null $price
      *
      * @return self
      */
-    public function setPrice(int $price) : self
+    public function setPrice(?int $price) : self
     {
         $this->price = $price;
 
@@ -40,7 +40,7 @@ trait PriceTrait
      *
      * @return int|null
      */
-    public function getPrice() : int
+    public function getPrice() : ?int
     {
         return $this->price;
     }
