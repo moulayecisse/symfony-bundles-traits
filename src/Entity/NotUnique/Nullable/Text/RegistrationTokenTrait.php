@@ -10,7 +10,7 @@ namespace Cisse\Traits\Entity\NotUnique\Nullable\Text;
 
 use Doctrine\ORM\Mapping as ORM;
 
-trait RegistrationIdTrait
+trait RegistrationTokenTrait
 {
     /**
      * RegistrationId
@@ -19,17 +19,17 @@ trait RegistrationIdTrait
      *
      * @ORM\Column(type="text", nullable=true, unique=false)
      */
-    protected $registrationId;
+    protected $registrationToken;
 
     /**
      * Set registrationId
      *
-     * @param  string $registrationId
+     * @param  string $registrationToken
      * @return self
      */
-    public function setRegistrationId(?string $registrationId) : self
+    public function setRegistrationToken(?string $registrationToken) : self
     {
-        $this->registrationId = $registrationId;
+        $this->registrationToken = $registrationToken;
 
         return $this;
     }
@@ -39,8 +39,8 @@ trait RegistrationIdTrait
      *
      * @return string|null
      */
-    public function getRegistrationId() : ?string
+    public function getRegistrationToken() : ?string
     {
-        return $this->registrationId;
+        return $this->registrationToken;
     }
 }

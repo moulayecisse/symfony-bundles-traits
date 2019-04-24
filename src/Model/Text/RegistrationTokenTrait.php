@@ -8,24 +8,24 @@
 
 namespace Cisse\Traits\Model\Text;
 
-trait RegistrationIdTrait
+trait RegistrationTokenTrait
 {
     /**
      * RegistrationId
      *
      * @var string
      */
-    protected $registrationId;
+    protected $registrationToken;
 
     /**
      * Set registrationId
      *
-     * @param  string $registrationId
+     * @param  string $registrationToken
      * @return self
      */
-    public function setRegistrationId(?string $registrationId) : self
+    public function setRegistrationToken(?string $registrationToken) : self
     {
-        $this->registrationId = $registrationId;
+        $this->registrationToken = $registrationToken;
 
         return $this;
     }
@@ -35,8 +35,8 @@ trait RegistrationIdTrait
      *
      * @return string|null
      */
-    public function getRegistrationId() : ?string
+    public function getRegistrationToken() : ?string
     {
-        return $this->registrationId;
+        return $this->registrationToken;
     }
 }
