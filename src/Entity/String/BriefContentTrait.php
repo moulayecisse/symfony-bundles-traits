@@ -1,0 +1,48 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: moulaye.c@gmail.com
+ * Date: 27/08/2018
+ * Time: 01:03
+ */
+
+namespace Cisse\Traits\Entity\String;
+
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+
+trait BriefContentTrait
+{
+    /**
+     * BriefContent
+     *
+     * @var string
+     *
+     * @ORM\Column(type="string", length=255)
+     * @Assert\Type(type="string")
+     */
+    protected $briefContent;
+
+    /**
+     * Set briefContent
+     *
+     * @param  string $briefContent
+     * @return self
+     */
+    public function setBriefContent(string $briefContent) : self
+    {
+        $this->briefContent = $briefContent;
+
+        return $this;
+    }
+
+    /**
+     * Get briefContent
+     *
+     * @return string|null
+     */
+    public function getBriefContent() : ?string
+    {
+        return $this->briefContent;
+    }
+}
