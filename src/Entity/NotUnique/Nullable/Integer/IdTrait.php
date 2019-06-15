@@ -34,15 +34,4 @@ trait IdTrait
     {
         return $this->id;
     }
-
-    /**
-     * @param int $id
-     * @return self
-     */
-    public function setId(?int $id): self
-    {
-        $this->id = $id;
-
-        return $this;
-    }
 }
