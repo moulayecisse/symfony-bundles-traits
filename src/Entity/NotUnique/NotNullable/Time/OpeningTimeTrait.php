@@ -8,7 +8,6 @@
 
 namespace Cisse\Traits\Entity\NotUnique\NotNullable\Time;
 
-use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -19,7 +18,7 @@ trait OpeningTimeTrait
     /**
      * OpeningTime
      *
-     * @var DateTime
+     * @var \DateTime
      *
      * @ORM\Column(type="time", nullable=false, unique=false)
      */
@@ -28,11 +27,11 @@ trait OpeningTimeTrait
     /**
      * Set OpeningTime.
      *
-     * @param DateTime $openingTime Content
+     * @param \DateTime $openingTime Content
      *
      * @return self
      */
-    public function setOpeningTime(DateTime $openingTime): self
+    public function setOpeningTime(\DateTime $openingTime): self
     {
         $this->openingTime = $openingTime;
 
@@ -42,9 +41,9 @@ trait OpeningTimeTrait
     /**
      * Get OpeningTime.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
-    public function getOpeningTime(): dateTime
+    public function getOpeningTime(): \DateTime
     {
         return $this->openingTime;
     }

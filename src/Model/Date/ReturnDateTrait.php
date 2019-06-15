@@ -8,7 +8,7 @@
 
 namespace Cisse\Traits\Model\Date;
 
-use DateTime;
+
 
 /**
  * trait DateTrait.
@@ -18,18 +18,18 @@ trait ReturnDateTrait
     /**
      * ReturnDate
      *
-     * @var DateTime
+     * @var \DateTime
      */
     protected $returnDate;
 
     /**
      * Set returnDate.
      *
-     * @param DateTime $returnDate Content
+     * @param \DateTime $returnDate Content
      *
      * @return self
      */
-    public function setReturnDate(?Datetime $returnDate): self
+    public function setReturnDate(?\Datetime $returnDate): self
     {
         $this->returnDate = $returnDate;
 
@@ -39,7 +39,7 @@ trait ReturnDateTrait
     /**
      * Get returnDate.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
     public function getReturnDate(): ?DateTime
     {

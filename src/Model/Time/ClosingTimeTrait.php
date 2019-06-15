@@ -8,7 +8,7 @@
 
 namespace Cisse\Traits\Model\Time;
 
-use DateTime;
+
 
 /**
  * trait DateTrait.
@@ -18,14 +18,14 @@ trait ClosingTimeTrait
     /**
      * ClosingTime
      *
-     * @var DateTime
+     * @var \DateTime
      */
     protected $closingTime;
 
     /**
      * Set ClosingTime.
      *
-     * @param DateTime $closingTime Content
+     * @param \DateTime $closingTime Content
      *
      * @return self
      */
@@ -39,7 +39,7 @@ trait ClosingTimeTrait
     /**
      * Get ClosingTime.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
     public function getClosingTime(): ?DateTime
     {

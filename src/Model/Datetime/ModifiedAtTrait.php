@@ -8,7 +8,7 @@
 
 namespace Cisse\Traits\Model\Datetime;
 
-use DateTime;
+
 
 /**
  * trait DateTrait.
@@ -18,18 +18,18 @@ trait ModifiedAtTrait
     /**
      * ModifiedAt
      *
-     * @var DateTime
+     * @var \DateTime
      */
     protected $modifiedAt;
 
     /**
      * Set ModifiedAt.
      *
-     * @param DateTime $modifiedAt Content
+     * @param \DateTime $modifiedAt Content
      *
      * @return self
      */
-    public function setModifiedAt(?Datetime $modifiedAt): self
+    public function setModifiedAt(?\Datetime $modifiedAt): self
     {
         $this->modifiedAt = $modifiedAt;
 
@@ -39,7 +39,7 @@ trait ModifiedAtTrait
     /**
      * Get ModifiedAt.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
     public function getModifiedAt(): ?DateTime
     {

@@ -8,7 +8,7 @@
 
 namespace Cisse\Traits\Entity\Unique\Nullable\Datetime;
 
-use DateTime;
+
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -19,7 +19,7 @@ trait UpdatedAtTrait
     /**
      * UpdatedAt
      *
-     * @var DateTime
+     * @var \DateTime
      *
      * @ORM\Column(type="datetime", nullable=true, unique=true)
      */
@@ -28,7 +28,7 @@ trait UpdatedAtTrait
     /**
      * Set UpdatedAt.
      *
-     * @param DateTime $updatedAt Content
+     * @param \DateTime $updatedAt Content
      *
      * @return self
      */
@@ -42,7 +42,7 @@ trait UpdatedAtTrait
     /**
      * Get UpdatedAt.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
     public function getUpdatedAt(): ?DateTime
     {

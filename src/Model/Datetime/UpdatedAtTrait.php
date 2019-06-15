@@ -8,7 +8,7 @@
 
 namespace Cisse\Traits\Model\Datetime;
 
-use DateTime;
+
 
 /**
  * trait DateTrait.
@@ -18,18 +18,18 @@ trait UpdatedAtTrait
     /**
      * UpdatedAt
      *
-     * @var DateTime
+     * @var \DateTime
      */
     protected $updatedAt;
 
     /**
      * Set UpdatedAt.
      *
-     * @param DateTime $updatedAt Content
+     * @param \DateTime $updatedAt Content
      *
      * @return self
      */
-    public function setUpdatedAt(?Datetime $updatedAt): self
+    public function setUpdatedAt(?\Datetime $updatedAt): self
     {
         $this->updatedAt = $updatedAt;
 
@@ -39,7 +39,7 @@ trait UpdatedAtTrait
     /**
      * Get UpdatedAt.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
     public function getUpdatedAt(): ?DateTime
     {

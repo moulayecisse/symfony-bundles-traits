@@ -8,7 +8,7 @@
 
 namespace Cisse\Traits\Model\Datetime;
 
-use DateTime;
+
 
 /**
  * trait DateTrait.
@@ -18,14 +18,14 @@ trait TokenExpireAtTrait
     /**
      * TokenExpireAt.
      *
-     * @var DateTime|null
+     * @var \DateTime|null
      */
     protected $tokenExpireAt;
 
     /**
      * Set TokenExpireAt.
      *
-     * @param DateTime|null $tokenExpireAt Content
+     * @param \DateTime|null $tokenExpireAt Content
      *
      * @return self
      */
@@ -39,7 +39,7 @@ trait TokenExpireAtTrait
     /**
      * Get TokenExpireAt.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
     public function getTokenExpireAt(): ?DateTime
     {

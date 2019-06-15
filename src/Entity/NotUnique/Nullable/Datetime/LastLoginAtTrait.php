@@ -8,7 +8,7 @@
 
 namespace Cisse\Traits\Entity\NotUnique\Nullable\Datetime;
 
-use DateTime;
+
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -19,7 +19,7 @@ trait LastLoginAtTrait
     /**
      * LastLoginAt.
      *
-     * @var DateTime|null
+     * @var \DateTime|null
      *
      * @ORM\Column(type="datetime", nullable=true, unique=false)
      */
@@ -28,11 +28,11 @@ trait LastLoginAtTrait
     /**
      * Set LastLoginAt.
      *
-     * @param DateTime $lastLoginAt Content
+     * @param \DateTime $lastLoginAt Content
      *
      * @return self
      */
-    public function setLastLoginAt(?Datetime $lastLoginAt): self
+    public function setLastLoginAt(?\Datetime $lastLoginAt): self
     {
         $this->lastLoginAt = $lastLoginAt;
 
@@ -42,7 +42,7 @@ trait LastLoginAtTrait
     /**
      * Get LastLoginAt.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
     public function getLastLoginAt(): ?DateTime
     {

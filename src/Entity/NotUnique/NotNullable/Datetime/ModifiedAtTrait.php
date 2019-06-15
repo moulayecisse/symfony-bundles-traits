@@ -8,7 +8,6 @@
 
 namespace Cisse\Traits\Entity\NotUnique\NotNullable\Datetime;
 
-use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -19,7 +18,7 @@ trait ModifiedAtTrait
     /**
      * ModifiedAt
      *
-     * @var DateTime
+     * @var \DateTime
      *
      * @ORM\Column(type="datetime", nullable=false, unique=false)
      */
@@ -28,11 +27,11 @@ trait ModifiedAtTrait
     /**
      * Set ModifiedAt.
      *
-     * @param DateTime $modifiedAt Content
+     * @param \DateTime $modifiedAt Content
      *
      * @return self
      */
-    public function setModifiedAt(DateTime $modifiedAt): self
+    public function setModifiedAt(\DateTime $modifiedAt): self
     {
         $this->modifiedAt = $modifiedAt;
 
@@ -42,9 +41,9 @@ trait ModifiedAtTrait
     /**
      * Get ModifiedAt.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
-    public function getModifiedAt(): ?DateTime
+    public function getModifiedAt(): ?\DateTime
     {
         return $this->modifiedAt;
     }

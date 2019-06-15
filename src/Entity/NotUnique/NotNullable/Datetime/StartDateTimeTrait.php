@@ -8,7 +8,6 @@
 
 namespace Cisse\Traits\Entity\NotUnique\NotNullable\Datetime;
 
-use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -19,7 +18,7 @@ trait StartDateTimeTrait
     /**
      * StartDateTime
      *
-     * @var DateTime
+     * @var \DateTime
      *
      * @ORM\Column(type="datetime", nullable=false, unique=false)
      */
@@ -28,11 +27,11 @@ trait StartDateTimeTrait
     /**
      * Set StartDateTime.
      *
-     * @param DateTime $startDateTime Content
+     * @param \DateTime $startDateTime Content
      *
      * @return self
      */
-    public function setStartDateTime(DateTime $startDateTime): self
+    public function setStartDateTime(\DateTime $startDateTime): self
     {
         $this->startDateTime = $startDateTime;
 
@@ -42,9 +41,9 @@ trait StartDateTimeTrait
     /**
      * Get StartDateTime.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
-    public function getStartDateTime(): ?DateTime
+    public function getStartDateTime(): ?\DateTime
     {
         return $this->startDateTime;
     }

@@ -8,7 +8,7 @@
 
 namespace Cisse\Traits\Model\Date;
 
-use DateTime;
+
 
 /**
  * trait DateTrait.
@@ -18,18 +18,18 @@ trait EndDateTrait
     /**
      * EndDate
      *
-     * @var DateTime
+     * @var \DateTime
      */
     protected $endDate;
 
     /**
      * Set endDate.
      *
-     * @param DateTime $endDate Content
+     * @param \DateTime $endDate Content
      *
      * @return self
      */
-    public function setEndDate(?Datetime $endDate): self
+    public function setEndDate(?\Datetime $endDate): self
     {
         $this->endDate = $endDate;
 
@@ -39,7 +39,7 @@ trait EndDateTrait
     /**
      * Get endDate.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
     public function getEndDate(): ?DateTime
     {

@@ -8,7 +8,7 @@
 
 namespace Cisse\Traits\Entity\Unique\NotNullable\Datetime;
 
-use DateTime;
+
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -19,7 +19,7 @@ trait CreatedAtTrait
     /**
      * CreatedAt
      *
-     * @var DateTime
+     * @var \DateTime
      *
      * @ORM\Column(type="datetime", nullable=false, unique=true)
      */
@@ -28,7 +28,7 @@ trait CreatedAtTrait
     /**
      * Set CreatedAt.
      *
-     * @param DateTime $createdAt Content
+     * @param \DateTime $createdAt Content
      *
      * @return self
      */
@@ -42,7 +42,7 @@ trait CreatedAtTrait
     /**
      * Get CreatedAt.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
     public function getCreatedAt(): ?DateTime
     {

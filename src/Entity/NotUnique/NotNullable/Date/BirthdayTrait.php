@@ -8,7 +8,6 @@
 
 namespace Cisse\Traits\Entity\NotUnique\NotNullable\Date;
 
-use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -19,7 +18,7 @@ trait BirthdayTrait
     /**
      * Name.
      *
-     * @var DateTime
+     * @var \DateTime
      *
      * @ORM\Column(type="date", nullable=false, unique=false)
      */
@@ -28,11 +27,11 @@ trait BirthdayTrait
     /**
      * Set birthday.
      *
-     * @param DateTime $birthday Content
+     * @param \DateTime $birthday Content
      *
      * @return self
      */
-    public function setBirthday(DateTime $birthday): self
+    public function setBirthday(\DateTime $birthday): self
     {
         $this->birthday = $birthday;
 
@@ -42,9 +41,9 @@ trait BirthdayTrait
     /**
      * Get birthday.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
-    public function getBirthday(): DateTime
+    public function getBirthday(): \DateTime
     {
         return $this->birthday;
     }

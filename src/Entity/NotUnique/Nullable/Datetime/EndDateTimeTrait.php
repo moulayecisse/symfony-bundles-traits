@@ -8,7 +8,7 @@
 
 namespace Cisse\Traits\Entity\NotUnique\Nullable\Datetime;
 
-use DateTime;
+
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -19,7 +19,7 @@ trait EndDateTimeTrait
     /**
      * EndDateTime
      *
-     * @var DateTime
+     * @var \DateTime
      *
      * @ORM\Column(type="datetime", nullable=true, unique=false)
      */
@@ -28,11 +28,11 @@ trait EndDateTimeTrait
     /**
      * Set EndDateTime.
      *
-     * @param DateTime $endDateTime Content
+     * @param \DateTime $endDateTime Content
      *
      * @return self
      */
-    public function setEndDateTime(?Datetime $endDateTime): self
+    public function setEndDateTime(?\Datetime $endDateTime): self
     {
         $this->endDateTime = $endDateTime;
 
@@ -42,7 +42,7 @@ trait EndDateTimeTrait
     /**
      * Get EndDateTime.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
     public function getEndDateTime(): ?DateTime
     {

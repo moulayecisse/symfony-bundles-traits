@@ -8,7 +8,7 @@
 
 namespace Cisse\Traits\Entity\NotUnique\Nullable\Datetime;
 
-use DateTime;
+
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -19,7 +19,7 @@ trait TokenExpireAtTrait
     /**
      * TokenExpireAt.
      *
-     * @var DateTime|null
+     * @var \DateTime|null
      *
      * @ORM\Column(type="datetime", nullable=true, unique=false)
      */
@@ -28,7 +28,7 @@ trait TokenExpireAtTrait
     /**
      * Set TokenExpireAt.
      *
-     * @param DateTime|null $tokenExpireAt Content
+     * @param \DateTime|null $tokenExpireAt Content
      *
      * @return self
      */
@@ -42,7 +42,7 @@ trait TokenExpireAtTrait
     /**
      * Get TokenExpireAt.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
     public function getTokenExpireAt(): ?DateTime
     {

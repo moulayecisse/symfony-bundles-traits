@@ -8,7 +8,7 @@
 
 namespace Cisse\Traits\Model\Time;
 
-use DateTime;
+
 
 /**
  * trait DateTrait.
@@ -18,14 +18,14 @@ trait OpeningTimeTrait
     /**
      * OpeningTime
      *
-     * @var DateTime
+     * @var \DateTime
      */
     protected $openingTime;
 
     /**
      * Set OpeningTime.
      *
-     * @param DateTime $openingTime Content
+     * @param \DateTime $openingTime Content
      *
      * @return self
      */
@@ -39,7 +39,7 @@ trait OpeningTimeTrait
     /**
      * Get OpeningTime.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
     public function getOpeningTime(): ?DateTime
     {

@@ -8,7 +8,6 @@
 
 namespace Cisse\Traits\Entity\NotUnique\NotNullable\Date;
 
-use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -19,7 +18,7 @@ trait ReturnDateTrait
     /**
      * ReturnDate
      *
-     * @var DateTime
+     * @var \DateTime
      *
      * @ORM\Column(type="date", nullable=false, unique=false)
      */
@@ -28,11 +27,11 @@ trait ReturnDateTrait
     /**
      * Set returnDate.
      *
-     * @param DateTime $returnDate Content
+     * @param \DateTime $returnDate Content
      *
      * @return self
      */
-    public function setReturnDate(DateTime $returnDate): self
+    public function setReturnDate(\DateTime $returnDate): self
     {
         $this->returnDate = $returnDate;
 
@@ -42,9 +41,9 @@ trait ReturnDateTrait
     /**
      * Get returnDate.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
-    public function getReturnDate(): DateTime
+    public function getReturnDate(): \DateTime
     {
         return $this->returnDate;
     }

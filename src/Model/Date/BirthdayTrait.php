@@ -8,7 +8,7 @@
 
 namespace Cisse\Traits\Model\Date;
 
-use DateTime;
+
 
 /**
  * trait BirthdayTrait.
@@ -18,18 +18,18 @@ trait BirthdayTrait
     /**
      * Name.
      *
-     * @var DateTime
+     * @var \DateTime
      */
     protected $birthday;
 
     /**
      * Set birthday.
      *
-     * @param DateTime $birthday Content
+     * @param \DateTime $birthday Content
      *
      * @return self
      */
-    public function setBirthday(?Datetime $birthday): self
+    public function setBirthday(?\Datetime $birthday): self
     {
         $this->birthday = $birthday;
 
@@ -39,7 +39,7 @@ trait BirthdayTrait
     /**
      * Get birthday.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
     public function getBirthday(): ?DateTime
     {

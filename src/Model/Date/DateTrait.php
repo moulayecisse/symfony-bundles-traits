@@ -8,7 +8,7 @@
 
 namespace Cisse\Traits\Model\Date;
 
-use DateTime;
+
 
 /**
  * trait DateTrait.
@@ -18,18 +18,18 @@ trait DateTrait
     /**
      * Name.
      *
-     * @var DateTime
+     * @var \DateTime
      */
     protected $date;
 
     /**
      * Set date.
      *
-     * @param DateTime $date Content
+     * @param \DateTime $date Content
      *
      * @return self
      */
-    public function setDate(?Datetime $date): self
+    public function setDate(?\Datetime $date): self
     {
         $this->date = $date;
 
@@ -39,7 +39,7 @@ trait DateTrait
     /**
      * Get date.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
     public function getDate(): ?DateTime
     {

@@ -8,7 +8,7 @@
 
 namespace Cisse\Traits\Model\Datetime;
 
-use DateTime;
+
 
 /**
  * trait DateTrait.
@@ -18,18 +18,18 @@ trait StartDateTimeTrait
     /**
      * StartDateTime
      *
-     * @var DateTime
+     * @var \DateTime
      */
     protected $startDateTime;
 
     /**
      * Set StartDateTime.
      *
-     * @param DateTime $startDateTime Content
+     * @param \DateTime $startDateTime Content
      *
      * @return self
      */
-    public function setStartDateTime(?Datetime $startDateTime): self
+    public function setStartDateTime(?\Datetime $startDateTime): self
     {
         $this->startDateTime = $startDateTime;
 
@@ -39,7 +39,7 @@ trait StartDateTimeTrait
     /**
      * Get StartDateTime.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
     public function getStartDateTime(): ?DateTime
     {

@@ -8,7 +8,7 @@
 
 namespace Cisse\Traits\Model\Datetime;
 
-use DateTime;
+
 
 /**
  * trait DateTrait.
@@ -18,18 +18,18 @@ trait CreatedAtTrait
     /**
      * CreatedAt
      *
-     * @var DateTime
+     * @var \DateTime
      */
     protected $createdAt;
 
     /**
      * Set CreatedAt.
      *
-     * @param DateTime $createdAt Content
+     * @param \DateTime $createdAt Content
      *
      * @return self
      */
-    public function setCreatedAt(?Datetime $createdAt): self
+    public function setCreatedAt(?\Datetime $createdAt): self
     {
         $this->createdAt = $createdAt;
 
@@ -39,7 +39,7 @@ trait CreatedAtTrait
     /**
      * Get CreatedAt.
      *
-     * @return DateTime|null
+     * @return \DateTime|null
      */
     public function getCreatedAt(): ?DateTime
     {
