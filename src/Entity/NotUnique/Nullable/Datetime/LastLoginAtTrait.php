@@ -44,7 +44,7 @@ trait LastLoginAtTrait
      *
      * @return \DateTime|null
      */
-    public function getLastLoginAt(): ?DateTime
+    public function getLastLoginAt(): ?\DateTime
     {
         return $this->lastLoginAt;
     }

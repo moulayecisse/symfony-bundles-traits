@@ -32,7 +32,7 @@ trait StartDateTrait
      *
      * @return self
      */
-    public function setStartDate(DateTime $startDate): self
+    public function setStartDate(\DateTime $startDate): self
     {
         $this->startDate = $startDate;
 
@@ -44,7 +44,7 @@ trait StartDateTrait
      *
      * @return \DateTime|null
      */
-    public function getStartDate(): ?DateTime
+    public function getStartDate(): ?\DateTime
     {
         return $this->startDate;
     }

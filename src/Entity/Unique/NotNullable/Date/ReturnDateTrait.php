@@ -32,7 +32,7 @@ trait ReturnDateTrait
      *
      * @return self
      */
-    public function setReturnDate(DateTime $returnDate): self
+    public function setReturnDate(\DateTime $returnDate): self
     {
         $this->returnDate = $returnDate;
 
@@ -44,7 +44,7 @@ trait ReturnDateTrait
      *
      * @return \DateTime|null
      */
-    public function getReturnDate(): ?DateTime
+    public function getReturnDate(): ?\DateTime
     {
         return $this->returnDate;
     }

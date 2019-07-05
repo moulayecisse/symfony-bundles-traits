@@ -44,7 +44,7 @@ trait StartDateTimeTrait
      *
      * @return \DateTime|null
      */
-    public function getStartDateTime(): ?DateTime
+    public function getStartDateTime(): ?\DateTime
     {
         return $this->startDateTime;
     }

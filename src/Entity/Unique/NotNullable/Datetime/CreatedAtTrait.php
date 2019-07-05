@@ -32,7 +32,7 @@ trait CreatedAtTrait
      *
      * @return self
      */
-    public function setCreatedAt(DateTime $createdAt): self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->createdAt = $createdAt;
 
@@ -44,7 +44,7 @@ trait CreatedAtTrait
      *
      * @return \DateTime|null
      */
-    public function getCreatedAt(): ?DateTime
+    public function getCreatedAt(): ?\DateTime
     {
         return $this->createdAt;
     }

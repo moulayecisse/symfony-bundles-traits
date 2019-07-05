@@ -32,7 +32,7 @@ trait BirthdayTrait
      *
      * @return self
      */
-    public function setBirthday(DateTime $birthday): self
+    public function setBirthday(\DateTime $birthday): self
     {
         $this->birthday = $birthday;
 
@@ -44,7 +44,7 @@ trait BirthdayTrait
      *
      * @return \DateTime|null
      */
-    public function getBirthday(): ?DateTime
+    public function getBirthday(): ?\DateTime
     {
         return $this->birthday;
     }

@@ -32,7 +32,7 @@ trait LastLoginAtTrait
      *
      * @return self
      */
-    public function setLastLoginAt(DateTime $lastLoginAt): self
+    public function setLastLoginAt(\DateTime $lastLoginAt): self
     {
         $this->lastLoginAt = $lastLoginAt;
 
@@ -44,7 +44,7 @@ trait LastLoginAtTrait
      *
      * @return \DateTime|null
      */
-    public function getLastLoginAt(): ?DateTime
+    public function getLastLoginAt(): ?\DateTime
     {
         return $this->lastLoginAt;
     }

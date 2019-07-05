@@ -32,7 +32,7 @@ trait DateTrait
      *
      * @return self
      */
-    public function setDate(DateTime $date): self
+    public function setDate(\DateTime $date): self
     {
         $this->date = $date;
 
@@ -44,7 +44,7 @@ trait DateTrait
      *
      * @return \DateTime|null
      */
-    public function getDate(): ?DateTime
+    public function getDate(): ?\DateTime
     {
         return $this->date;
     }

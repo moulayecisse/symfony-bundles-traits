@@ -32,7 +32,7 @@ trait OpeningTimeTrait
      *
      * @return self
      */
-    public function setOpeningTime(DateTime $openingTime): self
+    public function setOpeningTime(\DateTime $openingTime): self
     {
         $this->openingTime = $openingTime;
 
@@ -44,7 +44,7 @@ trait OpeningTimeTrait
      *
      * @return \DateTime|null
      */
-    public function getOpeningTime(): ?DateTime
+    public function getOpeningTime(): ?\DateTime
     {
         return $this->openingTime;
     }

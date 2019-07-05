@@ -29,7 +29,7 @@ trait TokenExpireAtTrait
      *
      * @return self
      */
-    public function setTokenExpireAt(?DateTime $tokenExpireAt): self
+    public function setTokenExpireAt(?\DateTime $tokenExpireAt): self
     {
         $this->tokenExpireAt = $tokenExpireAt;
 
@@ -41,7 +41,7 @@ trait TokenExpireAtTrait
      *
      * @return \DateTime|null
      */
-    public function getTokenExpireAt(): ?DateTime
+    public function getTokenExpireAt(): ?\DateTime
     {
         return $this->tokenExpireAt;
     }

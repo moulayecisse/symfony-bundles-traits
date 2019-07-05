@@ -32,7 +32,7 @@ trait EndDateTrait
      *
      * @return self
      */
-    public function setEndDate(DateTime $endDate): self
+    public function setEndDate(\DateTime $endDate): self
     {
         $this->endDate = $endDate;
 
@@ -44,7 +44,7 @@ trait EndDateTrait
      *
      * @return \DateTime|null
      */
-    public function getEndDate(): ?DateTime
+    public function getEndDate(): ?\DateTime
     {
         return $this->endDate;
     }

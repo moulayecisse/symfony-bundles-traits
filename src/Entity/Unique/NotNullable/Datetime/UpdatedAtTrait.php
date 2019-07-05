@@ -32,7 +32,7 @@ trait UpdatedAtTrait
      *
      * @return self
      */
-    public function setUpdatedAt(DateTime $updatedAt): self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->updatedAt = $updatedAt;
 
@@ -44,7 +44,7 @@ trait UpdatedAtTrait
      *
      * @return \DateTime|null
      */
-    public function getUpdatedAt(): ?DateTime
+    public function getUpdatedAt(): ?\DateTime
     {
         return $this->updatedAt;
     }

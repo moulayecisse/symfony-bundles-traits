@@ -44,7 +44,7 @@ trait ModifiedAtTrait
      *
      * @return \DateTime|null
      */
-    public function getModifiedAt(): ?DateTime
+    public function getModifiedAt(): ?\DateTime
     {
         return $this->modifiedAt;
     }
