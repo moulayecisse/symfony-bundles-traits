@@ -18,11 +18,23 @@ composer require cisse/symfony-traits
 
 require __DIR__.'/vendor/autoload.php';
 
-use Cisse\Traits\Entity\AddressTrait;
+use Cisse\Traits\Entity\Text\AddressTrait;
+use Cisse\Traits\Entity\Json\RolesTrait;
 
 class Foo{
     use AddressTrait;
-    // That's it
+    // Declaration
+    
+    use RolesTrait {
+        RolesTrait::__construct as private __constructRoles;
+    }
+    // Declaration with constructor alias
+
+    public function __construct()
+    {
+        $this->__constructRoles();
+        // Calling constructor from withing trait
+    }
 }
 
 $foo = new Foo();
