@@ -16,7 +16,7 @@ trait PasswordTrait
     /**
      * Name
      *
-     * @var string
+     * @var string|null
      *
      * @ORM\Column(type="string", length=255, nullable=true, unique=false)
      *

@@ -15,7 +15,7 @@ trait IsbnTrait
     /**
      * Isbn
      *
-     * @var string
+     * @var string|null
      *
      * @ORM\Column(type="string", length=255, nullable=true, unique=false)
      */

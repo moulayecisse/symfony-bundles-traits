@@ -16,7 +16,7 @@ trait CountryTrait
     /**
      * Country
      *
-     * @var string
+     * @var string|null
      *
      * @ORM\Column(type="string", length=255, nullable=true, unique=false)
      * @Assert\Type(type="string")
@@ -42,7 +42,7 @@ trait CountryTrait
      *
      * @return string
      */
-    public function getCountry() : string
+    public function getCountry() : ?string
     {
         return $this->country;
     }

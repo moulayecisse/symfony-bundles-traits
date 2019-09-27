@@ -16,7 +16,7 @@ trait TypeTrait
     /**
      * Type
      *
-     * @var string
+     * @var string|null
      *
      * @ORM\Column(type="string", length=255, nullable=true, unique=false)
      * @Assert\Type(type="string")
@@ -42,7 +42,7 @@ trait TypeTrait
      *
      * @return string|null
      */
-    public function getType() : string
+    public function getType() : ?string
     {
         return $this->type;
     }

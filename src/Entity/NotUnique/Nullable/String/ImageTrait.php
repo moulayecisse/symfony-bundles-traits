@@ -16,10 +16,10 @@ trait ImageTrait
     /**
      * Name
      *
-     * @var string
+     * @var string|null
      *
      * @ORM\Column(type="string", length=255, nullable=true, unique=false)
-     * @var string
+     * @var string|null
      * @Assert\Type(type="string")
      */
     protected $image;

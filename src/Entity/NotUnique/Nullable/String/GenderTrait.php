@@ -18,7 +18,7 @@ trait GenderTrait
     /**
      * Gender
      *
-     * @var string
+     * @var string|null
      *
      * @ORM\Column(type="string", length=1, nullable=true, unique=false)
      * @Assert\Type(type="string")

@@ -15,7 +15,7 @@ trait ShortDescriptionTrait
     /**
      * ShortDescription
      *
-     * @var string
+     * @var string|null
      *
      * @ORM\Column(type="string", length=500, nullable=true, unique=false)
      */

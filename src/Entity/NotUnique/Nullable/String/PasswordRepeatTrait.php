@@ -15,7 +15,7 @@ trait PasswordRepeatTrait
     /**
      * Name
      *
-     * @var string
+     * @var string|null
      *
      * @Assert\NotBlank()
      * @Assert\NotNull()
