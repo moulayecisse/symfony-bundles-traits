@@ -70,3 +70,4 @@ gen### Symfony template
 # Embedded web-server pid file
 /.web-server-pid
 
+composer.lock
