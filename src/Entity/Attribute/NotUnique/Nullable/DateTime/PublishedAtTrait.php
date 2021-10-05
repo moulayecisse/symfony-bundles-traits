@@ -11,13 +11,6 @@ trait PublishedAtTrait
     #[ORM\Column(type: Types::DATETIME_MUTABLE, unique: false, nullable: true)]
     protected ?DateTime $publishedAt = null;
 
-    public function __construct()
-    {
-        $now = new DateTime();
-
-        $this->setPublishedAt($now);
-    }
-
     public function getPublishedAt(): ?DateTime
     {
         return $this->publishedAt;

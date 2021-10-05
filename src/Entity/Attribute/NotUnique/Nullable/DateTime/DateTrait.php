@@ -11,13 +11,6 @@ trait DateTrait
     #[ORM\Column(type: Types::DATETIME_MUTABLE, unique: false, nullable: true)]
     protected ?DateTime $date = null;
 
-    public function __construct()
-    {
-        $now = new DateTime();
-
-        $this->setDate($now);
-    }
-
     public function getDate(): ?DateTime
     {
         return $this->date;

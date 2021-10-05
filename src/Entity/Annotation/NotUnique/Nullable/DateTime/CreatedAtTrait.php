@@ -12,11 +12,6 @@ trait CreatedAtTrait
      */
     protected ?DateTime $createdAt;
 
-    public function __construct()
-    {
-        $this->setCreatedAt(new DateTime());
-    }
-
     public function getCreatedAt(): ?DateTime
     {
         return $this->createdAt;

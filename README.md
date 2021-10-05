@@ -18,8 +18,8 @@ composer require cisse/symfony-traits
 
 require __DIR__.'/vendor/autoload.php';
 
-use Cisse\Traits\Entity\Text\AddressTrait;
-use Cisse\Traits\Entity\Json\RolesTrait;
+use Cisse\Bundle\TraitsBundle\Entity\Annotation\NoUnique\Nullable\Text\AddressTrait;
+use Cisse\Bundle\TraitsBundle\Entity\Annotation\NoUnique\Nullable\Json\RolesTrait;
 
 class Foo{
     use AddressTrait;
@@ -47,3 +47,7 @@ $foo->getAddress(); // Return address
 ## Notes
 
 This component is a work in progress, and it is target for my own usages. But if you like it feel free to use it ;)
+
+## Versions
+
+8.0.2

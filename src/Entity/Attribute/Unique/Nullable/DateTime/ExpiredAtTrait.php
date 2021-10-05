@@ -11,11 +11,6 @@ trait ExpiredAtTrait
     #[ORM\Column(type: Types::DATETIME_MUTABLE, unique: true, nullable: true)]
     protected ?DateTime $expiredAt = null;
 
-    public function __construct()
-    {
-        $this->setExpiredAt(new DateTime());
-    }
-
     public function getExpiredAt(): ?DateTime
     {
         return $this->expiredAt;

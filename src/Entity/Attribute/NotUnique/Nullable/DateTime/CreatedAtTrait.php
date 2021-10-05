@@ -11,11 +11,6 @@ trait CreatedAtTrait
     #[ORM\Column(type: Types::DATETIME_MUTABLE, unique: false, nullable: true)]
     protected ?DateTime $createdAt = null;
 
-    public function __construct()
-    {
-        $this->setCreatedAt(new DateTime());
-    }
-
     public function getCreatedAt(): ?DateTime
     {
         return $this->createdAt;

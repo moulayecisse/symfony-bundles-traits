@@ -12,11 +12,6 @@ trait UpdatedAtTrait
      */
     protected ?DateTime $updatedAt;
 
-    public function __construct()
-    {
-        $this->setUpdatedAt(new DateTime());
-    }
-
     public function getUpdatedAt(): ?DateTime
     {
         return $this->updatedAt;

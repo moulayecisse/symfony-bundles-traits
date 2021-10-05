@@ -12,13 +12,6 @@ trait PublishedAtTrait
      */
     protected ?DateTime $publishedAt;
 
-    public function __construct()
-    {
-        $now = new DateTime();
-
-        $this->setPublishedAt($now);
-    }
-
     public function getPublishedAt(): ?DateTime
     {
         return $this->publishedAt;

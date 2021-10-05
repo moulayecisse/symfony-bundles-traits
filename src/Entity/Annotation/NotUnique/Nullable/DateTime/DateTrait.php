@@ -12,13 +12,6 @@ trait DateTrait
      */
     protected ?DateTime $date;
 
-    public function __construct()
-    {
-        $now = new DateTime();
-
-        $this->setDate($now);
-    }
-
     public function getDate(): ?DateTime
     {
         return $this->date;
