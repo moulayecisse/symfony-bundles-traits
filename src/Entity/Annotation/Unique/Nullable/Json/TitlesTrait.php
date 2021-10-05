@@ -13,7 +13,7 @@ trait TitlesTrait
      */
     protected array $titles = [];
 
-    #[Pure] public function getTitle(string $locale = null): string
+    public function getTitle(string $locale = null): string
     {
         return $this->titles[ApplicationUtility::locale($locale)] ?? '';
     }
@@ -37,7 +37,7 @@ trait TitlesTrait
         return $this;
     }
 
-    #[Pure] public function getTitleFr(): string
+    public function getTitleFr(): string
     {
         return $this->getTitle('fr');
     }
@@ -47,7 +47,7 @@ trait TitlesTrait
         return $this->setTitle($title, 'fr');
     }
 
-    #[Pure] public function getTitleEn(): string
+    public function getTitleEn(): string
     {
         return $this->getTitle('en');
     }

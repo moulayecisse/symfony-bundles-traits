@@ -1,20 +1,22 @@
 <?php
 
-namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Array;
+namespace Cisse\Bundle\TraitsBundle\Entity\Annotation\Unique\NotNullable\Arrays;
 
-use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
 trait TemplatesTrait
 {
-    protected ?array $templates = ['default'];
+    /**
+     * @ORM\Column(type="array", unique=true, nullable=false)
+     */
+    protected array $templates = ['default'];
 
-    public function getTemplates(): ?array
+    public function getTemplates(): array
     {
         return $this->templates;
     }
 
-    public function setTemplates(?array $templates): self
+    public function setTemplates(array $templates): self
     {
         $this->templates = $templates;
 
@@ -24,7 +26,7 @@ trait TemplatesTrait
     /**
      * @param mixed $template
      */
-    public function addTemplate(?string $template)
+    public function addTemplate(string $template)
     {
         $this->templates[] = $template;
     }
@@ -32,7 +34,7 @@ trait TemplatesTrait
     /**
      * @param mixed $template
      */
-    public function removeTemplate(?string $template)
+    public function removeTemplate(string $template)
     {
         if (false !== $key = array_search($template, $this->templates, true)) {
             array_splice($this->templates, $key, 1);

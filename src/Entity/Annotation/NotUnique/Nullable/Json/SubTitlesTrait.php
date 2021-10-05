@@ -13,7 +13,7 @@ trait SubTitlesTrait
      */
     protected array $subTitles = [];
 
-    #[Pure] public function getSubTitle(string $locale = null): string
+    public function getSubTitle(string $locale = null): string
     {
         return $this->subTitles[ApplicationUtility::locale($locale)] ?? '';
     }
@@ -37,7 +37,7 @@ trait SubTitlesTrait
         return $this;
     }
 
-    #[Pure] public function getSubTitleFr(): string
+    public function getSubTitleFr(): string
     {
         return $this->getSubTitle('fr');
     }
@@ -47,7 +47,7 @@ trait SubTitlesTrait
         return $this->setSubTitle($subTitle, 'fr');
     }
 
-    #[Pure] public function getSubTitleEn(): string
+    public function getSubTitleEn(): string
     {
         return $this->getSubTitle('en');
     }

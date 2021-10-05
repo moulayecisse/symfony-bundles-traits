@@ -13,7 +13,7 @@ trait SubjectsTrait
      */
     protected array $subjects = [];
 
-    #[Pure] public function getSubject(string $locale = null): string
+    public function getSubject(string $locale = null): string
     {
         return $this->subjects[ApplicationUtility::locale($locale)] ?? '';
     }

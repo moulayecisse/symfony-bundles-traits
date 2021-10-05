@@ -9,7 +9,7 @@ trait SubTitlesTrait
 {
     protected array $subTitles = [];
 
-    #[Pure] public function getSubTitle(string $locale = null): string
+    public function getSubTitle(string $locale = null): string
     {
         return $this->subTitles[ApplicationUtility::locale($locale)] ?? '';
     }

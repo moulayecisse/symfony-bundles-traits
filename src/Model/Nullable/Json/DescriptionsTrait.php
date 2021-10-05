@@ -9,7 +9,7 @@ trait DescriptionsTrait
 {
     protected array $descriptions = [];
 
-    #[Pure] public function getDescription(?string $locale = null): ?string
+    public function getDescription(?string $locale = null): ?string
     {
         return $this->descriptions[ApplicationUtility::locale($locale)] ?? '';
     }

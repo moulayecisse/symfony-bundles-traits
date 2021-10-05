@@ -6,7 +6,6 @@ use Doctrine\ORM\Mapping as ORM;
 
 trait RateTrait
 {
-    #[ORM\Column(type: Types::FLOAT, unique: false, nullable: true)]
     protected ?float $rate;
 
     public function setRate(?float $rate) : self

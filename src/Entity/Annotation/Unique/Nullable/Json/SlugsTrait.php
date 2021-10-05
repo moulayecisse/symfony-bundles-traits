@@ -13,7 +13,7 @@ trait SlugsTrait
      */
     protected array $slugs = [];
 
-    #[Pure] public function getSlug(string $locale = null): string
+    public function getSlug(string $locale = null): string
     {
         return $this->slugs[ApplicationUtility::locale($locale)] ?? '';
     }

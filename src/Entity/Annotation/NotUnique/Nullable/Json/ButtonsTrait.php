@@ -13,7 +13,7 @@ trait ButtonsTrait
      */
     protected array $buttons = [];
 
-    #[Pure] public function getButton(string $locale = null): string
+    public function getButton(string $locale = null): string
     {
         return $this->buttons[ApplicationUtility::locale($locale)] ?? '';
     }

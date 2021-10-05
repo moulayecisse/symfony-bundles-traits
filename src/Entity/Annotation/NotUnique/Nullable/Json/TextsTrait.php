@@ -13,7 +13,7 @@ trait TextsTrait
      */
     protected array $texts = [];
 
-    #[Pure] public function getText(string $locale = null): string
+    public function getText(string $locale = null): string
     {
         return $this->texts[ApplicationUtility::locale($locale)] ?? '';
     }
@@ -37,7 +37,7 @@ trait TextsTrait
         return $this;
     }
 
-    #[Pure] public function getTextFr(): string
+    public function getTextFr(): string
     {
         return $this->getText('fr');
     }
@@ -47,7 +47,7 @@ trait TextsTrait
         return $this->setText($text, 'fr');
     }
 
-    #[Pure] public function getTextEn(): string
+    public function getTextEn(): string
     {
         return $this->getText('en');
     }
