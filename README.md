@@ -50,5 +50,4 @@ This component is a work in progress, and it is target for my own usages. But if
 
 ## Versions
 
-
-4.0.3
+4.0.4
