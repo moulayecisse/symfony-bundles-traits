@@ -12,11 +12,6 @@ trait ExpiredAtTrait
      */
     protected ?DateTime $expiredAt;
 
-    public function __construct()
-    {
-        $this->setExpiredAt(new DateTime());
-    }
-
     public function getExpiredAt(): ?DateTime
     {
         return $this->expiredAt;
