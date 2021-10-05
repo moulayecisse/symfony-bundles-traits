@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait DeviceNameTrait
 {
     /**
-     * @ORM\Column(type="text", unique=true, nullable=false)
+     * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected string $deviceName;
+    protected ?string $deviceName;
 
-    public function getDeviceName(): string
+    public function getDeviceName(): ?string
     {
         return $this->deviceName;
     }
 
-    public function setDeviceName(string $deviceName): self
+    public function setDeviceName(?string $deviceName): self
     {
         $this->deviceName = $deviceName;
 

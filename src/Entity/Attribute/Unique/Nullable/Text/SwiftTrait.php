@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait SwiftTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: true, nullable: true)]
-    protected ?string $swift = null;
+    protected ?string $swift;
 
     public function getSwift(): ?string
     {

@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait ZipCodeTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=true, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected string $zipCode;
+    protected ?string $zipCode;
 
-    public function getZipCode(): string
+    public function getZipCode(): ?string
     {
         return $this->zipCode;
     }
 
-    public function setZipCode(string $zipCode): self
+    public function setZipCode(?string $zipCode): self
     {
         $this->zipCode = $zipCode;
 

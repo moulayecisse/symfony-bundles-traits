@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait OrderingTrait
 {
     /**
-     * @ORM\Column(type="integer", unique=false, nullable=false)
+     * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected int $ordering;
+    protected ?int $ordering;
 
-    public function getOrdering(): int
+    public function getOrdering(): ?int
     {
         return $this->ordering;
     }
 
-    public function setOrdering(int $ordering): self
+    public function setOrdering(?int $ordering): self
     {
         $this->ordering = $ordering;
 

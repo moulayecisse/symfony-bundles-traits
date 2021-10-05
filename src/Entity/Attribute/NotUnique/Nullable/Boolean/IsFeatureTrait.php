@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsFeatureTrait
 {
     #[ORM\Column(type: Types::BOOLEAN, unique: false, nullable: true)]
-    protected ?bool $isFeature = false;
+    protected ?bool $isFeature;
 
     public function getIsFeature(): ?bool
     {

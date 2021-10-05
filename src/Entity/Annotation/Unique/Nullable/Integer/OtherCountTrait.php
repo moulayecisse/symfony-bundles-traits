@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait OtherCountTrait
 {
     /**
-     * @ORM\Column(type="integer", unique=true, nullable=false)
+     * @ORM\Column(type="integer", unique=true, nullable=true)
      */
-    protected int $otherCount;
+    protected ?int $otherCount;
 
-    public function getOtherCount(): int
+    public function getOtherCount(): ?int
     {
         return $this->otherCount;
     }
 
-    public function setOtherCount(int $otherCount): self
+    public function setOtherCount(?int $otherCount): self
     {
         $this->otherCount = $otherCount;
 

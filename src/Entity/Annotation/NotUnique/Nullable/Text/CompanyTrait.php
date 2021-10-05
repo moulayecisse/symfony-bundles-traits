@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait CompanyTrait
 {
     /**
-     * @ORM\Column(type="text", unique=false, nullable=false)
+     * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected string $company;
+    protected ?string $company;
 
-    public function getCompany(): string
+    public function getCompany(): ?string
     {
         return $this->company;
     }
 
-    public function setCompany(string $company): self
+    public function setCompany(?string $company): self
     {
         $this->company = $company;
 

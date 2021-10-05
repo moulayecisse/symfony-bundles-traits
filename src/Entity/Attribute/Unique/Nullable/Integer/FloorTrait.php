@@ -8,14 +8,14 @@ use Doctrine\ORM\Mapping as ORM;
 trait FloorTrait
 {
     #[ORM\Column(type: Types::INTEGER, unique: true, nullable: true)]
-    protected int $floor;
+    protected ?int $floor;
 
-    public function getFloor(): int
+    public function getFloor(): ?int
     {
         return $this->floor;
     }
 
-    public function setFloor(int $floor): self
+    public function setFloor(?int $floor): self
     {
         $this->floor = $floor;
 

@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait PathTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=false, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected string $path;
+    protected ?string $path;
 
-    public function getPath(): string
+    public function getPath(): ?string
     {
         return $this->path;
     }
 
-    public function setPath(string $path): self
+    public function setPath(?string $path): self
     {
         $this->path = $path;
 

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait IconTrait
 {
     #[ORM\Column(type: Types::JSON, unique: false, nullable: true)]
-    protected array $icon = [];
+    protected ?array $icon;
 
     public function getIcon(): ?array
     {
@@ -45,7 +45,7 @@ trait IconTrait
     protected function setIconValue(?string $name, ?string $value): self
     {
         if (!$this->icon) {
-            $this->icon = [];
+            $this->icon;
         }
 
         if ($value) {

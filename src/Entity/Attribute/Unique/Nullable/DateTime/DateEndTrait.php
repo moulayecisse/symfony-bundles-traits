@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait DateEndTrait
 {
     #[ORM\Column(type: Types::DATETIME_MUTABLE, unique: true, nullable: true)]
-    protected ?DateTime $dateEnd = null;
+    protected ?DateTime $dateEnd;
 
     public function getDateEnd(): ?DateTime
     {

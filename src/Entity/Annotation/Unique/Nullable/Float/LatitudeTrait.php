@@ -8,16 +8,16 @@ trait LatitudeTrait
     /**
      * @ORM\Column(type="float", unique=true, nullable=true)
      */
-    protected int $latitude;
+    protected ?float $latitude;
 
-    public function setLatitude(int $latitude) : self
+    public function setLatitude(?float $latitude) : self
     {
         $this->latitude = $latitude;
 
         return $this;
     }
 
-    public function getLatitude() : int
+    public function getLatitude(): ?float
     {
         return $this->latitude;
     }

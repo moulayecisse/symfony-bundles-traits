@@ -9,9 +9,9 @@ use JetBrains\PhpStorm\Pure;
 trait PlaceholdersTrait
 {
     /**
-     * @ORM\Column(type="json", unique=false, nullable=false)
+     * @ORM\Column(type="json", unique=false, nullable=true)
      */
-    protected array $placeholders = [];
+    protected ?array $placeholders;
 
     #[Pure] public function getPlaceholder(string $locale = null): string
     {
@@ -25,12 +25,12 @@ trait PlaceholdersTrait
         return $this;
     }
 
-    public function getPlaceholders(): array
+    public function getPlaceholders(): ?array
     {
         return $this->placeholders;
     }
 
-    public function setPlaceholders(array $placeholders): self
+    public function setPlaceholders(?array $placeholders): self
     {
         $this->placeholders = $placeholders;
 

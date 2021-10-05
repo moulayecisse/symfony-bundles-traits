@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait ImageTrait
 {
     /**
-     * @ORM\Column(type="text", unique=true, nullable=false)
+     * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected string $image;
+    protected ?string $image;
 
-    public function getImage(): string
+    public function getImage(): ?string
     {
         return $this->image;
     }
 
-    public function setImage(string $image): self
+    public function setImage(?string $image): self
     {
         $this->image = $image;
 

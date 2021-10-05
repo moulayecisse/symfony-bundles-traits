@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait OrderKeyTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: true, nullable: true)]
-    protected ?string $orderKey = null;
+    protected ?string $orderKey;
 
     public function getOrderKey(): ?string
     {

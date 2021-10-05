@@ -9,9 +9,9 @@ use JetBrains\PhpStorm\Pure;
 trait TitlesTrait
 {
     /**
-     * @ORM\Column(type="json", unique=true, nullable=false)
+     * @ORM\Column(type="json", unique=true, nullable=true)
      */
-    protected array $titles = [];
+    protected ?array $titles;
 
     #[Pure] public function getTitle(string $locale = null): string
     {
@@ -25,12 +25,12 @@ trait TitlesTrait
         return $this;
     }
 
-    public function getTitles(): array
+    public function getTitles(): ?array
     {
         return $this->titles;
     }
 
-    public function setTitles(array $titles): self
+    public function setTitles(?array $titles): self
     {
         $this->titles = $titles;
 

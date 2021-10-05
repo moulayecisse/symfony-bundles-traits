@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait EnableFreeShippingTrait
 {
     #[ORM\Column(type: Types::BOOLEAN, unique: false, nullable: true)]
-    protected ?bool $enableFreeShipping = false;
+    protected ?bool $enableFreeShipping;
 
     public function getEnableFreeShipping(): ?bool
     {

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait ThumbnailTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: false, nullable: true)]
-    protected ?string $thumbnail = null;
+    protected ?string $thumbnail;
 
     public function getThumbnail(): ?string
     {

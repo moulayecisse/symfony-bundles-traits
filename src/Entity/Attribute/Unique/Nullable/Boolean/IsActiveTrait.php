@@ -8,14 +8,14 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsActiveTrait
 {
     #[ORM\Column(type: Types::BOOLEAN, unique: true, nullable: true)]
-    protected bool $isActive = false;
+    protected ?bool $isActive;
 
-    public function getIsActive(): bool
+    public function getIsActive(): ?bool
     {
         return $this->isActive;
     }
 
-    public function setIsActive(bool $isActive): self
+    public function setIsActive(?bool $isActive): self
     {
         $this->isActive = $isActive;
 

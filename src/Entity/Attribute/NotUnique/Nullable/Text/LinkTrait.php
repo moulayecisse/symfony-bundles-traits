@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait LinkTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: false, nullable: true)]
-    protected ?string $link = null;
+    protected ?string $link;
 
     public function getLink(): ?string
     {

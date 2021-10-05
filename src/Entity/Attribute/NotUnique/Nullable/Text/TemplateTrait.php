@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait TemplateTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: false, nullable: true)]
-    protected string $template = 'default';
+    protected ?string $template;
 
     public function getTemplate(): ?string
     {

@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait StudentCountTrait
 {
     /**
-     * @ORM\Column(type="integer", unique=true, nullable=false)
+     * @ORM\Column(type="integer", unique=true, nullable=true)
      */
-    protected int $studentCount;
+    protected ?int $studentCount;
 
-    public function getStudentCount(): int
+    public function getStudentCount(): ?int
     {
         return $this->studentCount;
     }
 
-    public function setStudentCount(int $studentCount): self
+    public function setStudentCount(?int $studentCount): self
     {
         $this->studentCount = $studentCount;
 

@@ -10,7 +10,7 @@ use JetBrains\PhpStorm\Pure;
 trait LabelsTrait
 {
     #[ORM\Column(type: Types::JSON, unique: false, nullable: true)]
-    protected array $labels = [];
+    protected ?array $labels;
 
     #[Pure]
     public function getLabel(?string $locale = null): ?string
@@ -30,7 +30,7 @@ trait LabelsTrait
         return $this->labels;
     }
 
-    public function setLabels(array $labels): self
+    public function setLabels(?array $labels): self
     {
         $this->labels = $labels;
 

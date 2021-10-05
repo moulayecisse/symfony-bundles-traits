@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait NationalityTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=true, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected string $nationality;
+    protected ?string $nationality;
 
-    public function getNationality(): string
+    public function getNationality(): ?string
     {
         return $this->nationality;
     }
 
-    public function setNationality(string $nationality): self
+    public function setNationality(?string $nationality): self
     {
         $this->nationality = $nationality;
 

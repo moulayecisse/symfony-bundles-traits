@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsReadTrait
 {
     /**
-     * @ORM\Column(type="boolean", unique=false, nullable=false)
+     * @ORM\Column(type="boolean", unique=false, nullable=true)
      */
-    protected bool $isRead = false;
+    protected ?bool $isRead;
 
-    public function getIsRead(): bool
+    public function getIsRead(): ?bool
     {
         return $this->isRead;
     }
 
-    public function setIsRead(bool $isRead): self
+    public function setIsRead(?bool $isRead): self
     {
         $this->isRead = $isRead;
 

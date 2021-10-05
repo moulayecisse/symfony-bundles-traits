@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait PublishedAtTrait
 {
     #[ORM\Column(type: Types::DATETIME_MUTABLE, unique: false, nullable: true)]
-    protected ?DateTime $publishedAt = null;
+    protected ?DateTime $publishedAt;
 
     public function getPublishedAt(): ?DateTime
     {

@@ -8,14 +8,14 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsVerifiedTrait
 {
     #[ORM\Column(type: Types::BOOLEAN, unique: true, nullable: true)]
-    protected bool $isVerified = false;
+    protected ?bool $isVerified;
 
-    public function getIsVerified(): bool
+    public function getIsVerified(): ?bool
     {
         return $this->isVerified;
     }
 
-    public function setIsVerified(bool $isVerified): self
+    public function setIsVerified(?bool $isVerified): self
     {
         $this->isVerified = $isVerified;
 

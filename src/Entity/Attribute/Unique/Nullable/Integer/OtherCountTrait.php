@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait OtherCountTrait
 {
     #[ORM\Column(type: Types::INTEGER, unique: true, nullable: true)]
-    protected ?int $otherCount = null;
+    protected ?int $otherCount;
 
     public function getOtherCount(): ?int
     {

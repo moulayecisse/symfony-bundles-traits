@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait PlaceholderTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: false, nullable: true)]
-    protected ?string $placeholder = null;
+    protected ?string $placeholder;
 
     public function getPlaceholder(): ?string
     {

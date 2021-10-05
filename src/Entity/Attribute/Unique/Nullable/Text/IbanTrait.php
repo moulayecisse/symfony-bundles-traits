@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait IbanTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: true, nullable: true)]
-    protected ?string $iban = null;
+    protected ?string $iban;
 
     public function getIban(): ?string
     {

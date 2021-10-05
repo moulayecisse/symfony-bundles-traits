@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait ValueTrait
 {
     #[ORM\Column(type: Types::JSON, unique: true, nullable: true)]
-    protected mixed $value = null;
+    protected mixed $value;
 
     public function getValue(): mixed
     {

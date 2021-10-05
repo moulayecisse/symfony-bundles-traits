@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait PaidAtTrait
 {
     #[ORM\Column(type: Types::DATETIME_MUTABLE, unique: false, nullable: true)]
-    protected ?DateTime $paidAt = null;
+    protected ?DateTime $paidAt;
 
     public function getPaidAt(): ?DateTime
     {

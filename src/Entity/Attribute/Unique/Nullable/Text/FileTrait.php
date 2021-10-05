@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\File\File;
 
 trait FileTrait
 {
-    protected ?File $file = null;
+    protected ?File $file;
 
     #[ORM\Column(type: Types::TEXT, unique: true, nullable: true)]
     protected ?string $filePath;

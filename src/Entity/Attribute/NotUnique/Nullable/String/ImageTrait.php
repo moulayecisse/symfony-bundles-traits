@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait ImageTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: false, nullable: true)]
-    protected ?string $image = null;
+    protected ?string $image;
 
     public function getImage(): ?string
     {

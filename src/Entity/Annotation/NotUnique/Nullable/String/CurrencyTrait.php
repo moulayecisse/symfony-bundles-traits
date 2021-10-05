@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait CurrencyTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=false, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected string $currency;
+    protected ?string $currency;
 
-    public function getCurrency(): string
+    public function getCurrency(): ?string
     {
         return $this->currency;
     }
 
-    public function setCurrency(string $currency): self
+    public function setCurrency(?string $currency): self
     {
         $this->currency = $currency;
 

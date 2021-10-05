@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait ProfessionTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: true, nullable: true)]
-    protected ?string $profession = null;
+    protected ?string $profession;
 
     public function getProfession(): ?string
     {

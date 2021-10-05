@@ -8,16 +8,16 @@ trait AmountTrait
     /**
      * @ORM\Column(type="float", unique=true, nullable=true)
      */
-    protected int $amount;
+    protected ?float $amount;
 
-    public function setAmount(int $amount) : self
+    public function setAmount(?float $amount) : self
     {
         $this->amount = $amount;
 
         return $this;
     }
 
-    public function getAmount() : int
+    public function getAmount(): ?float
     {
         return $this->amount;
     }

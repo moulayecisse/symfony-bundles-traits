@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait RegistrationIdTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=false, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected string $registrationId;
+    protected ?string $registrationId;
 
-    public function getRegistrationId(): string
+    public function getRegistrationId(): ?string
     {
         return $this->registrationId;
     }
 
-    public function setRegistrationId(string $registrationId): self
+    public function setRegistrationId(?string $registrationId): self
     {
         $this->registrationId = $registrationId;
 

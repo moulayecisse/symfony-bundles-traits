@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait IconTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=false, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected string $icon;
+    protected ?string $icon;
 
-    public function getIcon(): string
+    public function getIcon(): ?string
     {
         return $this->icon;
     }
 
-    public function setIcon(string $icon): self
+    public function setIcon(?string $icon): self
     {
         $this->icon = $icon;
 

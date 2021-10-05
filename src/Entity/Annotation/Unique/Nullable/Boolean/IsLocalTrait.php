@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsLocalTrait
 {
     /**
-     * @ORM\Column(type="boolean", unique=true, nullable=false)
+     * @ORM\Column(type="boolean", unique=true, nullable=true)
      */
-    protected bool $isLocal = false;
+    protected ?bool $isLocal;
 
-    public function getIsLocal(): bool
+    public function getIsLocal(): ?bool
     {
         return $this->isLocal;
     }
 
-    public function setIsLocal(bool $isLocal): self
+    public function setIsLocal(?bool $isLocal): self
     {
         $this->isLocal = $isLocal;
 

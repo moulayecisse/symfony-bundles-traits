@@ -8,11 +8,11 @@ use Doctrine\ORM\Mapping as ORM;
 trait TtcTrait
 {
     #[ORM\Column(type: Types::INTEGER, unique: true, nullable: true)]
-    protected ?int $ttc = null;
+    protected ?int $ttc;
 
     public function getTtc(): ?int
     {
-        return $this->ttc ?? 1;
+        return $this->ttc;
     }
 
     public function setTtc(?int $ttc): self

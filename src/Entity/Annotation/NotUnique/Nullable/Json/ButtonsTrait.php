@@ -9,9 +9,9 @@ use JetBrains\PhpStorm\Pure;
 trait ButtonsTrait
 {
     /**
-     * @ORM\Column(type="json", unique=false, nullable=false)
+     * @ORM\Column(type="json", unique=false, nullable=true)
      */
-    protected array $buttons = [];
+    protected ?array $buttons;
 
     #[Pure] public function getButton(string $locale = null): string
     {
@@ -25,12 +25,12 @@ trait ButtonsTrait
         return $this;
     }
 
-    public function getButtons(): array
+    public function getButtons(): ?array
     {
         return $this->buttons;
     }
 
-    public function setButtons(array $buttons): self
+    public function setButtons(?array $buttons): self
     {
         $this->buttons = $buttons;
 

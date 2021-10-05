@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait RibTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: false, nullable: true)]
-    protected ?string $rib = null;
+    protected ?string $rib;
 
     public function getRib(): ?string
     {

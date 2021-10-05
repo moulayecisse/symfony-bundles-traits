@@ -7,23 +7,23 @@ use Doctrine\ORM\Mapping as ORM;
 trait FieldsTrait
 {
     /**
-     * @ORM\Column(type="json", unique=false, nullable=false)
+     * @ORM\Column(type="json", unique=false, nullable=true)
      */
-    protected array $fields = [];
+    protected ?array $fields;
 
-    public function getFields(): array
+    public function getFields(): ?array
     {
         return $this->fields;
     }
 
-    public function setFields(array $fields): self
+    public function setFields(?array $fields): self
     {
         $this->fields = $fields ?? [];
 
         return $this;
     }
 
-    public function addField(array $field): self
+    public function addField(?array $field): self
     {
         if (isset($field['name'])) {
             $this->fields[$field['name']] = $field;
@@ -32,7 +32,7 @@ trait FieldsTrait
         return $this;
     }
 
-    public function setField(array $field): self
+    public function setField(?array $field): self
     {
         if (isset($field['name'])) {
             $this->fields[$field['name']] = $field;
@@ -41,7 +41,7 @@ trait FieldsTrait
         return $this;
     }
 
-    public function getField(array $field = []): array
+    public function getField(?array $field = []): ?array
     {
         if (isset($field['name'])) {
             $this->fields[$field['name']] = $field;

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait StockStatusTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: false, nullable: true)]
-    protected ?string $stockStatus = 'draft';
+    protected ?string $stockStatus;
 
     public function getStockStatus(): ?string
     {

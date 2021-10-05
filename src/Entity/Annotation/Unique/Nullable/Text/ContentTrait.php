@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait ContentTrait
 {
     /**
-     * @ORM\Column(type="text", unique=true, nullable=false)
+     * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected string $content;
+    protected ?string $content;
 
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }
 
-    public function setContent(string $content): self
+    public function setContent(?string $content): self
     {
         $this->content = $content;
 

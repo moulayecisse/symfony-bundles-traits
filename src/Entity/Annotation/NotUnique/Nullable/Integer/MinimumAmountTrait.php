@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait MinimumAmountTrait
 {
     /**
-     * @ORM\Column(type="integer", unique=false, nullable=false)
+     * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected int $minimumAmount;
+    protected ?int $minimumAmount;
 
-    public function getMinimumAmount(): int
+    public function getMinimumAmount(): ?int
     {
         return $this->minimumAmount ?? 1;
     }
 
-    public function setMinimumAmount(int $minimumAmount): self
+    public function setMinimumAmount(?int $minimumAmount): self
     {
         $this->minimumAmount = $minimumAmount;
 

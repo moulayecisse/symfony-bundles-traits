@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait RibTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=false, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected string $rib;
+    protected ?string $rib;
 
-    public function getRib(): string
+    public function getRib(): ?string
     {
         return $this->rib;
     }
 
-    public function setRib(string $rib): self
+    public function setRib(?string $rib): self
     {
         $this->rib = $rib;
 

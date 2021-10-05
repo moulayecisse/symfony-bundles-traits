@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait StudentCountTrait
 {
     #[ORM\Column(type: Types::INTEGER, unique: true, nullable: true)]
-    protected ?int $studentCount = null;
+    protected ?int $studentCount;
 
     public function getStudentCount(): ?int
     {

@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsFeatureTrait
 {
     /**
-     * @ORM\Column(type="boolean", unique=true, nullable=false)
+     * @ORM\Column(type="boolean", unique=true, nullable=true)
      */
-    protected bool $isFeature = false;
+    protected ?bool $isFeature;
 
-    public function getIsFeature(): bool
+    public function getIsFeature(): ?bool
     {
         return $this->isFeature;
     }
 
-    public function setIsFeature(bool $isFeature): self
+    public function setIsFeature(?bool $isFeature): self
     {
         $this->isFeature = $isFeature;
 

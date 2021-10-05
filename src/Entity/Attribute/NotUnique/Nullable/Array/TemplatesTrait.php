@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait TemplatesTrait
 {
     #[ORM\Column(type: Types::ARRAY, unique: false, nullable: true)]
-    protected ?array $templates = ['default'];
+    protected ?array $templates;
 
     public function getTemplates(): ?array
     {

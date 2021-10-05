@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait OsVersionTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: false, nullable: true)]
-    protected ?string $osVersion = null;
+    protected ?string $osVersion;
 
     public function getOsVersion(): ?string
     {

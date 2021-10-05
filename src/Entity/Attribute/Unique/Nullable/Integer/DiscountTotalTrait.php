@@ -8,11 +8,11 @@ use Doctrine\ORM\Mapping as ORM;
 trait DiscountTotalTrait
 {
     #[ORM\Column(type: Types::INTEGER, unique: true, nullable: true)]
-    protected ?int $discountTotal = null;
+    protected ?int $discountTotal;
 
     public function getDiscountTotal(): ?int
     {
-        return $this->discountTotal ?? 1;
+        return $this->discountTotal;
     }
 
     public function setDiscountTotal(?int $discountTotal): self

@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait ButtonTrait
 {
     /**
-     * @ORM\Column(type="text", unique=true, nullable=false)
+     * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected string $button;
+    protected ?string $button;
 
-    public function getButton(): string
+    public function getButton(): ?string
     {
         return $this->button;
     }
 
-    public function setButton(string $button): self
+    public function setButton(?string $button): self
     {
         $this->button = $button;
 

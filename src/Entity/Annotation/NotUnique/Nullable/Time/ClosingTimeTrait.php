@@ -10,14 +10,14 @@ trait ClosingTimeTrait
     /**
      * @ORM\Column(type="time", unique=false, nullable=true)
      */
-    protected DateTime $closingTime;
+    protected ?DateTime $closingTime;
 
-    public function getClosingTime(): DateTime
+    public function getClosingTime(): ?DateTime
     {
         return $this->closingTime;
     }
 
-    public function setClosingTime(DateTime $closingTime): self
+    public function setClosingTime(?DateTime $closingTime): self
     {
         $this->closingTime = $closingTime;
 

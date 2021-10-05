@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait BirthdayTrait
 {
     /**
-     * @ORM\Column(type="date", unique=true, nullable=false)
+     * @ORM\Column(type="date", unique=true, nullable=true)
      */
     protected ?DateTime $birthday;
 

@@ -10,7 +10,7 @@ use JetBrains\PhpStorm\Pure;
 trait SubjectsTrait
 {
     #[ORM\Column(type: Types::JSON, unique: true, nullable: true)]
-    protected array $subjects = [];
+    protected ?array $subjects;
 
     #[Pure]
     public function getSubject(?string $locale = null): ?string
@@ -30,7 +30,7 @@ trait SubjectsTrait
         return $this->subjects;
     }
 
-    public function setSubjects(array $subjects): self
+    public function setSubjects(?array $subjects): self
     {
         $this->subjects = $subjects;
 

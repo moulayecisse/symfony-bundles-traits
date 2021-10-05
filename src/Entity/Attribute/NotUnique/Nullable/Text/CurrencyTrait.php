@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait CurrencyTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: false, nullable: true)]
-    protected ?string $currency = null;
+    protected ?string $currency;
 
     public function getCurrency(): ?string
     {

@@ -8,14 +8,14 @@ use Doctrine\ORM\Mapping as ORM;
 trait RegistrationTokenTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: false, nullable: true)]
-    protected string $registrationToken;
+    protected ?string $registrationToken;
 
-    public function getRegistrationToken(): string
+    public function getRegistrationToken(): ?string
     {
         return $this->registrationToken;
     }
 
-    public function setRegistrationToken(string $registrationToken): self
+    public function setRegistrationToken(?string $registrationToken): self
     {
         $this->registrationToken = $registrationToken;
 

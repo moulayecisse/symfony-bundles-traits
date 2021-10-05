@@ -8,14 +8,14 @@ use Doctrine\ORM\Mapping as ORM;
 trait PasswordTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: false, nullable: true)]
-    protected ?string $password = null;
+    protected ?string $password;
 
-    public function getPassword(): string
+    public function getPassword(): ?string
     {
         return $this->password;
     }
 
-    public function setPassword(string $password): self
+    public function setPassword(?string $password): self
     {
         $this->password = $password;
 

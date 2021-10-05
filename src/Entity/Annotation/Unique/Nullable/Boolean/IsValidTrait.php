@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsValidTrait
 {
     /**
-     * @ORM\Column(type="boolean", unique=true, nullable=false)
+     * @ORM\Column(type="boolean", unique=true, nullable=true)
      */
-    protected bool $isValid = false;
+    protected ?bool $isValid;
 
-    public function getIsValid(): bool
+    public function getIsValid(): ?bool
     {
         return $this->isValid;
     }
 
-    public function setIsValid(bool $isValid): self
+    public function setIsValid(?bool $isValid): self
     {
         $this->isValid = $isValid;
 

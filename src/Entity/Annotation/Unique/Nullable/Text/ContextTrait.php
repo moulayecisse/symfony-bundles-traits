@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait ContextTrait
 {
     /**
-     * @ORM\Column(type="text", unique=true, nullable=false)
+     * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected string $context;
+    protected ?string $context;
 
-    public function getContext(): string
+    public function getContext(): ?string
     {
         return $this->context;
     }
 
-    public function setContext(string $context): self
+    public function setContext(?string $context): self
     {
         $this->context = $context;
 

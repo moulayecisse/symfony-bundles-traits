@@ -8,11 +8,11 @@ use Doctrine\ORM\Mapping as ORM;
 trait ShippingTotalTrait
 {
     #[ORM\Column(type: Types::INTEGER, unique: false, nullable: true)]
-    protected ?int $shippingTotal = null;
+    protected ?int $shippingTotal;
 
     public function getShippingTotal(): ?int
     {
-        return $this->shippingTotal ?? 1;
+        return $this->shippingTotal;
     }
 
     public function setShippingTotal(?int $shippingTotal): self

@@ -8,11 +8,11 @@ use Doctrine\ORM\Mapping as ORM;
 trait MinimumAmountTrait
 {
     #[ORM\Column(type: Types::INTEGER, unique: true, nullable: true)]
-    protected ?int $minimumAmount = null;
+    protected ?int $minimumAmount;
 
     public function getMinimumAmount(): ?int
     {
-        return $this->minimumAmount ?? 1;
+        return $this->minimumAmount;
     }
 
     public function setMinimumAmount(?int $minimumAmount): self

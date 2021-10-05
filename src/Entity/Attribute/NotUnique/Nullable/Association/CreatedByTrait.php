@@ -9,7 +9,7 @@ trait CreatedByTrait
 {
     #[ORM\ManyToOne(targetEntity: User::class)]
     #[ORM\JoinColumn(unique: false, nullable: true)]
-    protected ?User $createdBy = null;
+    protected ?User $createdBy;
 
     public function getCreatedBy(): ?User
     {

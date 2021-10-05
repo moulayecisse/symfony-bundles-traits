@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait OsVersionTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=false, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected string $osVersion;
+    protected ?string $osVersion;
 
-    public function getOsVersion(): string
+    public function getOsVersion(): ?string
     {
         return $this->osVersion;
     }
 
-    public function setOsVersion(string $osVersion): self
+    public function setOsVersion(?string $osVersion): self
     {
         $this->osVersion = $osVersion;
 

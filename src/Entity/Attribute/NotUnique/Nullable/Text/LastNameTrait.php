@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait LastNameTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: false, nullable: true)]
-    protected ?string $lastName = null;
+    protected ?string $lastName;
 
     public function getLastName(): ?string
     {

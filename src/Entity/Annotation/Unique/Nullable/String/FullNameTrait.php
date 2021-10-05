@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait FullNameTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=true, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected string $fullName;
+    protected ?string $fullName;
 
-    public function getFullName(): string
+    public function getFullName(): ?string
     {
         return $this->fullName;
     }
 
-    public function setFullName(string $fullName): self
+    public function setFullName(?string $fullName): self
     {
         $this->fullName = $fullName;
 

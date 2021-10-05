@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait ProfessionTrait
 {
     /**
-     * @ORM\Column(type="text", unique=true, nullable=false)
+     * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected string $profession;
+    protected ?string $profession;
 
-    public function getProfession(): string
+    public function getProfession(): ?string
     {
         return $this->profession;
     }
 
-    public function setProfession(string $profession): self
+    public function setProfession(?string $profession): self
     {
         $this->profession = $profession;
 

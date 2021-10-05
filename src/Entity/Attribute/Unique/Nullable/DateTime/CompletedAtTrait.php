@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait CompletedAtTrait
 {
     #[ORM\Column(type: Types::DATETIME_MUTABLE, unique: true, nullable: true)]
-    protected ?DateTime $completedAt = null;
+    protected ?DateTime $completedAt;
 
     public function getCompletedAt(): ?DateTime
     {

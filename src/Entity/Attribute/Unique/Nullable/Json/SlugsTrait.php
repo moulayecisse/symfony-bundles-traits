@@ -10,7 +10,7 @@ use JetBrains\PhpStorm\Pure;
 trait SlugsTrait
 {
     #[ORM\Column(type: Types::JSON, unique: true, nullable: true)]
-    protected array $slugs = [];
+    protected ?array $slugs;
 
     #[Pure]
     public function getSlug(?string $locale = null): ?string
@@ -30,7 +30,7 @@ trait SlugsTrait
         return $this->slugs;
     }
 
-    public function setSlugs(array $slugs): self
+    public function setSlugs(?array $slugs): self
     {
         $this->slugs = $slugs;
 

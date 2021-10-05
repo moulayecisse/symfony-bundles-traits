@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait EndDateTrait
 {
     /**
-     * @ORM\Column(type="date", unique=true, nullable=false)
+     * @ORM\Column(type="date", unique=true, nullable=true)
      */
     protected ?DateTime $endDate;
 

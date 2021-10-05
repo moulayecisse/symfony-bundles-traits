@@ -10,18 +10,18 @@ trait FileTrait
     protected ?File $file;
 
     /**
-     * @ORM\Column(type="text", unique=true, nullable=false)
+     * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected string $filePath;
+    protected ?string $filePath;
 
-    protected string $fileUrl;
+    protected ?string $fileUrl;
 
-    public function getFilePath(): string
+    public function getFilePath(): ?string
     {
         return $this->filePath;
     }
 
-    public function setFilePath(string $filePath): self
+    public function setFilePath(?string $filePath): self
     {
         $this->filePath = $filePath;
 
@@ -40,12 +40,12 @@ trait FileTrait
         return $this;
     }
 
-    public function getFileUrl(): string
+    public function getFileUrl(): ?string
     {
         return $this->fileUrl;
     }
 
-    public function setFileUrl(string $fileUrl): self
+    public function setFileUrl(?string $fileUrl): self
     {
         $this->fileUrl = $fileUrl;
 

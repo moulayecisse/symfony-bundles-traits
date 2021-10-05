@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait PasswordTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=true, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected string $password;
+    protected ?string $password;
 
-    public function getPassword(): string
+    public function getPassword(): ?string
     {
         return $this->password;
     }
 
-    public function setPassword(string $password): self
+    public function setPassword(?string $password): self
     {
         $this->password = $password;
 

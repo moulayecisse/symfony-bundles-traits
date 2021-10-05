@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait RegistrationIdTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: false, nullable: true)]
-    protected ?string $registrationId = null;
+    protected ?string $registrationId;
 
     public function getRegistrationId(): ?string
     {

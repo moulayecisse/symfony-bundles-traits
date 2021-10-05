@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait ButtonTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: true, nullable: true)]
-    protected ?string $button = null;
+    protected ?string $button;
 
     public function getButton(): ?string
     {

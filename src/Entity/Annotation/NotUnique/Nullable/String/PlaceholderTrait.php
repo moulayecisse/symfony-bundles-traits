@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait PlaceholderTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=false, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected string $placeholder;
+    protected ?string $placeholder;
 
-    public function getPlaceholder(): string
+    public function getPlaceholder(): ?string
     {
         return $this->placeholder;
     }
 
-    public function setPlaceholder(string $placeholder): self
+    public function setPlaceholder(?string $placeholder): self
     {
         $this->placeholder = $placeholder;
 

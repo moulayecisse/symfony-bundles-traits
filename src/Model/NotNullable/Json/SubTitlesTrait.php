@@ -33,7 +33,7 @@ trait SubTitlesTrait
         return $this;
     }
 
-    public function getSubTitleFr(): string
+    #[Pure] public function getSubTitleFr(): string
     {
         return $this->getSubTitle('fr');
     }
@@ -43,7 +43,7 @@ trait SubTitlesTrait
         return $this->setSubTitle($subTitle, 'fr');
     }
 
-    public function getSubTitleEn(): string
+    #[Pure] public function getSubTitleEn(): string
     {
         return $this->getSubTitle('en');
     }

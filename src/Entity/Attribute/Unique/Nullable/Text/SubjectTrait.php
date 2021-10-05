@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait SubjectTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: true, nullable: true)]
-    protected ?string $subject = null;
+    protected ?string $subject;
 
     public function getSubject(): ?string
     {

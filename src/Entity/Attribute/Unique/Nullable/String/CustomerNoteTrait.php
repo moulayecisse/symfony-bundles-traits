@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait CustomerNoteTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: true, nullable: true)]
-    protected ?string $customerNote = null;
+    protected ?string $customerNote;
 
     public function getCustomerNote(): ?string
     {

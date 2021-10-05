@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait IconTrait
 {
     /**
-     * @ORM\Column(type="json", unique=false, nullable=false)
+     * @ORM\Column(type="json", unique=false, nullable=true)
      */
-    protected array $icon = [];
+    protected ?array $icon;
 
-    public function getIcon(): array
+    public function getIcon(): ?array
     {
         return $this->icon;
     }
 
-    public function setIcon(array $icon): self
+    public function setIcon(?array $icon): self
     {
         $this->icon = $icon;
 
@@ -46,7 +46,7 @@ trait IconTrait
     protected function setIconValue(string $name, string $value): self
     {
         if (!$this->icon) {
-            $this->icon = [];
+            $this->icon;
         }
 
         if ($value) {

@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait CreatedAtTrait
 {
     #[ORM\Column(type: Types::DATETIME_MUTABLE, unique: true, nullable: true)]
-    protected ?DateTime $createdAt = null;
+    protected ?DateTime $createdAt;
 
     public function getCreatedAt(): ?DateTime
     {

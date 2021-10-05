@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsVerifiedTrait
 {
     /**
-     * @ORM\Column(type="boolean", unique=false, nullable=false)
+     * @ORM\Column(type="boolean", unique=false, nullable=true)
      */
-    protected bool $isVerified = false;
+    protected ?bool $isVerified;
 
-    public function getIsVerified(): bool
+    public function getIsVerified(): ?bool
     {
         return $this->isVerified;
     }
 
-    public function setIsVerified(bool $isVerified): self
+    public function setIsVerified(?bool $isVerified): self
     {
         $this->isVerified = $isVerified;
 

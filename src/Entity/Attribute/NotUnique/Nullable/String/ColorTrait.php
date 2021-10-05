@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait ColorTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: false, nullable: true)]
-    protected ?string $Color = null;
+    protected ?string $Color;
 
     public function getColor(): ?string
     {

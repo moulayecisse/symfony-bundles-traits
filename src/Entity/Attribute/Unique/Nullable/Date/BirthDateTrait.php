@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait BirthDateTrait
 {
     #[ORM\Column(type: Types::DATE_MUTABLE, unique: true, nullable: true)]
-    protected ?DateTime $birthDate = null;
+    protected ?DateTime $birthDate;
 
     public function getBirthDate(): ?DateTime
     {

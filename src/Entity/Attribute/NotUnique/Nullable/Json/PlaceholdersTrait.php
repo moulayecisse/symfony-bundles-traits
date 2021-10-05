@@ -10,7 +10,7 @@ use JetBrains\PhpStorm\Pure;
 trait PlaceholdersTrait
 {
     #[ORM\Column(type: Types::JSON, unique: false, nullable: true)]
-    protected array $placeholders = [];
+    protected ?array $placeholders;
 
     #[Pure]
     public function getPlaceholder(?string $locale = null): ?string
@@ -30,7 +30,7 @@ trait PlaceholdersTrait
         return $this->placeholders;
     }
 
-    public function setPlaceholders(array $placeholders): self
+    public function setPlaceholders(?array $placeholders): self
     {
         $this->placeholders = $placeholders;
 

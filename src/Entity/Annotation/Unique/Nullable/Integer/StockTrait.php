@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait StockTrait
 {
     /**
-     * @ORM\Column(type="integer", unique=true, nullable=false)
+     * @ORM\Column(type="integer", unique=true, nullable=true)
      */
-    protected int $stock;
+    protected ?int $stock;
 
-    public function getStock(): int
+    public function getStock(): ?int
     {
         return $this->stock;
     }
 
-    public function setStock(int $stock): self
+    public function setStock(?int $stock): self
     {
         $this->stock = $stock;
 

@@ -10,7 +10,7 @@ use JetBrains\PhpStorm\Pure;
 trait LinksTrait
 {
     #[ORM\Column(type: Types::JSON, unique: true, nullable: true)]
-    protected array $links = [];
+    protected ?array $links;
 
     #[Pure]
     public function getLink(?string $locale = null): ?string
@@ -30,7 +30,7 @@ trait LinksTrait
         return $this->links;
     }
 
-    public function setLinks(array $links): self
+    public function setLinks(?array $links): self
     {
         $this->links = $links;
 

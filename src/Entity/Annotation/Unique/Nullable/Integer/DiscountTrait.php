@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait DiscountTrait
 {
     /**
-     * @ORM\Column(type="integer", unique=true, nullable=false)
+     * @ORM\Column(type="integer", unique=true, nullable=true)
      */
-    protected int $discount;
+    protected ?int $discount;
 
-    public function getDiscount(): int
+    public function getDiscount(): ?int
     {
         return $this->discount ?? 1;
     }
 
-    public function setDiscount(int $discount): self
+    public function setDiscount(?int $discount): self
     {
         $this->discount = $discount;
 

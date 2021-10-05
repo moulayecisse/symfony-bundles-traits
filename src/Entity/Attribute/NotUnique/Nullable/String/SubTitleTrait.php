@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait SubTitleTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: false, nullable: true)]
-    protected ?string $subTitle = null;
+    protected ?string $subTitle;
 
     public function getSubTitle(): ?string
     {

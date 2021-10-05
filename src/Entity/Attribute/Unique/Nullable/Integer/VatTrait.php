@@ -8,11 +8,11 @@ use Doctrine\ORM\Mapping as ORM;
 trait VatTrait
 {
     #[ORM\Column(type: Types::INTEGER, unique: true, nullable: true)]
-    protected ?int $vat = null;
+    protected ?int $vat;
 
     public function getVat(): ?int
     {
-        return $this->vat ?? 1;
+        return $this->vat;
     }
 
     public function setVat(?int $vat): self

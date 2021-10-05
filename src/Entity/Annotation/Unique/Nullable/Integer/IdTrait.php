@@ -8,12 +8,12 @@ trait IdTrait
 {
     /**
      * @ORM\Id
-     * @ORM\Column(type="integer", unique: true, nullable=true)
+     * @ORM\Column(type="integer", unique: false, nullable=true)
      * @ORM\GeneratedValue
      */
-    protected int $id;
+    protected ?int $id;
 
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }

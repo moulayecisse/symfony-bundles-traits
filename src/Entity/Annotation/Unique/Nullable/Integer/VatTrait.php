@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait VatTrait
 {
     /**
-     * @ORM\Column(type="integer", unique=true, nullable=false)
+     * @ORM\Column(type="integer", unique=true, nullable=true)
      */
-    protected int $vat;
+    protected ?int $vat;
 
-    public function getVat(): int
+    public function getVat(): ?int
     {
         return $this->vat ?? 1;
     }
 
-    public function setVat(int $vat): self
+    public function setVat(?int $vat): self
     {
         $this->vat = $vat;
 

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait NamespaceTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: true, nullable: true)]
-    protected ?string $namespace = null;
+    protected ?string $namespace;
 
     public function getNamespace(): ?string
     {

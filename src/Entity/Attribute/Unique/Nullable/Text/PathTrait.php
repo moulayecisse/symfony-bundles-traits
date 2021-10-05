@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait PathTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: true, nullable: true)]
-    protected ?string $path = null;
+    protected ?string $path;
 
     public function getPath(): ?string
     {

@@ -10,7 +10,7 @@ use JetBrains\PhpStorm\Pure;
 trait ContextsTrait
 {
     #[ORM\Column(type: Types::JSON, unique: true, nullable: true)]
-    protected array $contexts = [];
+    protected ?array $contexts;
 
     #[Pure]
     public function getContext(?string $locale = null): ?string
@@ -30,7 +30,7 @@ trait ContextsTrait
         return $this->contexts;
     }
 
-    public function setContexts(array $contexts): self
+    public function setContexts(?array $contexts): self
     {
         $this->contexts = $contexts;
 

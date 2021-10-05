@@ -9,14 +9,14 @@ use Doctrine\ORM\Mapping as ORM;
 trait ClosingTimeTrait
 {
     #[ORM\Column(type: Types::TIME_MUTABLE, unique: true, nullable: true)]
-    protected DateTime $closingTime;
+    protected ?DateTime $closingTime;
 
-    public function getClosingTime(): DateTime
+    public function getClosingTime(): ?DateTime
     {
         return $this->closingTime;
     }
 
-    public function setClosingTime(DateTime $closingTime): self
+    public function setClosingTime(?DateTime $closingTime): self
     {
         $this->closingTime = $closingTime;
 

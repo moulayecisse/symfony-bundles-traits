@@ -8,16 +8,16 @@ trait RateTrait
     /**
      * @ORM\Column(type="float", unique=false, nullable=true)
      */
-    protected int $rate;
+    protected ?float $rate;
 
-    public function setRate(int $rate) : self
+    public function setRate(?float $rate): self
     {
         $this->rate = $rate;
 
         return $this;
     }
 
-    public function getRate() : int
+    public function getRate(): ?float
     {
         return $this->rate;
     }

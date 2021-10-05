@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait TemplateTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=true, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected string $template = 'default';
+    protected ?string $template = 'default';
 
-    public function getTemplate(): string
+    public function getTemplate(): ?string
     {
         return $this->template;
     }
 
-    public function setTemplate(string $template): self
+    public function setTemplate(?string $template): self
     {
         $this->template = $template;
 

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait QuantityTrait
 {
     #[ORM\Column(type: Types::INTEGER, unique: true, nullable: true)]
-    protected ?int $quantity = null;
+    protected ?int $quantity;
 
     public function getQuantity(): ?int
     {

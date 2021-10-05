@@ -9,7 +9,7 @@ trait UpdatedByTrait
 {
     #[ORM\ManyToOne(targetEntity: User::class)]
     #[ORM\JoinColumn(unique: true, nullable: true)]
-    protected ?User $updatedBy = null;
+    protected ?User $updatedBy;
 
     public function getUpdatedBy(): ?User
     {

@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait SwiftTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=true, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected string $swift;
+    protected ?string $swift;
 
-    public function getSwift(): string
+    public function getSwift(): ?string
     {
         return $this->swift;
     }
 
-    public function setSwift(string $swift): self
+    public function setSwift(?string $swift): self
     {
         $this->swift = $swift;
 

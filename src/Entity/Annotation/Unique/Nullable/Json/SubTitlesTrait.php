@@ -9,9 +9,9 @@ use JetBrains\PhpStorm\Pure;
 trait SubTitlesTrait
 {
     /**
-     * @ORM\Column(type="json", unique=true, nullable=false)
+     * @ORM\Column(type="json", unique=true, nullable=true)
      */
-    protected array $subTitles = [];
+    protected ?array $subTitles;
 
     #[Pure] public function getSubTitle(string $locale = null): string
     {
@@ -25,12 +25,12 @@ trait SubTitlesTrait
         return $this;
     }
 
-    public function getSubTitles(): array
+    public function getSubTitles(): ?array
     {
         return $this->subTitles;
     }
 
-    public function setSubTitles(array $subTitles): self
+    public function setSubTitles(?array $subTitles): self
     {
         $this->subTitles = $subTitles;
 

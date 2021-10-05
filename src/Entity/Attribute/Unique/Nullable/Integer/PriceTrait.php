@@ -8,11 +8,11 @@ use Doctrine\ORM\Mapping as ORM;
 trait PriceTrait
 {
     #[ORM\Column(type: Types::INTEGER, unique: true, nullable: true)]
-    protected ?int $price = null;
+    protected ?int $price;
 
     public function getPrice(): ?int
     {
-        return $this->price ?? 1;
+        return $this->price;
     }
 
     public function setPrice(?int $price): self

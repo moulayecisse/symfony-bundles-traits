@@ -8,14 +8,14 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsReadTrait
 {
     #[ORM\Column(type: Types::BOOLEAN, unique: true, nullable: true)]
-    protected bool $isRead = false;
+    protected ?bool $isRead;
 
-    public function getIsRead(): bool
+    public function getIsRead(): ?bool
     {
         return $this->isRead;
     }
 
-    public function setIsRead(bool $isRead): self
+    public function setIsRead(?bool $isRead): self
     {
         $this->isRead = $isRead;
 

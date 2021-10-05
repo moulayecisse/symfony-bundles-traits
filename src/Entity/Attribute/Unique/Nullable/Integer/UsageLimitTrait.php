@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait UsageLimitTrait
 {
     #[ORM\Column(type: Types::INTEGER, unique: true, nullable: true)]
-    protected ?int $usageLimit = null;
+    protected ?int $usageLimit;
 
     public function getUsageLimit(): ?int
     {

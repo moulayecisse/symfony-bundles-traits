@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait SubTotalTrait
 {
     /**
-     * @ORM\Column(type="integer", unique=true, nullable=false)
+     * @ORM\Column(type="integer", unique=true, nullable=true)
      */
-    protected int $subTotal;
+    protected ?int $subTotal;
 
-    public function getSubTotal(): int
+    public function getSubTotal(): ?int
     {
         return $this->subTotal ?? 1;
     }
 
-    public function setSubTotal(int $subTotal): self
+    public function setSubTotal(?int $subTotal): self
     {
         $this->subTotal = $subTotal;
 

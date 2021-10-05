@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait TokenTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: false, nullable: true)]
-    protected ?string $token = null;
+    protected ?string $token;
 
     public function getToken(): ?string
     {

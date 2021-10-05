@@ -9,9 +9,9 @@ use JetBrains\PhpStorm\Pure;
 trait SlugsTrait
 {
     /**
-     * @ORM\Column(type="json", unique=false, nullable=false)
+     * @ORM\Column(type="json", unique=false, nullable=true)
      */
-    protected array $slugs = [];
+    protected ?array $slugs;
 
     #[Pure] public function getSlug(string $locale = null): string
     {
@@ -25,12 +25,12 @@ trait SlugsTrait
         return $this;
     }
 
-    public function getSlugs(): array
+    public function getSlugs(): ?array
     {
         return $this->slugs;
     }
 
-    public function setSlugs(array $slugs): self
+    public function setSlugs(?array $slugs): self
     {
         $this->slugs = $slugs;
 

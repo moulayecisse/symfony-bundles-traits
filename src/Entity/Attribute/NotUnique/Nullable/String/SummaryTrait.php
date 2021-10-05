@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait SummaryTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: false, nullable: true)]
-    protected ?string $summary = null;
+    protected ?string $summary;
 
     public function getSummary(): ?string
     {

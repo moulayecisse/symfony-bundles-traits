@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsLocalTrait
 {
     #[ORM\Column(type: Types::BOOLEAN, unique: false, nullable: true)]
-    protected ?bool $isLocal = false;
+    protected ?bool $isLocal;
 
     public function getIsLocal(): ?bool
     {

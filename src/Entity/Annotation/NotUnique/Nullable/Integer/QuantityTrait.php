@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait QuantityTrait
 {
     /**
-     * @ORM\Column(type="integer", unique=false, nullable=false)
+     * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected int $quantity;
+    protected ?int $quantity;
 
-    public function getQuantity(): int
+    public function getQuantity(): ?int
     {
         return $this->quantity;
     }
 
-    public function setQuantity(int $quantity): self
+    public function setQuantity(?int $quantity): self
     {
         $this->quantity = $quantity;
 

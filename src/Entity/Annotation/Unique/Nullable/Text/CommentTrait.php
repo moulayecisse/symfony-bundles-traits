@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait CommentTrait
 {
     /**
-     * @ORM\Column(type="text", unique=true, nullable=false)
+     * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected string $comment;
+    protected ?string $comment;
 
-    public function getComment(): string
+    public function getComment(): ?string
     {
         return $this->comment;
     }
 
-    public function setComment(string $comment): self
+    public function setComment(?string $comment): self
     {
         $this->comment = $comment;
 

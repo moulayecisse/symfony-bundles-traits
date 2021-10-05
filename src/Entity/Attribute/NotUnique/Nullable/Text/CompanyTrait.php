@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait CompanyTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: false, nullable: true)]
-    protected ?string $company = null;
+    protected ?string $company;
 
     public function getCompany(): ?string
     {

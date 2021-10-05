@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait TotalTrait
 {
     /**
-     * @ORM\Column(type="integer", unique=false, nullable=false)
+     * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected int $total;
+    protected ?int $total;
 
-    public function getTotal(): int
+    public function getTotal(): ?int
     {
         return $this->total ?? 1;
     }
 
-    public function setTotal(int $total): self
+    public function setTotal(?int $total): self
     {
         $this->total = $total;
 

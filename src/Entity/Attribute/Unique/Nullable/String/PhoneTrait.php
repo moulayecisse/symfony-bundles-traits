@@ -8,14 +8,14 @@ use Doctrine\ORM\Mapping as ORM;
 trait PhoneTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: true, nullable: true)]
-    protected string $phone;
+    protected ?string $phone;
 
-    public function getPhone(): string
+    public function getPhone(): ?string
     {
         return $this->phone;
     }
 
-    public function setPhone(string $phone): self
+    public function setPhone(?string $phone): self
     {
         $this->phone = $phone;
 

@@ -33,7 +33,7 @@ trait TitlesTrait
         return $this;
     }
 
-    public function getTitleFr(): ?string
+    #[Pure] public function getTitleFr(): ?string
     {
         return $this->getTitle('fr');
     }
@@ -43,7 +43,7 @@ trait TitlesTrait
         return $this->setTitle($title, 'fr');
     }
 
-    public function getTitleEn(): ?string
+    #[Pure] public function getTitleEn(): ?string
     {
         return $this->getTitle('en');
     }

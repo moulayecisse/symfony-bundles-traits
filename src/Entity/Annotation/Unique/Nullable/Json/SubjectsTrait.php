@@ -9,9 +9,9 @@ use JetBrains\PhpStorm\Pure;
 trait SubjectsTrait
 {
     /**
-     * @ORM\Column(type="json", unique=true, nullable=false)
+     * @ORM\Column(type="json", unique=true, nullable=true)
      */
-    protected array $subjects = [];
+    protected ?array $subjects;
 
     #[Pure] public function getSubject(string $locale = null): string
     {
@@ -25,12 +25,12 @@ trait SubjectsTrait
         return $this;
     }
 
-    public function getSubjects(): array
+    public function getSubjects(): ?array
     {
         return $this->subjects;
     }
 
-    public function setSubjects(array $subjects): self
+    public function setSubjects(?array $subjects): self
     {
         $this->subjects = $subjects;
 

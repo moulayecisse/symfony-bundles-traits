@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait LabelTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: false, nullable: true)]
-    protected ?string $label = null;
+    protected ?string $label;
 
     public function getLabel(): ?string
     {

@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsIdTrait
 {
     /**
-     * @ORM\Column(type="boolean", unique=false, nullable=false)
+     * @ORM\Column(type="boolean", unique=false, nullable=true)
      */
-    protected bool $isId = false;
+    protected ?bool $isId;
 
-    public function getIsId(): bool
+    public function getIsId(): ?bool
     {
         return $this->isId;
     }
 
-    public function setIsId(bool $isId): self
+    public function setIsId(?bool $isId): self
     {
         $this->isId = $isId;
 

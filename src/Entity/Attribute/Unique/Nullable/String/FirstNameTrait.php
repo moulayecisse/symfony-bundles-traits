@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait FirstNameTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: true, nullable: true)]
-    protected ?string $firstName = null;
+    protected ?string $firstName;
 
     public function getFirstName(): ?string
     {

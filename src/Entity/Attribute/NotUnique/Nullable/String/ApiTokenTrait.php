@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait ApiTokenTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: false, nullable: true)]
-    protected ?string $apiToken = null;
+    protected ?string $apiToken;
 
     public function getApiToken(): ?string
     {

@@ -8,14 +8,14 @@ use Doctrine\ORM\Mapping as ORM;
 trait PasswordRepeatTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: true, nullable: true)]
-    protected string $passwordRepeat;
+    protected ?string $passwordRepeat;
 
-    public function getPasswordRepeat(): string
+    public function getPasswordRepeat(): ?string
     {
         return $this->passwordRepeat;
     }
 
-    public function setPasswordRepeat(string $passwordRepeat): self
+    public function setPasswordRepeat(?string $passwordRepeat): self
     {
         $this->passwordRepeat = $passwordRepeat;
 

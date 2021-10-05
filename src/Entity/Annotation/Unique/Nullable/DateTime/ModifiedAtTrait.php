@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait ModifiedAtTrait
 {
     /**
-     * @ORM\Column(type="datetime", unique=true, nullable=false)
+     * @ORM\Column(type="datetime", unique=true, nullable=true)
      */
     protected ?DateTime $modifiedAt;
 

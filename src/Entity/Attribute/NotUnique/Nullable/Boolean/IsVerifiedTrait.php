@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsVerifiedTrait
 {
     #[ORM\Column(type: Types::BOOLEAN, unique: false, nullable: true)]
-    protected ?bool $isVerified = false;
+    protected ?bool $isVerified;
 
     public function getIsVerified(): ?bool
     {

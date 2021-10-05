@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait DateStartTrait
 {
     #[ORM\Column(type: Types::DATETIME_MUTABLE, unique: false, nullable: true)]
-    protected ?DateTime $dateStart = null;
+    protected ?DateTime $dateStart;
 
     public function getDateStart(): ?DateTime
     {

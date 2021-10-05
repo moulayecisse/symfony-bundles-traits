@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait ZipCodeTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: true, nullable: true)]
-    protected ?string $zipCode = null;
+    protected ?string $zipCode;
 
     public function getZipCode(): ?string
     {

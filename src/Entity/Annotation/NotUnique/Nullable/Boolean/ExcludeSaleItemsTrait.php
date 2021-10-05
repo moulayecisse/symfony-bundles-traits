@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait ExcludeSaleItemsTrait
 {
     /**
-     * @ORM\Column(type="boolean", unique=false, nullable=false)
+     * @ORM\Column(type="boolean", unique=false, nullable=true)
      */
-    protected bool $excludeSaleItems = false;
+    protected ?bool $excludeSaleItems;
 
-    public function getExcludeSaleItems(): bool
+    public function getExcludeSaleItems(): ?bool
     {
         return $this->excludeSaleItems;
     }
 
-    public function setExcludeSaleItems(bool $excludeSaleItems): self
+    public function setExcludeSaleItems(?bool $excludeSaleItems): self
     {
         $this->excludeSaleItems = $excludeSaleItems;
 

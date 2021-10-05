@@ -9,12 +9,12 @@ use Doctrine\ORM\Mapping as ORM;
 trait RolesTrait
 {
     #[ORM\Column(type: Types::JSON, unique: true, nullable: true)]
-    protected array $roles = [USER::ROLE_USER];
+    protected ?array $roles = [USER::ROLE_USER];
 
     /**
      * @see UserInterface
      */
-    public function getRoles(): array
+    public function getRoles(): ?array
     {
         $roles = $this->roles;
         // guarantee every user at least has ROLE_USER
@@ -23,7 +23,7 @@ trait RolesTrait
         return array_unique($roles);
     }
 
-    public function setRoles(array $roles): self
+    public function setRoles(?array $roles): self
     {
         $this->roles = $roles;
 

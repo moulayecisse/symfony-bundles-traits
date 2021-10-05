@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait ExcludeSaleItemsTrait
 {
     #[ORM\Column(type: Types::BOOLEAN, unique: false, nullable: true)]
-    protected ?bool $excludeSaleItems = false;
+    protected ?bool $excludeSaleItems;
 
     public function getExcludeSaleItems(): ?bool
     {

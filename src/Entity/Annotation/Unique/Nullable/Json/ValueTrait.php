@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait ValueTrait
 {
     /**
-     * @ORM\Column(type="json", unique=true, nullable=false)
+     * @ORM\Column(type="json", unique=true, nullable=true)
      */
     protected mixed $value;
 

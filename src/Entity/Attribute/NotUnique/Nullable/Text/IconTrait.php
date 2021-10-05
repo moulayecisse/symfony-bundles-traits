@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait IconTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: false, nullable: true)]
-    protected ?string $icon = null;
+    protected ?string $icon;
 
     public function getIcon(): ?string
     {

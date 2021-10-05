@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait SummaryTrait
 {
     /**
-     * @ORM\Column(type="text", unique=true, nullable=false)
+     * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected string $summary;
+    protected ?string $summary;
 
-    public function getSummary(): string
+    public function getSummary(): ?string
     {
         return $this->summary;
     }
 
-    public function setSummary(string $summary): self
+    public function setSummary(?string $summary): self
     {
         $this->summary = $summary;
 

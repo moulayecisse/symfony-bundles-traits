@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait BriefTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=true, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected string $brief;
+    protected ?string $brief;
 
-    public function getBrief(): string
+    public function getBrief(): ?string
     {
         return $this->brief;
     }
 
-    public function setBrief(string $brief): self
+    public function setBrief(?string $brief): self
     {
         $this->brief = $brief;
 

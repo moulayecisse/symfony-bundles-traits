@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsIndividualTrait
 {
     #[ORM\Column(type: Types::BOOLEAN, unique: false, nullable: true)]
-    protected ?bool $isIndividual = false;
+    protected ?bool $isIndividual;
 
     public function getIsIndividual(): ?bool
     {

@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait SubjectTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=true, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected string $subject;
+    protected ?string $subject;
 
-    public function getSubject(): string
+    public function getSubject(): ?string
     {
         return $this->subject;
     }
 
-    public function setSubject(string $subject): self
+    public function setSubject(?string $subject): self
     {
         $this->subject = $subject;
 

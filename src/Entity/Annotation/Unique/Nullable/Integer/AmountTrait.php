@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait AmountTrait
 {
     /**
-     * @ORM\Column(type="integer", unique=true, nullable=false)
+     * @ORM\Column(type="integer", unique=true, nullable=true)
      */
-    protected int $amount;
+    protected ?int $amount;
 
-    public function getAmount(): int
+    public function getAmount(): ?int
     {
         return $this->amount ?? 1;
     }
 
-    public function setAmount(int $amount): self
+    public function setAmount(?int $amount): self
     {
         $this->amount = $amount;
 

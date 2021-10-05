@@ -11,9 +11,9 @@ use Symfony\Bundle\MakerBundle\Str;
 trait ExtrasTrait
 {
     /**
-     * @ORM\Column(type="json", unique=false, nullable=false)
+     * @ORM\Column(type="json", unique=false, nullable=true)
      */
-    protected array $extras = [];
+    protected ?array $extras;
 
     public function __call($method, $arguments)
     {
@@ -45,12 +45,12 @@ trait ExtrasTrait
         return $extras[StringUtility::asLowerCamelCase($fieldName)] ?? null;
     }
 
-    public function getExtras(): array
+    public function getExtras(): ?array
     {
         return $this->extras;
     }
 
-    public function setExtras(array $extras): self
+    public function setExtras(?array $extras): self
     {
         $this->extras = $extras ?? [];
 

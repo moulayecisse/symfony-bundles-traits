@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait IdTrait
 {
     #[ORM\Id, ORM\Column(type: Types::INTEGER, unique: true, nullable: true), ORM\GeneratedValue]
-    protected ?int $id = null;
+    protected ?int $id;
 
     public function getId(): ?int
     {

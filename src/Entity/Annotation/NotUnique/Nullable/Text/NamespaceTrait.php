@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait NamespaceTrait
 {
     /**
-     * @ORM\Column(type="text", unique=false, nullable=false)
+     * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected string $namespace;
+    protected ?string $namespace;
 
-    public function getNamespace(): string
+    public function getNamespace(): ?string
     {
         return $this->namespace;
     }
 
-    public function setNamespace(string $namespace): self
+    public function setNamespace(?string $namespace): self
     {
         $this->namespace = $namespace;
 

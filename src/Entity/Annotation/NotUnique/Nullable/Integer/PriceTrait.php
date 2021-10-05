@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait PriceTrait
 {
     /**
-     * @ORM\Column(type="integer", unique=false, nullable=false)
+     * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected int $price;
+    protected ?int $price;
 
-    public function getPrice(): int
+    public function getPrice(): ?int
     {
         return $this->price ?? 1;
     }
 
-    public function setPrice(int $price): self
+    public function setPrice(?int $price): self
     {
         $this->price = $price;
 

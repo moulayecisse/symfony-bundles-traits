@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait ExpiredAtTrait
 {
     #[ORM\Column(type: Types::DATETIME_MUTABLE, unique: false, nullable: true)]
-    protected ?DateTime $expiredAt = null;
+    protected ?DateTime $expiredAt;
 
     public function getExpiredAt(): ?DateTime
     {

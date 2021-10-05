@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait SubTitleTrait
 {
     /**
-     * @ORM\Column(type="text", unique=true, nullable=false)
+     * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected string $subTitle;
+    protected ?string $subTitle;
 
-    public function getSubTitle(): string
+    public function getSubTitle(): ?string
     {
         return $this->subTitle;
     }
 
-    public function setSubTitle(string $subTitle): self
+    public function setSubTitle(?string $subTitle): self
     {
         $this->subTitle = $subTitle;
 

@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait PriceDiscountTrait
 {
     #[ORM\Column(type: Types::DECIMAL, precision: 12, scale: 2, unique: true, nullable: true)]
-    protected ?int $priceDiscount;
+    protected ?float $priceDiscount;
 
-    public function setPriceDiscount(?int $priceDiscount) : self
+    public function setPriceDiscount(?float $priceDiscount) : self
     {
         $this->priceDiscount = $priceDiscount;
 
         return $this;
     }
 
-    public function getPriceDiscount() : ?int
+    public function getPriceDiscount() : ?float
     {
         return $this->priceDiscount;
     }

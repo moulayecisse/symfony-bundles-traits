@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait InstitutionTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=true, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected string $institution;
+    protected ?string $institution;
 
-    public function getInstitution(): string
+    public function getInstitution(): ?string
     {
         return $this->institution;
     }
 
-    public function setInstitution(string $institution): self
+    public function setInstitution(?string $institution): self
     {
         $this->institution = $institution;
 

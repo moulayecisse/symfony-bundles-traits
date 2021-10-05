@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait FullContentTrait
 {
     /**
-     * @ORM\Column(type="text", unique=true, nullable=false)
+     * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected string $fullContent;
+    protected ?string $fullContent;
 
-    public function getFullContent(): string
+    public function getFullContent(): ?string
     {
         return $this->fullContent;
     }
 
-    public function setFullContent(string $fullContent): self
+    public function setFullContent(?string $fullContent): self
     {
         $this->fullContent = $fullContent;
 

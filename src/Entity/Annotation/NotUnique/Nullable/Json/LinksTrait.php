@@ -9,9 +9,9 @@ use JetBrains\PhpStorm\Pure;
 trait LinksTrait
 {
     /**
-     * @ORM\Column(type="json", unique=false, nullable=false)
+     * @ORM\Column(type="json", unique=false, nullable=true)
      */
-    protected array $links = [];
+    protected ?array $links;
 
     #[Pure] public function getLink(string $locale = null): string
     {
@@ -25,12 +25,12 @@ trait LinksTrait
         return $this;
     }
 
-    public function getLinks(): array
+    public function getLinks(): ?array
     {
         return $this->links;
     }
 
-    public function setLinks(array $links): self
+    public function setLinks(?array $links): self
     {
         $this->links = $links;
 

@@ -8,14 +8,14 @@ use Doctrine\ORM\Mapping as ORM;
 trait VersionCodeTrait
 {
     #[ORM\Column(type: Types::INTEGER, unique: true, nullable: true)]
-    protected int $versionCode;
+    protected ?int $versionCode;
 
-    public function getVersionCode(): int
+    public function getVersionCode(): ?int
     {
         return $this->versionCode;
     }
 
-    public function setVersionCode(int $versionCode): self
+    public function setVersionCode(?int $versionCode): self
     {
         $this->versionCode = $versionCode;
 

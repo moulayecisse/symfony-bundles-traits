@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait TtcTrait
 {
     /**
-     * @ORM\Column(type="integer", unique=true, nullable=false)
+     * @ORM\Column(type="integer", unique=true, nullable=true)
      */
-    protected int $ttc;
+    protected ?int $ttc;
 
-    public function getTtc(): int
+    public function getTtc(): ?int
     {
         return $this->ttc ?? 1;
     }
 
-    public function setTtc(int $ttc): self
+    public function setTtc(?int $ttc): self
     {
         $this->ttc = $ttc;
 

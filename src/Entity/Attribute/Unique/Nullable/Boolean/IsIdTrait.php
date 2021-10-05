@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsIdTrait
 {
     #[ORM\Column(type: Types::BOOLEAN, unique: true, nullable: true)]
-    protected ?bool $isId = false;
+    protected ?bool $isId;
 
     public function getIsId(): ?bool
     {

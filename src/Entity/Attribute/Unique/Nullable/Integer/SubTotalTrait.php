@@ -8,11 +8,11 @@ use Doctrine\ORM\Mapping as ORM;
 trait SubTotalTrait
 {
     #[ORM\Column(type: Types::INTEGER, unique: true, nullable: true)]
-    protected ?int $subTotal = null;
+    protected ?int $subTotal;
 
     public function getSubTotal(): ?int
     {
-        return $this->subTotal ?? 1;
+        return $this->subTotal;
     }
 
     public function setSubTotal(?int $subTotal): self

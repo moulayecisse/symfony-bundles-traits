@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait EmailTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: true, nullable: true)]
-    protected ?string $email = null;
+    protected ?string $email;
 
     public function getEmail(): ?string
     {

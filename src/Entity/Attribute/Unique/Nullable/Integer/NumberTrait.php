@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait NumberTrait
 {
     #[ORM\Column(type: Types::INTEGER, unique: true, nullable: true)]
-    protected ?int $number = null;
+    protected ?int $number;
 
     public function getNumber(): ?int
     {

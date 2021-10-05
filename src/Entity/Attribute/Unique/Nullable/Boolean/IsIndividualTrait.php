@@ -8,14 +8,14 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsIndividualTrait
 {
     #[ORM\Column(type: Types::BOOLEAN, unique: true, nullable: true)]
-    protected bool $isIndividual = false;
+    protected ?bool $isIndividual;
 
-    public function getIsIndividual(): bool
+    public function getIsIndividual(): ?bool
     {
         return $this->isIndividual;
     }
 
-    public function setIsIndividual(bool $isIndividual): self
+    public function setIsIndividual(?bool $isIndividual): self
     {
         $this->isIndividual = $isIndividual;
 

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsActiveTrait
 {
     #[ORM\Column(type: Types::BOOLEAN, unique: false, nullable: true)]
-    protected ?bool $isActive = false;
+    protected ?bool $isActive;
 
     public function getIsActive(): ?bool
     {

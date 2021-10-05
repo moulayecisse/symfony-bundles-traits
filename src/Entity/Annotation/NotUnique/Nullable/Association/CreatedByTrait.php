@@ -11,14 +11,14 @@ trait CreatedByTrait
      * @ORM\ManyToOne(targetEntity: User::classt)
      * @ORM\JoinColumn(unique=false, nullable= false)
      */
-    protected User $createdBy;
+    protected ?User $createdBy;
 
-    public function getCreatedBy(): User
+    public function getCreatedBy(): ?User
     {
         return $this->createdBy;
     }
 
-    public function setCreatedBy(User $user): self
+    public function setCreatedBy(?User $user): self
     {
         $this->createdBy = $user;
 

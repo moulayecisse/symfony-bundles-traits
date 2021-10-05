@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait CityTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: true, nullable: true)]
-    protected ?string $city = null;
+    protected ?string $city;
 
     public function getCity(): ?string
     {

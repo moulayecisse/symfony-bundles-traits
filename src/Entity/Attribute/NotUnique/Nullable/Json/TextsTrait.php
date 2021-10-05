@@ -10,7 +10,7 @@ use JetBrains\PhpStorm\Pure;
 trait TextsTrait
 {
     #[ORM\Column(type: Types::JSON, unique: false, nullable: true)]
-    protected array $texts = [];
+    protected ?array $texts;
 
     #[Pure]
     public function getText(?string $locale = null): ?string
@@ -30,7 +30,7 @@ trait TextsTrait
         return $this->texts;
     }
 
-    public function setTexts(array $texts): self
+    public function setTexts(?array $texts): self
     {
         $this->texts = $texts;
 

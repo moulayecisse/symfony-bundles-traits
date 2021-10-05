@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait NationalityTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: true, nullable: true)]
-    protected ?string $nationality = null;
+    protected ?string $nationality;
 
     public function getNationality(): ?string
     {

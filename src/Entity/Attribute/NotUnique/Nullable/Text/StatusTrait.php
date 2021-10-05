@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait StatusTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: false, nullable: true)]
-    protected ?string $status = 'draft';
+    protected ?string $status;
 
     public function getStatus(): ?string
     {

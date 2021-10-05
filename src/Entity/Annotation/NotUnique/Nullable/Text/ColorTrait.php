@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait ColorTrait
 {
     /**
-     * @ORM\Column(type="text", unique=false, nullable=false)
+     * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected string $Color;
+    protected ?string $Color;
 
-    public function getColor(): string
+    public function getColor(): ?string
     {
         return $this->Color;
     }
 
-    public function setColor(string $Color): self
+    public function setColor(?string $Color): self
     {
         $this->Color = $Color;
 

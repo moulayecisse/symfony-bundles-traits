@@ -12,7 +12,7 @@ use Symfony\Bundle\MakerBundle\Str;
 trait ExtrasTrait
 {
     #[ORM\Column(type: Types::JSON, unique: false, nullable: true)]
-    protected array $extras = [];
+    protected ?array $extras;
 
     public function __call($method, $arguments)
     {

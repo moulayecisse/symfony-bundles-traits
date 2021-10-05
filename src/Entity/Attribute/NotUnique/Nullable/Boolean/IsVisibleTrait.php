@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsVisibleTrait
 {
     #[ORM\Column(type: Types::BOOLEAN, unique: false, nullable: true)]
-    protected ?bool $isVisible = false;
+    protected ?bool $isVisible;
 
     public function getIsVisible(): ?bool
     {

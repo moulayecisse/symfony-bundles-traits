@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait FloorTrait
 {
     /**
-     * @ORM\Column(type="integer", unique=false, nullable=false)
+     * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected int $floor;
+    protected ?int $floor;
 
-    public function getFloor(): int
+    public function getFloor(): ?int
     {
         return $this->floor;
     }
 
-    public function setFloor(int $floor): self
+    public function setFloor(?int $floor): self
     {
         $this->floor = $floor;
 

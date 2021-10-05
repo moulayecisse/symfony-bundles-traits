@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait DeviceNameTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: false, nullable: true)]
-    protected ?string $deviceName = null;
+    protected ?string $deviceName;
 
     public function getDeviceName(): ?string
     {

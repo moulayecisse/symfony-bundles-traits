@@ -33,7 +33,7 @@ trait ContentsTrait
         return $this;
     }
 
-    public function getContentFr(): string
+    #[Pure] public function getContentFr(): string
     {
         return $this->getContent('fr');
     }
@@ -43,7 +43,7 @@ trait ContentsTrait
         return $this->setContent($content, 'fr');
     }
 
-    public function getContentEn(): string
+    #[Pure] public function getContentEn(): string
     {
         return $this->getContent('en');
     }

@@ -8,11 +8,11 @@ use Doctrine\ORM\Mapping as ORM;
 trait TaxTotalTrait
 {
     #[ORM\Column(type: Types::INTEGER, unique: false, nullable: true)]
-    protected ?int $taxTotal = null;
+    protected ?int $taxTotal;
 
     public function getTaxTotal(): ?int
     {
-        return $this->taxTotal ?? 1;
+        return $this->taxTotal;
     }
 
     public function setTaxTotal(?int $taxTotal): self

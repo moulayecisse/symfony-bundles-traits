@@ -8,14 +8,14 @@ use Doctrine\ORM\Mapping as ORM;
 trait RankTrait
 {
     #[ORM\Column(type: Types::INTEGER, unique: true, nullable: true)]
-    protected int $rank;
+    protected ?int $rank;
 
-    public function getRank(): int
+    public function getRank(): ?int
     {
         return $this->rank;
     }
 
-    public function setRank(int $rank): self
+    public function setRank(?int $rank): self
     {
         $this->rank = $rank;
 

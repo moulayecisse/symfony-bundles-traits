@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait AccountTrait
 {
     /**
-     * @ORM\Column(type="text", unique=true, nullable=false)
+     * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected string $account;
+    protected ?string $account;
 
-    public function getAccount(): string
+    public function getAccount(): ?string
     {
         return $this->account;
     }
 
-    public function setAccount(string $account): self
+    public function setAccount(?string $account): self
     {
         $this->account = $account;
 

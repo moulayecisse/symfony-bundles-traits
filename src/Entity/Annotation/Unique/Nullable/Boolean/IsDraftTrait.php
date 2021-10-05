@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsDraftTrait
 {
     /**
-     * @ORM\Column(type="boolean", unique=true, nullable=false)
+     * @ORM\Column(type="boolean", unique=true, nullable=true)
      */
-    protected bool $isDraft = false;
+    protected ?bool $isDraft;
 
-    public function getIsDraft(): bool
+    public function getIsDraft(): ?bool
     {
         return $this->isDraft;
     }
 
-    public function setIsDraft(bool $isDraft): self
+    public function setIsDraft(?bool $isDraft): self
     {
         $this->isDraft = $isDraft;
 

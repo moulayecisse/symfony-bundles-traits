@@ -33,7 +33,7 @@ trait TextsTrait
         return $this;
     }
 
-    public function getTextFr(): string
+    #[Pure] public function getTextFr(): string
     {
         return $this->getText('fr');
     }
@@ -43,7 +43,7 @@ trait TextsTrait
         return $this->setText($text, 'fr');
     }
 
-    public function getTextEn(): string
+    #[Pure] public function getTextEn(): string
     {
         return $this->getText('en');
     }

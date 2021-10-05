@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait ShippingTotalTrait
 {
     /**
-     * @ORM\Column(type="integer", unique=false, nullable=false)
+     * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected int $shippingTotal;
+    protected ?int $shippingTotal;
 
-    public function getShippingTotal(): int
+    public function getShippingTotal(): ?int
     {
         return $this->shippingTotal ?? 1;
     }
 
-    public function setShippingTotal(int $shippingTotal): self
+    public function setShippingTotal(?int $shippingTotal): self
     {
         $this->shippingTotal = $shippingTotal;
 

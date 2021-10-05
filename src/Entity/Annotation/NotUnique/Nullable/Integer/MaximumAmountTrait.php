@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait MaximumAmountTrait
 {
     /**
-     * @ORM\Column(type="integer", unique=false, nullable=false)
+     * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected int $maximumAmount;
+    protected ?int $maximumAmount;
 
-    public function getMaximumAmount(): int
+    public function getMaximumAmount(): ?int
     {
         return $this->maximumAmount ?? 1;
     }
 
-    public function setMaximumAmount(int $maximumAmount): self
+    public function setMaximumAmount(?int $maximumAmount): self
     {
         $this->maximumAmount = $maximumAmount;
 

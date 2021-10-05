@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsDraftTrait
 {
     #[ORM\Column(type: Types::BOOLEAN, unique: true, nullable: true)]
-    protected ?bool $isDraft = false;
+    protected ?bool $isDraft;
 
     public function getIsDraft(): ?bool
     {

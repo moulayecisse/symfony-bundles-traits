@@ -9,9 +9,9 @@ use JetBrains\PhpStorm\Pure;
 trait LabelsTrait
 {
     /**
-     * @ORM\Column(type="json", unique=false, nullable=false)
+     * @ORM\Column(type="json", unique=false, nullable=true)
      */
-    protected array $labels = [];
+    protected ?array $labels;
 
     #[Pure] public function getLabel(string $locale = null): string
     {
@@ -25,12 +25,12 @@ trait LabelsTrait
         return $this;
     }
 
-    public function getLabels(): array
+    public function getLabels(): ?array
     {
         return $this->labels;
     }
 
-    public function setLabels(array $labels): self
+    public function setLabels(?array $labels): self
     {
         $this->labels = $labels;
 

@@ -10,7 +10,7 @@ use JetBrains\PhpStorm\Pure;
 trait ButtonsTrait
 {
     #[ORM\Column(type: Types::JSON, unique: true, nullable: true)]
-    protected array $buttons = [];
+    protected ?array $buttons;
 
     #[Pure]
     public function getButton(?string $locale = null): ?string
@@ -30,7 +30,7 @@ trait ButtonsTrait
         return $this->buttons;
     }
 
-    public function setButtons(array $buttons): self
+    public function setButtons(?array $buttons): self
     {
         $this->buttons = $buttons;
 

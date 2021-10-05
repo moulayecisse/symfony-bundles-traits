@@ -8,14 +8,14 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsAvailableTrait
 {
     #[ORM\Column(type: Types::BOOLEAN, unique: true, nullable: true)]
-    protected bool $isAvailable = false;
+    protected ?bool $isAvailable;
 
-    public function getIsAvailable(): bool
+    public function getIsAvailable(): ?bool
     {
         return $this->isAvailable;
     }
 
-    public function setIsAvailable(bool $isAvailable): self
+    public function setIsAvailable(?bool $isAvailable): self
     {
         $this->isAvailable = $isAvailable;
 

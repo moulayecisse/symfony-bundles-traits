@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait SerialTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=true, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected string $serial;
+    protected ?string $serial;
 
-    public function getSerial(): string
+    public function getSerial(): ?string
     {
         return $this->serial;
     }
 
-    public function setSerial(string $serial): self
+    public function setSerial(?string $serial): self
     {
         $this->serial = $serial;
 

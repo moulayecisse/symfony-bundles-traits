@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait LocaleTrait
 {
     /**
-     * @ORM\Column(type="string", length=255, unique=false, nullable=false)
+     * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected string $locale = 'fr';
+    protected ?string $locale = 'fr';
 
-    public function getLocale(): string
+    public function getLocale(): ?string
     {
         return $this->locale ?? 'fr';
     }
 
-    public function setLocale(string $locale = 'fr'): self
+    public function setLocale(?string $locale = 'fr'): self
     {
         $this->locale = $locale ?? 'fr';
 

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait ExtensionTrait
 {
     #[ORM\Column(type: Types::TEXT, unique: false, nullable: true)]
-    protected ?string $extension = null;
+    protected ?string $extension;
 
     public function getExtension(): ?string
     {

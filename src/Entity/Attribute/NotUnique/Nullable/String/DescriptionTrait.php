@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait DescriptionTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: false, nullable: true)]
-    protected ?string $description = null;
+    protected ?string $description;
 
     public function getDescription(): ?string
     {

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait PhoneNumberTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: true, nullable: true)]
-    protected ?string $phoneNumber = null;
+    protected ?string $phoneNumber;
 
     public function getPhoneNumber(): ?string
     {

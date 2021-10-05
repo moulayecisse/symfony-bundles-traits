@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait IsOwnerOnlyTrait
 {
     #[ORM\Column(type: Types::BOOLEAN, unique: false, nullable: true)]
-    protected ?bool $isOwnerOnly = false;
+    protected ?bool $isOwnerOnly;
 
     public function getIsOwnerOnly(): ?bool
     {

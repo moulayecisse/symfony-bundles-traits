@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait ContextTrait
 {
     #[ORM\Column(type: Types::STRING, length: 255, unique: true, nullable: true)]
-    protected ?string $context = null;
+    protected ?string $context;
 
     public function getContext(): ?string
     {

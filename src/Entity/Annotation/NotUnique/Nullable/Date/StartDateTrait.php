@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait StartDateTrait
 {
     /**
-     * @ORM\Column(type="date", unique=false, nullable=false)
+     * @ORM\Column(type="date", unique=false, nullable=true)
      */
     protected ?DateTime $startDate;
 

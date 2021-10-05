@@ -7,16 +7,16 @@ use Doctrine\ORM\Mapping as ORM;
 trait PageNumberTrait
 {
     /**
-     * @ORM\Column(type="integer", unique=true, nullable=false)
+     * @ORM\Column(type="integer", unique=true, nullable=true)
      */
-    protected int $pageNumber;
+    protected ?int $pageNumber;
 
-    public function getPageNumber(): int
+    public function getPageNumber(): ?int
     {
         return $this->pageNumber;
     }
 
-    public function setPageNumber(int $pageNumber): self
+    public function setPageNumber(?int $pageNumber): self
     {
         $this->pageNumber = $pageNumber;
 

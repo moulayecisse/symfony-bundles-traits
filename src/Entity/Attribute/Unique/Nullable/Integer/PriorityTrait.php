@@ -8,11 +8,11 @@ use Doctrine\ORM\Mapping as ORM;
 trait PriorityTrait
 {
     #[ORM\Column(type: Types::INTEGER, unique: true, nullable: true)]
-    protected ?int $priority = null;
+    protected ?int $priority;
 
     public function getPriority(): ?int
     {
-        return $this->priority ?? 1;
+        return $this->priority;
     }
 
     public function setPriority(?int $priority): self

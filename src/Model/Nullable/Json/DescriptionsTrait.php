@@ -33,7 +33,7 @@ trait DescriptionsTrait
         return $this;
     }
 
-    public function getDescriptionFr(): ?string
+    #[Pure] public function getDescriptionFr(): ?string
     {
         return $this->getDescription('fr');
     }
@@ -43,7 +43,7 @@ trait DescriptionsTrait
         return $this->setDescription($description, 'fr');
     }
 
-    public function getDescriptionEn(): ?string
+    #[Pure] public function getDescriptionEn(): ?string
     {
         return $this->getDescription('en');
     }
