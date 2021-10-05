@@ -1,0 +1,24 @@
+<?php
+
+namespace Cisse\Bundle\TraitsBundle\Entity\Attribute\NotUnique\NotNullable\Boolean;
+
+use Doctrine\DBAL\Types\Types;
+use Doctrine\ORM\Mapping as ORM;
+
+trait IsDraftTrait
+{
+    #[ORM\Column(type: Types::BOOLEAN, unique: false, nullable: false)]
+    protected bool $isDraft = false;
+
+    public function getIsDraft(): bool
+    {
+        return $this->isDraft;
+    }
+
+    public function setIsDraft(bool $isDraft): self
+    {
+        $this->isDraft = $isDraft;
+
+        return $this;
+    }
+}

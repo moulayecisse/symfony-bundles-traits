@@ -1,5 +1,5 @@
 <?php
-namespace Cisse\Traits;
+namespace Cisse\Bundle\TraitsBundle;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
