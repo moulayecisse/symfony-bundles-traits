@@ -47,3 +47,7 @@ $foo->getAddress(); // Return address
 ## Notes
 
 This component is a work in progress, and it is target for my own usages. But if you like it feel free to use it ;)
+
+## Versions
+
+4.0.1
