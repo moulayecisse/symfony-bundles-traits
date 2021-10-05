@@ -13,7 +13,7 @@ trait LinksTrait
      */
     protected array $links = [];
 
-    #[Pure] public function getLink(string $locale = null): string
+    public function getLink(string $locale = null): string
     {
         return $this->links[ApplicationUtility::locale($locale)] ?? '';
     }

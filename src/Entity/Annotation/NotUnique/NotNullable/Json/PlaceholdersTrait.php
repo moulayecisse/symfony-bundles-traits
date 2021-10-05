@@ -13,7 +13,7 @@ trait PlaceholdersTrait
      */
     protected array $placeholders = [];
 
-    #[Pure] public function getPlaceholder(string $locale = null): string
+    public function getPlaceholder(string $locale = null): string
     {
         return $this->placeholders[ApplicationUtility::locale($locale)] ?? '';
     }
@@ -37,7 +37,7 @@ trait PlaceholdersTrait
         return $this;
     }
 
-    #[Pure] public function getPlaceholderFr(): string
+    public function getPlaceholderFr(): string
     {
         return $this->getPlaceholder('fr');
     }
@@ -47,7 +47,7 @@ trait PlaceholdersTrait
         return $this->setPlaceholder($placeholder, 'fr');
     }
 
-    #[Pure] public function getPlaceholderEn(): string
+    public function getPlaceholderEn(): string
     {
         return $this->getPlaceholder('en');
     }

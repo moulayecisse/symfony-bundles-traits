@@ -9,7 +9,7 @@ trait ButtonsTrait
 {
     protected array $buttons = [];
 
-    #[Pure] public function getButton(?string $locale = null): ?string
+    public function getButton(?string $locale = null): ?string
     {
         return $this->buttons[ApplicationUtility::locale($locale)] ?? '';
     }
@@ -33,7 +33,7 @@ trait ButtonsTrait
         return $this;
     }
 
-    #[Pure] public function getButtonFr(): ?string
+    public function getButtonFr(): ?string
     {
         return $this->getButton('fr');
     }
@@ -43,7 +43,7 @@ trait ButtonsTrait
         return $this->setButton($button, 'fr');
     }
 
-    #[Pure] public function getButtonEn(): ?string
+    public function getButtonEn(): ?string
     {
         return $this->getButton('en');
     }

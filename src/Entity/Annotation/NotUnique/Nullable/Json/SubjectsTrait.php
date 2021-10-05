@@ -13,7 +13,7 @@ trait SubjectsTrait
      */
     protected array $subjects = [];
 
-    #[Pure] public function getSubject(string $locale = null): string
+    public function getSubject(string $locale = null): string
     {
         return $this->subjects[ApplicationUtility::locale($locale)] ?? '';
     }
@@ -37,7 +37,7 @@ trait SubjectsTrait
         return $this;
     }
 
-    #[Pure] public function getSubjectFr(): string
+    public function getSubjectFr(): string
     {
         return $this->getSubject('fr');
     }
@@ -47,7 +47,7 @@ trait SubjectsTrait
         return $this->setSubject($subject, 'fr');
     }
 
-    #[Pure] public function getSubjectEn(): string
+    public function getSubjectEn(): string
     {
         return $this->getSubject('en');
     }

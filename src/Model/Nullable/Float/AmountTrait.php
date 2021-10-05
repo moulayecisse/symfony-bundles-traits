@@ -6,7 +6,6 @@ use Doctrine\ORM\Mapping as ORM;
 
 trait AmountTrait
 {
-    #[ORM\Column(type: Types::FLOAT, unique: false, nullable: true)]
     protected ?float $amount;
 
     public function setAmount(?float $amount) : self

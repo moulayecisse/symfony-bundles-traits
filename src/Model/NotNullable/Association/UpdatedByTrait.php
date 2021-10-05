@@ -7,8 +7,6 @@ use Doctrine\ORM\Mapping as ORM;
 
 trait UpdatedByTrait
 {
-    #[ORM\ManyToOne(targetEntity: User::class)]
-    #[ORM\JoinColumn(unique: false, nullable: false)]
     protected User $updatedBy;
 
     public function getUpdatedBy(): User

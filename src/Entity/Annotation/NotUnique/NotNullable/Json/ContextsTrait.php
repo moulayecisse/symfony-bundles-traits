@@ -13,7 +13,7 @@ trait ContextsTrait
      */
     protected array $contexts = [];
 
-    #[Pure] public function getContext(string $locale = null): string
+    public function getContext(string $locale = null): string
     {
         return $this->contexts[ApplicationUtility::locale($locale)] ?? '';
     }
@@ -37,7 +37,7 @@ trait ContextsTrait
         return $this;
     }
 
-    #[Pure] public function getContextFr(): string
+    public function getContextFr(): string
     {
         return $this->getContext('fr');
     }
@@ -47,7 +47,7 @@ trait ContextsTrait
         return $this->setContext($context, 'fr');
     }
 
-    #[Pure] public function getContextEn(): string
+    public function getContextEn(): string
     {
         return $this->getContext('en');
     }

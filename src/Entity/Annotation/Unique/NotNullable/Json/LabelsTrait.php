@@ -13,7 +13,7 @@ trait LabelsTrait
      */
     protected array $labels = [];
 
-    #[Pure] public function getLabel(string $locale = null): string
+    public function getLabel(string $locale = null): string
     {
         return $this->labels[ApplicationUtility::locale($locale)] ?? '';
     }
@@ -37,7 +37,7 @@ trait LabelsTrait
         return $this;
     }
 
-    #[Pure] public function getLabelFr(): string
+    public function getLabelFr(): string
     {
         return $this->getLabel('fr');
     }
@@ -47,7 +47,7 @@ trait LabelsTrait
         return $this->setLabel($label, 'fr');
     }
 
-    #[Pure] public function getLabelEn(): string
+    public function getLabelEn(): string
     {
         return $this->getLabel('en');
     }

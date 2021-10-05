@@ -9,7 +9,7 @@ trait TitlesTrait
 {
     protected array $titles = [];
 
-    #[Pure] public function getTitle(?string $locale = null): ?string
+    public function getTitle(?string $locale = null): ?string
     {
         return $this->titles[ApplicationUtility::locale($locale)] ?? '';
     }

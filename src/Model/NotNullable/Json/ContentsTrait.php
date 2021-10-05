@@ -9,7 +9,7 @@ trait ContentsTrait
 {
     protected array $contents = [];
 
-    #[Pure] public function getContent(string $locale = null): string
+    public function getContent(string $locale = null): string
     {
         return $this->contents[ApplicationUtility::locale($locale)] ?? '';
     }

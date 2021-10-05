@@ -9,7 +9,7 @@ trait LinksTrait
 {
     protected array $links = [];
 
-    #[Pure] public function getLink(?string $locale = null): ?string
+    public function getLink(?string $locale = null): ?string
     {
         return $this->links[ApplicationUtility::locale($locale)] ?? '';
     }
@@ -33,7 +33,7 @@ trait LinksTrait
         return $this;
     }
 
-    #[Pure] public function getLinkFr(): ?string
+    public function getLinkFr(): ?string
     {
         return $this->getLink('fr');
     }
@@ -43,7 +43,7 @@ trait LinksTrait
         return $this->setLink($link, 'fr');
     }
 
-    #[Pure] public function getLinkEn(): ?string
+    public function getLinkEn(): ?string
     {
         return $this->getLink('en');
     }

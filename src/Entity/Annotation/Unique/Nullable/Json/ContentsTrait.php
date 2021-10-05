@@ -13,7 +13,7 @@ trait ContentsTrait
      */
     protected array $contents = [];
 
-    #[Pure] public function getContent(string $locale = null): string
+    public function getContent(string $locale = null): string
     {
         return $this->contents[ApplicationUtility::locale($locale)] ?? '';
     }
@@ -37,7 +37,7 @@ trait ContentsTrait
         return $this;
     }
 
-    #[Pure] public function getContentFr(): string
+    public function getContentFr(): string
     {
         return $this->getContent('fr');
     }
@@ -47,7 +47,7 @@ trait ContentsTrait
         return $this->setContent($content, 'fr');
     }
 
-    #[Pure] public function getContentEn(): string
+    public function getContentEn(): string
     {
         return $this->getContent('en');
     }

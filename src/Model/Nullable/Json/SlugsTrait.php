@@ -9,7 +9,7 @@ trait SlugsTrait
 {
     protected array $slugs = [];
 
-    #[Pure] public function getSlug(?string $locale = null): ?string
+    public function getSlug(?string $locale = null): ?string
     {
         return $this->slugs[ApplicationUtility::locale($locale)] ?? '';
     }
@@ -33,7 +33,7 @@ trait SlugsTrait
         return $this;
     }
 
-    #[Pure] public function getSlugFr(): ?string
+    public function getSlugFr(): ?string
     {
         return $this->getSlug('fr');
     }
@@ -43,7 +43,7 @@ trait SlugsTrait
         return $this->setSlug($slug, 'fr');
     }
 
-    #[Pure] public function getSlugEn(): ?string
+    public function getSlugEn(): ?string
     {
         return $this->getSlug('en');
     }

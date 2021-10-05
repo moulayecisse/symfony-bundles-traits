@@ -9,7 +9,7 @@ trait DescriptionsTrait
 {
     protected array $descriptions = [];
 
-    #[Pure] public function getDescription(string $locale = null): string
+    public function getDescription(string $locale = null): string
     {
         return $this->descriptions[ApplicationUtility::locale($locale)] ?? '';
     }
@@ -33,7 +33,7 @@ trait DescriptionsTrait
         return $this;
     }
 
-    #[Pure] public function getDescriptionFr(): string
+    public function getDescriptionFr(): string
     {
         return $this->getDescription('fr');
     }
@@ -43,7 +43,7 @@ trait DescriptionsTrait
         return $this->setDescription($description, 'fr');
     }
 
-    #[Pure] public function getDescriptionEn(): string
+    public function getDescriptionEn(): string
     {
         return $this->getDescription('en');
     }

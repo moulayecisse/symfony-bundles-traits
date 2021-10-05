@@ -11,7 +11,7 @@ trait FullNameTrait
     use FirstNameTrait;
     use LastNameTrait;
 
-    #[Pure] public function getFullName(): ?string
+    public function getFullName(): ?string
     {
         return "{$this->getFirstName()} {$this->getLastName()}";
     }

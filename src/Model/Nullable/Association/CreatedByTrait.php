@@ -7,8 +7,6 @@ use Doctrine\ORM\Mapping as ORM;
 
 trait CreatedByTrait
 {
-    #[ORM\ManyToOne(targetEntity: User::class)]
-    #[ORM\JoinColumn(unique: false, nullable: true)]
     protected ?User $createdBy = null;
 
     public function getCreatedBy(): ?User

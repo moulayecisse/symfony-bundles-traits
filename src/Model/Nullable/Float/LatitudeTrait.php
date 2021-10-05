@@ -6,7 +6,6 @@ use Doctrine\ORM\Mapping as ORM;
 
 trait LatitudeTrait
 {
-    #[ORM\Column(type: Types::FLOAT, unique: false, nullable: true)]
     protected ?float $latitude;
 
     public function setLatitude(?float $latitude) : self

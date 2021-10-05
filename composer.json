@@ -13,7 +13,7 @@
 	}
   ],
   "require": {
-	"php": ">=8.0",
+	"php": ">=7.4",
     "ext-json": "*",
 	"doctrine/orm": "*",
     "symfony/http-kernel": "^4.4|^5.0"
